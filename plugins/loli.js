@@ -1,0 +1,12 @@
+let fetch = require('node-fetch')
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+  let res = await fetch(`https://api.lolhuman.xyz/api/pinterest?apikey=Dawnfrostkey&query=loli`)
+  let json = await res.json()
+  conn.sendButtonImg(m.chat, await (await fetch(json.result)).buffer(), `Kyaa, , kawaii !   > / / / <`, `${wm}`, 'Next', `#loli`, m, 0, { thumbnail: await (await fetch(json.result)).buffer() })
+}
+handler.help = ['loli']
+handler.tags = ['anime']
+handler.command = /^(loli)$/i
+
+module.exports = handler
+let wm = global.botwm
