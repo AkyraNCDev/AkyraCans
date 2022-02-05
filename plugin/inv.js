@@ -163,7 +163,7 @@ let date = global.botdate
 
 ╭───────────[ Tools ]───────────✧
 ├◪ 🥼 Armor: ${armor == 0 ? '❌' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor' : ''}
-├◪ ⚔️ Sword: ${sword == 0 ? '❌' : '' || sword == 1 ? 'wooden sword' : '' || sword == 2 ? 'Iron sword' : '' || sword == 3 ? 'Gold sword' : '' || sword == 4 ? 'Diamond sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (${_sword} / ${sword 100})` : '' || sword == 5 ? 'Netherite Sword' : ''}
+├◪ ⚔️ Sword: ${sword == 0 ? '❌' : '' || sword == 1 ? 'wooden sword' : '' || sword == 2 ? 'Iron sword' : '' || sword == 3 ? 'Gold sword' : '' || sword == 4 ? 'Diamond sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (${_sword} / ${_sword 100})` : '' || sword == 5 ? 'Netherite Sword' : ''}
 ├◪ ╰ Durability: ${sdurability}
 ├◪ ⛏️ Pickaxe: ${pickaxe == 0 ? '❌' : '' || pickaxe == 1 ? 'wooden pickaxe' : '' || pickaxe == 2 ? 'Iron pickaxe' : '' || pickaxe == 3 ? 'Gold pickaxe' : '' || pickaxe == 4 ? 'Diamond pickaxe' : '' || pickaxe == 5 ? 'Netherite pickaxe' : ''}
 ├◪ ╰ Durability: ${pdurability}
