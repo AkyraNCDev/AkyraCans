@@ -227,14 +227,6 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       setting.anon = isEnable
       break
-    case 'onsfw':
-      isAll = true
-      if (!isOwner) {
-        global.dfail('owner', m, conn)
-        throw false
-      }
-      opts['nsfw'] = isEnable
-      break
     case 'jadibot':
       isAll = true
       if (!isOwner) {

@@ -27,7 +27,7 @@ ${sortedExp.slice(0, len).map(({ jid, exp }, i) => `${i + 1}. ${participants.som
 }
 handler.help = ['topmoney']
 handler.tags = ['xp']
-handler.command = /^(leaderboard|topmoney)$/i
+handler.command = /^(topmoney)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

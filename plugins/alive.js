@@ -14,23 +14,21 @@ let handler  = async (m, { conn }) => {
   totaluser = Object.keys(DATABASE.data.users)
   ppbuffer = await fetch(pplink).then(v => v.buffer())
   conn.sendMessage(m.chat, ppbuffer, 'imageMessage', { caption:`
-❏ Bot Name : ${conn.user.name}
-❏ Version : 13.02.01
-❏ Age : 2 Month
-❏ Groups Chats : ${conn.chats.array.filter(v => v.jid.endsWith('g.us')).map(v => v.jid).length}
-❏ Personal Chats : ${conn.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net')).map(v => v.jid).length}
-❏ User Total : ${totaluser.length}
-❏ Wa Web Name : ${conn.browserDescription[0]}
-❏ Wa Web Version : ${conn.browserDescription[2]}
-❏ Browser : ${conn.browserDescription[1]}
-❏ Platform : Unbuntu Linux
-❏ Uptime Bot : ${clockString(process.uptime() * 1000)}
-❏ Host Number : @${global.conn.user.jid.split('@')[0]}
-❏ Bio Bot : ${ppstatus.status}\n\nSupport/Follow Me\nhttps://instagram.com/bot.ngcore`, quoted: m, sendEphemeral: true, thumbnail: fs.readFileSync('./src/uwu.png'), contextInfo: { mentionedJid: [global.conn.user.jid]}})
+❏ *Bot Name* : ${conn.user.name}
+❏ *Groups Chats* : ${conn.chats.array.filter(v => v.jid.endsWith('g.us')).map(v => v.jid).length}
+❏ *Personal Chats* : ${conn.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net')).map(v => v.jid).length}
+❏ *User Total* : ${totaluser.length}
+❏ *Wa Web Name* : ${conn.browserDescription[0]}
+❏ *Wa Web Version* : ${conn.browserDescription[2]}
+❏ *Browser* : ${conn.browserDescription[1]}
+❏ *Platform* : Unbuntu Linux
+❏ *Uptime Bot* : ${clockString(process.uptime() * 1000)}
+❏ *Host Number* : @${global.conn.user.jid.split('@')[0]}
+❏ *Bio Bot* : ${ppstatus.status}\n\n*Support/Follow Me*\nhttps://instagram.com/ppiowy_`, quoted: m, sendEphemeral: true, thumbnail: fs.readFileSync('./src/uwu.png'), contextInfo: { mentionedJid: [global.conn.user.jid]}})
 }
 handler.help = ['alive']
-handler.tags = ['main']
-handler.command = /^(alive)$/i
+handler.tags = ['ksksjdjd']
+handler.command = /^(elksjsusid)$/i
 handler.fail = null
 
 module.exports = handler

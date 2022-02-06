@@ -19,7 +19,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 ⏱️Timeout ${(timeout / 1000).toFixed(2)} Detik
 🎁Bonus ${poin} XP
-❗Ketik ${usedPrefix}teka Untuk Bantuan
 `.trim()
     conn.tebakkata[id] = [
         await conn.reply(m.chat, caption, m),

@@ -23,7 +23,7 @@ let handler = async (m, { conn, args }) => {
     '-size',
     '1024x784',
     '-pointsize',
-    '20',
+    '15',
     '-interline-spacing',
     '1',
     '-annotate',
@@ -34,7 +34,7 @@ let handler = async (m, { conn, args }) => {
     '-size',
     '1024x784',
     '-pointsize',
-    '18',
+    '13',
     '-interline-spacing',
     '1',
     '-annotate',
@@ -45,7 +45,7 @@ let handler = async (m, { conn, args }) => {
     '-size',
     '1024x784',
     '-pointsize',
-    '20',
+    '15',
     '-interline-spacing',
     '-7.5',
     '-annotate',
@@ -68,9 +68,7 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-handler.limit = true
-handler.register = true
-//udah di maapin kan?
+
 handler.admin = false
 handler.botAdmin = false
 

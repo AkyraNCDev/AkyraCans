@@ -1,10 +1,10 @@
 let handler = async (m, { conn }) => {
 await m.reply(global.wait)
-  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random/nsfw/hentai?apikey=LOLKONTOL09', '', '', m)
+  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random2/lewdkemo?apikey=LOLKONTOL09', '', '', m)
 }
-handler.help = ['hentai']
+handler.help = ['lewdkemo']
 handler.tags = ['hentai']
-handler.command = /^(hentai)$/i
+handler.command = /^(lewdkemo)$/i
 handler.limit = true
 handler.register = true
 module.exports = handler

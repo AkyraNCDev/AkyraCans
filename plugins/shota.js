@@ -1,14 +1,10 @@
-let fetch = require('node-fetch')
-
-let handler = async (m, { conn, usedPrefix, command }) => {
-    let res = await fetch(API('amel', '/shota', {}, 'apikey'))
-    if (!res.ok) throw eror
-    let json = await res.json()
-    if (!json.status) throw json
-    conn.sendButtonImg(m.chat, json.result, 'Nieh banh ', wm, 'shota again', `${usedPrefix + command}`, m)
+let handler = async (m, { conn }) => {
+await m.reply(global.wait)
+  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random/shota?apikey=LOLKONTOL09', '', '', m)
 }
 handler.help = ['shota']
 handler.tags = ['anime']
 handler.command = /^(shota)$/i
-
+handler.limit = true
+handler.register = true
 module.exports = handler

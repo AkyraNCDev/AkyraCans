@@ -1,23 +1,10 @@
-let fetch = require('node-fetch')
-let neko = require('nekos.life')
-let Neko = new neko()
-     let handler  = async (m, { conn, args }) => {
-if (!db.data.chats[m.chat].nsfw && m.isGroup) throw 'Feature Nsfw Disable\nType *!enable* *nsfw* to activate this feature'
-     json = (await Neko.nsfw.yuri()).url
-   conn.sendFile(m.chat, json, 'yuri.jpg', '', m, false)
+let handler = async (m, { conn }) => {
+await m.reply(global.wait)
+  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random2/yuri?apikey=LOLKONTOL09', '', '', m)
 }
 handler.help = ['yuri']
 handler.tags = ['hentai']
-handler.command = /^yuri$/i
-handler.owner = false
-handler.mods = false
-handler.premium = true
-handler.group = false
-handler.private = false
-handler.limit = false
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
-
+handler.command = /^(yuri)$/i
+handler.limit = true
+handler.register = true
 module.exports = handler

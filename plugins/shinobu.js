@@ -1,10 +1,10 @@
 let handler = async (m, { conn }) => {
 await m.reply(global.wait)
-  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random/elaina?apikey=LOLKONTOL09', '', '', m)
+  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random/shinobu?apikey=LOLKONTOL09', '', '', m)
 }
-handler.help = ['elaina']
+handler.help = ['shinobu']
 handler.tags = ['anime']
-handler.command = /^(elaina)$/i
+handler.command = /^(shinobu)$/i
 handler.limit = true
 handler.register = true
 module.exports = handler

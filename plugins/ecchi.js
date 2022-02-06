@@ -1,26 +1,10 @@
-let axios = require('axios');
-let fetch = require('node-fetch')
-let neko = require('nekos.life')
-let Neko = new neko()
-     let handler  = async (m, { conn, args }) => {
-     	if (!db.data.chats[m.chat].nsfw && m.isGroup) throw global.nsfw
-     json = (await axios.get('https://meme-api.herokuapp.com/gimme/ecchi')).data
-   conn.sendFile(m.chat, json.url, 'ecchi.jpg', json.title, m, false)
+let handler = async (m, { conn }) => {
+await m.reply(global.wait)
+  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random/nsfw/ecchi?apikey=LOLKONTOL09', '', '', m)
 }
 handler.help = ['ecchi']
 handler.tags = ['hentai']
-handler.command = /^ecchi$/i
-handler.owner = false
-handler.mods = false
-handler.premium = true
-handler.group = false
-handler.private = false
-handler.register = true
-
-handler.limit = false
-handler.admin = false
-handler.botAdmin = false
+handler.command = /^(ecchi)$/i
 handler.limit = true
-handler.fail = null
-
+handler.register = true
 module.exports = handler

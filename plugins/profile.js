@@ -32,5 +32,5 @@ ${about ? '🗒️ About: ' + about : ''}
 }
 handler.help = ['profile [@user]']
 handler.tags = ['tools']
-handler.command = /^profile|pp|profil$/i
+handler.command = /^profile|profil$/i
 module.exports = handler

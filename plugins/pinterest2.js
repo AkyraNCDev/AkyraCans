@@ -9,7 +9,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 handler.help = ['pinterest2 <keyword>']
 handler.tags = ['internet']
-handler.command = /^(pinterest|pin|pint)$/i
+handler.command = /^(pinterest2|pin|pint)$/i
 handler.limit = true
 handler.register = true
 //udah di maapin kan?
