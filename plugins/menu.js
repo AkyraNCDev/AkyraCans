@@ -262,7 +262,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ╟╮  ⊚┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟨ V14
 ║╽◍ Aktif Selama ${uptime}
 ║╽◍ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-║╽◍ Prefix : [#]
+║╽◍ Prefix : [Multi]
 ║╽◍ ${Object.keys(global.db.data.users).length} Pengguna
 ║╽◍ ${totaljadibot.length} Jadibot
 ║╽◍ ${conn.blocklist.length} Terblock
