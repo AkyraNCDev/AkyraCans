@@ -9,7 +9,7 @@ Tiktod By X-RyuuZeyy
 let fetch = require('node-fetch')
 let handler = async (m, { conn, args }) => {
 if (!args[0]) throw 'Uhm..url nya mana?'
-let res = await fetch(`https://api.lolhuman.xyz/api/tiktok?apikey=LOLKONTOL09&url=${args[0]}`)
+let res = await fetch(`https://api.lolhuman.xyz/api/tiktok?apikey=31caf10e4a64e86c1a92bcba&url=${args[0]}`)
 if (!res.ok) throw await res.text()
 let json = await res.json()
 if (!json.status) throw json
