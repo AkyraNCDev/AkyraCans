@@ -14,7 +14,6 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 let d = new Date(new Date + 3600000)
 let locale = 'id'
-let ara = fs.readFileSync('./audio/cepetan.mp3') 
 let week = d.toLocaleDateString(locale, { weekday: 'long' })
 let date = d.toLocaleDateString(locale, {
 day: 'numeric',
@@ -100,7 +99,7 @@ global.imagebot = `https://telegra.ph/Rikka-02-10-3`
 global.logo = fs.readFileSync('./src/logo3.jpg')
 global.logoowner = fs.readFileSync('./src/owner.jpg')
 global.logopartner = fs.readFileSync('./src/partner.jpg')
-global.wait = conn.sendMessage(m.chat, ara, MessageType.audio, {quoted: m, mimetype: 'audio/mp4', ptt:true}) zaa
+global.wait = '```「❗」Wait\n\nJika Lama Tidak Merespon Fitur Error```'
 global.rpg = '[❗] Fitur Rpg Dimatikan\n*Ketik !enable rpg Untuk Menggunakan Fitur Ini!*\nKalo Mau Main Disini Aja\nhttps://chat.whatsapp.com/FQZcB1IaelbDkEdVWF313Z'
 global.nsfw = '[❗] Fitur NSFW Dimatikan\n*Ketik !enable nsfw Untuk Menggunakan Fitur Ini!*\n\n“Katakanlah Kepada Orang Laki-laki Yang Beriman: Hendaklah Mereka Menahan Pandanganya, Dan Memelihara Kemaluannya; … Katakanlah Kepada Wanita Yang Beriman: Hendaklah Mereka Menahan Pandangannya, Dan Kemaluannya, Dan Janganlah Mereka Menampakkan Perhiasannya, Kecuali Yang (Biasa) Nampak Dari Padany,” \n(TQS. Al-Nur [24]: 30-31).'
 global.eror = '```404 ERROR```'
