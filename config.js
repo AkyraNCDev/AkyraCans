@@ -95,11 +95,11 @@ global.author = '۰ ⸼'
 // silakan di ganti klo mau
 global.botwm = `🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃`//UBAH JADI NAMAMU
 global.botdate = `╭──────────═┅═─────────\n│◪ ${time}\n┊◪ ${week} ${date}\n╰──────────═┅═─────────`
-global.imagebot = `https://telegra.ph/file/91bb62eff29959ce2d2e2.jpg`
+global.global.imagebot = `https://telegra.ph/Rikka-02-10-3`
 global.logo = fs.readFileSync('./src/logo3.jpg')
 global.logoowner = fs.readFileSync('./src/owner.jpg')
 global.logopartner = fs.readFileSync('./src/partner.jpg')
-global.wait = '```[❗] wait...```'
+global.wait = fs.readFileSync('./audio/cepetan.mp3')
 global.rpg = '[❗] Fitur Rpg Dimatikan\n*Ketik !enable rpg Untuk Menggunakan Fitur Ini!*\nKalo Mau Main Disini Aja\nhttps://chat.whatsapp.com/FQZcB1IaelbDkEdVWF313Z'
 global.nsfw = '[❗] Fitur NSFW Dimatikan\n*Ketik !enable nsfw Untuk Menggunakan Fitur Ini!*\n\n“Katakanlah Kepada Orang Laki-laki Yang Beriman: Hendaklah Mereka Menahan Pandanganya, Dan Memelihara Kemaluannya; … Katakanlah Kepada Wanita Yang Beriman: Hendaklah Mereka Menahan Pandangannya, Dan Kemaluannya, Dan Janganlah Mereka Menampakkan Perhiasannya, Kecuali Yang (Biasa) Nampak Dari Padany,” \n(TQS. Al-Nur [24]: 30-31).'
 global.eror = '```404 ERROR```'
