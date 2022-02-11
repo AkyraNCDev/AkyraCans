@@ -9,7 +9,7 @@ let handler = async (m, { conn, text }) => {
     let index = json.findIndex(v => (v.replace(/[^0-9]/g, '') + '@s.whatsapp.net') === (who.replace(/[^0-9]/g, '') + '@s.whatsapp.net'))
     json.splice(index, 1)
     fs.writeFileSync('./src/premium.json', JSON.stringify(json))
-    m.reply(`${conn.getName(who)} Sekarang Bukan Premium!`)
+    m.reply(`${conn.getName(who)} sekarang bukan premium!`)
 
     delete require.cache[require.resolve('../config')]
     require('../config')
@@ -17,7 +17,8 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['delprem [@user]']
 handler.tags = ['owner']
-handler.command = /^(remove|hapus|-|del)prem$/i
+handler.command = /^(delprem)$/i
+handler.restrict = false
 
 handler.owner = true
 

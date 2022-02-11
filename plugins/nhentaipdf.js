@@ -3,7 +3,7 @@ let handler = async (m, { conn, args }) => {
 	if (!db.data.chats[m.chat].nsfw && m.isGroup) throw global.nsfw
   if (!args[0]) throw 'Uhm...kode nya mana?'
   m.reply('Searching....')
-  let lol = global.API('lol', `/api/nhentaipdf/${args[0]}`, {}, 'apikey')
+  let lol = global.API('lol', `/api/nhentaipdf/${args[0]}`, {}, 'rey2k21')
   let { result } = (await get(lol)).data
   if (result.includes('HTML')) throw `Code ${args[0]} Not Found!`
    conn.sendMessage(m.chat, await getBuffer(result), 'documentMessage', { quoted: m, filename: `${args[0]}.pdf`, mimetype: 'application/pdf' })

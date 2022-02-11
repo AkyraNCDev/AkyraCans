@@ -1,23 +1,28 @@
-const fetch = require('node-fetch')
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) throw `contoh:\n${usedPrefix + command} rasel.ganz`
+const axios = require('axios')
+const cheerio = require('cheerio')
 
-  let res = await fetch(global.API('zekais', '/igs', { username: args[0] }))
-  if (!res.ok) throw eror
-  let json = await res.json()
-  if (json.status != 200) throw json
-  conn.sendFile(m.chat, json.data.profilehd, 'eror.jpg', `
-📛 Nama: ${json.data.fullname}
-💌 Bio: \n${json.data.bio}
-👥 Followers: ${json.data.follower}
-👯 Following: ${json.data.following}
-🖼️ Posts: ${json.data.timeline}
-🕴️ Private: ${json.data.private ? '✔️' : '✖️'}
-💻 Link: \nhttp://instagram.com/${json.data.username}
-`, m, 0, { thumbnail: await (await fetch(json.data.profilehd)).buffer() })
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+  if (!args || !args[0]) throw `Gunakan format ${usedPrefix}${command} [username]
+Contoh: ${usedPrefix}${command} drak_ipul123
+`.trim()
+  let res = await igstalk(args[0])
+  m.reply('_Sedang membuat..._\n*Mohon tunggu sekitar 1 menit*')
+  let json = JSON.parse(JSON.stringify(res))
+  let iggs = `
+┏━━━ꕥ *INSTAGRAM STALKER* ꕥ━⬣
+┃✾ *Username:* ${json.username}
+┃✾ *Nickname:* ${json.fullName}
+┃✾ *Followers:* ${json.followersM} Followers
+┃✾ *Following:* ${json.followingM} Following
+┃✾ *Posting:* ${json.postsCountM} Postingan
+┃✾ *Link:* https://instagram.com/${json.username}
+┃✾ *Bio:* ${json.bio}
+┗━❑
+`.trim() // tambahin sendiri json.blablabla :)
+ m.reply('_APIKEY SALAH, pastikan anda pernah berlangganan di https://apikey-bear3.herokuapp.com/docs_')
 }
 handler.help = ['igstalk <username>']
-handler.tags = ['internet']
-handler.command = /^(igsta?lk)$/i
-handler.limit = true
+handler.tags = ['sodiud']
+handler.command = /^(dosidi)$/i
+handler.limit = 3
 module.exports = handler

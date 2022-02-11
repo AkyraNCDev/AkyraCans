@@ -44,7 +44,7 @@ const defaultMenu = {
 ╰────═┅═───────═┅═───┴⎔
 %readmore`.trimStart(),
   header: '╭═[ %category ]═────···\n┴',
-  body: '│▣ %cmd %islimit %isPremium',
+  body: '│⚘ %cmd %islimit %isPremium',
   footer: '┬\n╰───────────···',
   after: `⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕.
      %me
@@ -259,23 +259,23 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "footerText": `
 ⊚━━━━━❮ 𝗗𝗔𝗦𝗛𝗕𝗢𝗔𝗥𝗗
 ╓ ⊚ ❭━━━━━━━━━━━━━━━━━━┈─•
-╟╮  ⊚┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟨ V14
-║╽◍ Aktif Selama ${uptime}
-║╽◍ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-║╽◍ Prefix : [Multi]
-║╽◍ ${Object.keys(global.db.data.users).length} Pengguna
-║╽◍ ${totaljadibot.length} Jadibot
-║╽◍ ${conn.blocklist.length} Terblock
-║╽◍ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
-║╽◍ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
+╟╮  ⊚┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟨ V16
+║╽❖ ᴀᴋᴛғɪ sᴇʟᴀᴍᴀ ${uptime}
+║╽❖ ʙᴀᴛᴇʀᴀɪ ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? 'ᴘᴇɴɢɪsɪᴀɴ' : ''}` : 'ᴛɪᴅᴀᴋ ᴅɪᴋᴇᴛᴀʜᴜɪ'}
+║╽❖ ᴘʀᴇғɪx : [ᴍᴜʟᴛɪ]
+║╽❖ ${Object.keys(global.db.data.users).length} ᴘᴇɴɢɢᴜɴᴀ
+║╽❖ ${totaljadibot.length} ᴊᴀᴅɪʙᴏᴛ
+║╽❖ ${conn.blocklist.length} ᴛᴇʀʙʟᴏᴄᴋ
+║╽❖ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} ᴄʜᴀᴛ ᴛᴇʀʙᴀɴɴᴇᴅ
+║╽❖ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} ᴘᴇɴɢɢᴜɴᴀ ᴛᴇʀʙᴀɴɴᴇᴅ
 ╟╯╭╼╼╼╼╼╼╼╼╼╼╼╼╼╼┈─•
-╠═╯  Free To Add
+╠═╯  Free to Add 1 Day Trial
 ║ • 𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 Is The Best
 ╰━━━━━━━━━━━━━━━━━━━━┈─◂
         ▌│█║▌║▌║║▌║▌║█│▌█ ▌
      
      ${week}, ${date}`,
-          "buttonText": "Menu Is Here",
+          "buttonText": "𝗠𝗘𝗡𝗨",
           "listType": "SINGLE_SELECT",
           "sections": [
                             {
@@ -529,9 +529,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       money, age, prems, level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
       readmore: readMore
     }
-    text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
+  text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     // await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), '🎮 Ƙαɴɴα вσт', 'Owner', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
-    await conn.send3ButtonLoc(m.chat, logo, '✧───···[ 🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 ]···───✧', text.trim(), '𝙊𝙒𝙉𝙀𝙍', '.owner', '𝘿𝙊𝙉𝘼𝙎𝙄', '.donasi', '𝙍𝙐𝙇𝙀𝙎', '.rules', m)
+    await conn.send3ButtonLoc(m.chat, logo, '─────[ 🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 ]─────', text.trim(), '❯╾ 𝐎𝐖𝐍𝐄𝐑 ╼ ', '.nowner', '❯╾ 𝐃𝐎𝐍𝐀𝐒𝐈 ╼ ', '.donasi', '❯╾ 𝐑𝐔𝐋𝐄𝐒 ╼ ', '.rules', m)
     let nama = await conn.getName(m.sender)
     let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
 

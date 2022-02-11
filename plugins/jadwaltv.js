@@ -2,7 +2,7 @@ let axios = require("axios")
 let handler = async(m, { conn, text }) => { 
 
   await m.reply(global.wait) 
-   axios.get(`https://api.haipbis.xyz/jadwaltvnow`).then((res) => {
+   axios.get(`https://api.lolhuman.xyz/api/jadwaltv/text?apikey=rey2k21`).then((res) => {
     let hasil = `Jam : ${res.data.jam}\n\n${res.data.jadwalTV}`
           
     conn.reply(m.chat, hasil, m)

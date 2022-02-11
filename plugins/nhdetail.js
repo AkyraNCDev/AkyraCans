@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 let handler = async(m, { conn, args, usedPrefix, command}) => {
     if (!args[0]) throw `Masukkan kode, berikut: ${usedPrefix + command} 304307`
-    let res = await fetch(global.API('lolhum', `/api/nhentai/${args[0]}`, {}, 'apikey'))
+    let res = await fetch(global.API('lolhum', `/api/nhentai/${args[0]}`, {}, 'rey2k21'))
     if (!res.ok) throw await res.text()
     let json = await res.json()
     let ayaka = `

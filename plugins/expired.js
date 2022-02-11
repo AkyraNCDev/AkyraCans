@@ -1,5 +1,5 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0] || isNaN(args[0])) throw `Masukan Angka Mewakili Jumlah Hari!\n\nContoh:\n${usedPrefix + command} 30`
+    if (!args[0] || isNaN(args[0])) throw `Masukkan angka mewakili jumlah hari !\n*Misal : ${usedPrefix + command} 30*`
 
     let who
     if (m.isGroup) who = args[1] ? args[1] : m.chat
@@ -9,11 +9,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     var now = new Date() * 1
     if (now < global.db.data.chats[who].expired) global.db.data.chats[who].expired += jumlahHari
     else global.db.data.chats[who].expired = now + jumlahHari
-    m.reply(`Berhasil Menetapkan Hari Kedaluarsa Untuk ${conn.getName(who)} Selama ${args[0]} hari.\n\nHitung Mundur : ${msToDate(global.db.data.chats[who].expired - now)}`)
+    m.reply(`✔️Berhasil Menetapkan Hari Kadaluarsa Untuk Grup Ini Selama ${args[0]} hari.\n\n⏳Hitung Mundur : ${msToDate(global.db.data.chats[who].expired - now)}`)
 }
-handler.help = ['expired <hari>']
+handler.help = ['addsewa <hari>']
 handler.tags = ['owner']
-handler.command = /^(expired)$/i
+handler.command = /^(expired|addsewa)$/i
 handler.owner = true
 module.exports = handler
 
