@@ -129,15 +129,16 @@ global.reloadHandler = function () {
     conn.off('CB:action,,call', conn.onCall)
   }
   conn.welcome = `*Hai @user ! 👋*
-         ‷✧ Selamat Datang di Grup
-           *@subject*
+         Selamat Datang Di Grup
+          @subject
            
-╭◪ *Intro Member Baru* ◪─
-│ ✧ *Nama:*
-│ ✧ *Umur:*
-│ ✧ *Status:*
-│ ✧ *Askot:*
-╰◪
+╭─────❒𝗣𝗥𝗢𝗙𝗜𝗟𝗘
+├❏ Nama
+├❏ Umur
+├❏ Status
+├❏ Askot
+└──────────────────>
+
   ${readMore}
               *◌  ⃝✧⪼ Deskripsi Group ミ*
   @desc`
