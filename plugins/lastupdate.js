@@ -9,10 +9,7 @@ function clockString(ms) {
 }
 
 let handler  = async (m, { conn }) => {
-  pplink = await conn.getProfilePicture(conn.user.jid)
-  ppstatus = await conn.getStatus(conn.user.jid)
-  totaluser = Object.keys(DATABASE.data.users)
-  ppbuffer = await fetch(pplink).then(v => v.buffer())
+
   conn.sendMessage(m.chat, ppbuffer, 'imageMessage', { caption:`
 ❗Information Update on 12
 
