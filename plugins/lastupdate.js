@@ -1,16 +1,4 @@
-// By Caliph & Akbar
-let fetch = require('node-fetch')
-let fs = require('fs')
-function clockString(ms) {
-  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
-}
-
-let handler  = async (m, { conn }) => {
-
-  conn.sendMessage(m.chat, 'imageMessage', { caption:`
+let handler = async m => m.reply(`
 ❗Information Update on 12
 
 
@@ -79,11 +67,10 @@ Jadi Ketik Manual Aja
 
 
 
-「 February 12 」`, quoted: m, sendEphemeral: true, thumbnail: fs.readFileSync('./src/uwu.png'), contextInfo: { mentionedJid: [global.conn.user.jid]}})
-}
-handler.help = ['lastupdate']
-handler.tags = ['info']
+「 February 12 」
+`.trim()) // Tambah sendiri kalo mau
+handler.help = ['lastupdate'] 
+handler.tags = ['info'] 
 handler.command = /^(lastupdate)$/i
-handler.fail = null
 
 module.exports = handler
