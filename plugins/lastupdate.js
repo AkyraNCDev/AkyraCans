@@ -10,7 +10,7 @@ function clockString(ms) {
 
 let handler  = async (m, { conn }) => {
 
-  conn.sendMessage(m.chat, ppbuffer, 'imageMessage', { caption:`
+  conn.sendMessage(m.chat, 'imageMessage', { caption:`
 ❗Information Update on 12
 
 
