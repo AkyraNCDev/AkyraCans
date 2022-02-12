@@ -295,6 +295,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                          "title": "                        👨‍💻 ❯╾ 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 ╼ ",
                                          "description": "                            ᴋᴏɴᴛᴀᴋ ᴄʀᴇᴀᴛᴏʀᴋᴜ <3",
                                          "rowId": ".nowner"
+                                    }, {
+                                         "title": "                     ⏫ ❯╾ 𝗟𝗔𝗦𝗧 𝗨𝗣𝗗𝗔𝗧𝗘 ╼ ",
+                                         "description": "              ɪɴғᴏʀᴍᴀsɪ ᴜᴘᴅᴀᴛᴇ ᴛᴇʀᴀᴋʜɪʀ ᴋᴀʟɪ ʙᴏᴛ",
+                                         "rowId": ".lastupdate"
                        }],
                     "title": "✧────────────[ 𝐒𝐓𝐀𝐓𝐒 ]───────────────✧"
                 }, {
