@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-❗Information Update on 12
+❗Information Update on 20
 
 
 ➕ New Features
@@ -8,57 +8,42 @@ let handler = async m => m.reply(`
 
 
 
-NOTE📑
-Udah Segini Aja Dlu, Owner Jg Lgi Sakit Dan Doain Biar Sembuh 🐦
+📑Owner's Message
+Updatenya Baru 50%, Soalnya Owner Lagi Banyak Tugas Numpuk, Maaf Ya Kawan² Dan Lanjut Besok Aja Updatenya;-;
 
 
+➕ #sendkontak
+➕ #balas
+➕ #bonk @user
+➕ #fitnahstatus
+➕ #kataanime
+➕ #notstonk
+➕ #stonk
+➕ #paling
+➕ #cat
+➕ #dog
+➕ #memesub
+➕ #pikachu
+➕ #smule
+➕ #sr
+➕ #suitpvp
+➕ #tutorialrpg
 
-➕ #animal
-➕ #gitclone
-➕ #gitsearch
-➕ #gitdl
-➕ #wallpaperq
-➕ #deluser
-➕ #totalfitur
-➕ #jumlahdatabase
-➕ #tourl
 
 ➖ Blank
 
-☑️ #yaoi
-☑️ #wink
-☑️ #wallpaper
-☑️ #tiktok
-☑️ #solo
-☑️ #sideoppai
-☑️ #shota
-☑️ #sagiri
-☑️ #shinobu
-☑️ #nsfwtrap
-☑️ #nsfwavatar
-☑️ #lewdkemo
-☑️ #hololewd
-☑️ #happy
-☑️ #fury
-☑️ #hentai
-☑️ #futanari
-☑️ #foxgirl
-☑️ #estetic
-☑️ #elf
-☑️ #elaina
-☑️ #ecchi
-☑️ #cringe
-☑️ #cecan
-☑️ #bully
-☑️ #blowjob
-☑️ #art
-☑️ #armpits
-☑️ #animebooty
-☑️ #animefeets
-☑️ #ahegao
-☑️ #pinterest
-☑️ #pinterest2
-☑️ #getcode
+
+☑️ #fb
+☑️ #igstalk
+☑️ #detik
+☑️ #kompas
+☑️ #tribun
+☑️ #liputan6
+☑️ #jalantikus
+☑️ #quotes
+☑️ #ssweb
+☑️ #textpro
+☑️ #judulanime
 
 
 
@@ -67,7 +52,7 @@ Jadi Ketik Manual Aja
 
 
 
-「 February 12 」
+「 February 20 」
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['lastupdate'] 
 handler.tags = ['info'] 
