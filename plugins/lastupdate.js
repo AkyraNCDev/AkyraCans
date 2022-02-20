@@ -47,8 +47,9 @@ Updatenya Baru 50%, Soalnya Owner Lagi Banyak Tugas Numpuk, Maaf Ya Kawan² Dan 
 
 
 
-⚠️Button Gak Respon
-Jadi Ketik Manual Aja
+⚠️Untuk Melihat Update Sebelum Ini Ketik
+
+#last12
 
 
 
