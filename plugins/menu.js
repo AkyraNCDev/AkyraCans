@@ -541,7 +541,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
 
   logo2 = global.logo
-  kanna = fs.readFileSync('./src/logo3.jpg')
+  kanna = fs.readFileSync('./src/logo4.jpg')
   kannaImg = (await conn.prepareMessage('0@s.whatsapp.net', kanna, MessageType.image, { thumbnail: Buffer.alloc(0) })).message.imageMessage
   sumberImg = await (await fetch(fla + teks + ' menu')).buffer()
   image = (await conn.prepareMessage('0@s.whatsapp.net', logo2, MessageType.image, { thumbnail: Buffer.alloc(0) })).message.imageMessage
