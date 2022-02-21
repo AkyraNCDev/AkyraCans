@@ -4,9 +4,9 @@ let handler = async (m, { conn }) => {
     if (!(id in conn.tebakkata)) throw false
     let json = conn.tebakkata[id][1]
     let ans = json.jawaban.trim()
-    let clue = ans.replace(/[AIUEO]/gi, '_')
-    m.reply('```' + clue + '```')
+    let clue = ans.replace(/[AIUEOaiueo]/g, '_')
+    conn.reply(m.chat, '```' + clue + '```\nBalas soalnya, bukan pesan ini', conn.tebakkata[id][0])
 }
-handler.command = /^teka$/i
+handler.command = /^tekaa$/i
 handler.limit = true
 module.exports = handler
