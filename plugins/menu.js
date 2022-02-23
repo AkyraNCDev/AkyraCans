@@ -254,11 +254,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `✧──────···[ 🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 ]···──────✧`.trim(),
+          "title": `✧────···[ 🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 ]···────✧`.trim(),
           "description": `${ucapan()}, ${name} !`.trim(),
           "footerText": `
 ⊚━━━━━❮ 𝗗𝗔𝗦𝗛𝗕𝗢𝗔𝗥𝗗
-╓ ⊚ ❭━━━━━━━━━━━━━━━━━━┈─•
+╓ ⊚ ❭━━━━━━━━━━━━━━━━━┈─•
 ╟╮  ⊚┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟨ V16
 ║╽❖ ᴀᴋᴛғɪ sᴇʟᴀᴍᴀ ${uptime}
 ║╽❖ ʙᴀᴛᴇʀᴀɪ ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? 'ᴘᴇɴɢɪsɪᴀɴ' : ''}` : 'ᴛɪᴅᴀᴋ ᴅɪᴋᴇᴛᴀʜᴜɪ'}
@@ -269,9 +269,18 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ║╽❖ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} ᴄʜᴀᴛ ᴛᴇʀʙᴀɴɴᴇᴅ
 ║╽❖ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} ᴘᴇɴɢɢᴜɴᴀ ᴛᴇʀʙᴀɴɴᴇᴅ
 ╟╯╭╼╼╼╼╼╼╼╼╼╼╼╼╼╼┈─•
-╠═╯  Free to Add 1 Day Trial
-║ • 𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 Is The Best
-╰━━━━━━━━━━━━━━━━━━━━┈─◂
+╠═╯  𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 Is The Best
+║ • Free To Add With Conditions
+╰━┯━━━━━━━━━━━━━━━━━━┈─◂
+  ┳ │                  𝗬𝗼𝘂𝗿 𝗜𝗻𝗳𝗼
+  ╽ ┠❖ Name ${name}
+  ╽ ┠❖ Age ${age} 
+  ╽ ┠❖ Limit ${age}
+  ╽ ┠❖ Role ${role}
+  ╽ ┠❖ Level ${level}
+  ╰ ┠❖ Money ${money}
+  ⊚━━━━━━━━━━━━━━━━━━┈─◂
+      
         ▌│█║▌║▌║║▌║▌║█│▌█ ▌
      
      ${week}, ${date}`,
@@ -442,7 +451,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                 "description": "                                        ꜱᴄ ʙᴏᴛ",
                                 "rowId": ".sc"
                                 }, {
-                                "title": ".                    🎖️❯╾𝗧𝗛𝗔𝗡𝗞𝗦 𝗧𝗢╼",
+                                "title": ".                    🎖️❯╾𝗧𝗛??𝗡𝗞𝗦 𝗧𝗢╼",
                                 "description": "ᴛᴇʀɪᴍᴀ ᴋᴀꜱɪʜ ᴜɴᴛᴜᴋ ᴜꜱᴇʀ ʏᴀɴɢ ʙᴇʀᴘᴀʀᴛɪꜱɪᴘᴀꜱɪ",
                                 "rowId": ".? thnks"
                                 }],

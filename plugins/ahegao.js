@@ -5,6 +5,6 @@ await m.reply(global.wait)
 handler.help = ['ahegao']
 handler.tags = ['hentai']
 handler.command = /^(ahegao)$/i
-handler.limit = true
+handler.limit = 3
 handler.register = true
 module.exports = handler

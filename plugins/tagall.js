@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, participants }) => {
   })
 }
 handler.command = ['tagall']
-
+handler.limit = 3
 handler.admin = true
 handler.group = true
 

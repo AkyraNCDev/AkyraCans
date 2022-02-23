@@ -5,6 +5,6 @@ await m.reply(global.wait)
 handler.help = ['cecan']
 handler.tags = ['image']
 handler.command = /^(cecan)$/i
-handler.limit = true
+handler.limit = 3
 handler.register = true
 module.exports = handler

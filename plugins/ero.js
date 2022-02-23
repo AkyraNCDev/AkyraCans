@@ -16,10 +16,9 @@ handler.group = false
 handler.private = false
 handler.register = true
 
-handler.limit = false
+handler.limit = 3
 handler.admin = false
 handler.botAdmin = false
-handler.limit = true
 
 handler.fail = null
 

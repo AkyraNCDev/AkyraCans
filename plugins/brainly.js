@@ -11,7 +11,7 @@ handler.help = ['brainly <soal>','belajar <soal>','mtk <soal>','ipa <soal>','ips
 handler.tags = ['edukasi']
 handler.command = /^(brainly|belajar|mtk|ipa|ips|ppkn|inggris|pertanyaan)$/i
 
-handler.limit = true
+handler.limit = 5
 handler.register = true
 
 module.exports = handler

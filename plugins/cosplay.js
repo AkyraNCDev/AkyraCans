@@ -30,7 +30,7 @@ async function getRandom(url) {
   
   handler.botAdmin = false
   
-  handler.limit = true
+  handler.limit = 5
   
   
   handler.fail = null
