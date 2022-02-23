@@ -47,16 +47,11 @@ Updatenya Baru 50%, Soalnya Owner Lagi Banyak Tugas Numpuk, Maaf Ya Kawan² Dan 
 
 
 
-⚠️Untuk Melihat Update Sebelum Ini Ketik
-
-#last12
-
-
 
 「 February 20 」
 `.trim()) // Tambah sendiri kalo mau
-handler.help = ['lastupdate'] 
+handler.help = ['last20'] 
 handler.tags = ['info'] 
-handler.command = /^(lastupdate)$/i
+handler.command = /^(last20)$/i
 
 module.exports = handler

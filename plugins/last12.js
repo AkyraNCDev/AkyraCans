@@ -1,76 +1,77 @@
 let handler = async m => m.reply(`
-❗Information Update on 12
+❗Information Update on 23
 
 
 ➕ New Features
 ➖ Features Removed
 ☑️ Features Fixed
-
+🎟️ Limit Adjustment
+🔥Apikey Substitution
 
 
 NOTE📑
-Udah Segini Aja Dlu, Owner Jg Lgi Sakit Dan Doain Biar Sembuh 🐦
+Haii Guys, Update Kali Ini Liat Saja Dibawah Yaa, Maaf Jika Sedikit><
 
 
 
-➕ #animal
-➕ #gitclone
-➕ #gitsearch
-➕ #gitdl
-➕ #wallpaperq
-➕ #deluser
-➕ #totalfitur
-➕ #jumlahdatabase
-➕ #tourl
+➕ #blub
+➕ #cerpen
+➕ #cersex
+➕ #emowa
+➕ #job
+➕ #listjob
+➕ #gsewa
+➕ #ghost
+➕ #gemuk
+➕ #ighighlight
+➕ #nuliskanan
+➕ #nuliskiri
+➕ #nuliskanan
+➕ #sneko
+➕ #pastebin
+➕ #tololserti
+
 
 ➖ Blank
 
-☑️ #yaoi
-☑️ #wink
-☑️ #wallpaper
-☑️ #tiktok
-☑️ #solo
-☑️ #sideoppai
-☑️ #shota
-☑️ #sagiri
-☑️ #shinobu
-☑️ #nsfwtrap
-☑️ #nsfwavatar
-☑️ #lewdkemo
-☑️ #hololewd
-☑️ #happy
-☑️ #fury
-☑️ #hentai
-☑️ #futanari
-☑️ #foxgirl
-☑️ #estetic
-☑️ #elf
-☑️ #elaina
-☑️ #ecchi
-☑️ #cringe
-☑️ #cecan
-☑️ #bully
-☑️ #blowjob
-☑️ #art
-☑️ #armpits
-☑️ #animebooty
-☑️ #animefeets
-☑️ #ahegao
-☑️ #pinterest
-☑️ #pinterest2
-☑️ #getcode
+
+☑️ #aksara
+☑️ #artimimpi
+☑️ #toimg
+☑️ #menu
+☑️ #nhd
+☑️ #nhsearch
+☑️ #nh
+
+
+🎟️ #ahegao
+🎟️ #armpits
+🎟️ #ass
+🎟️ #asupan
+🎟️ #blowjob
+🎟️ #bkp
+🎟️ #cecan
+🎟️ #cosplay
+🎟️ #brainly
+🎟️ #ero
+🎟️ #ecchi
+🎟️ #hentai
+🎟️ #tagall
+🎟️ #panties
+
+
+🔥 Blank
 
 
 
-⚠️Button Gak Respon
-Jadi Ketik Manual Aja
+⚠️Jika Mau Liat Update Sebelumnya Ketik Saja
+#last20
 
 
-
-「 February 12 」
+「 February 23 」
 `.trim()) // Tambah sendiri kalo mau
-handler.help = ['last12'] 
+handler.help = ['lastupdate'] 
 handler.tags = ['info'] 
-handler.command = /^(last12)$/i
+handler.command = /^(lastupdate)$/i
 
 module.exports = handler
