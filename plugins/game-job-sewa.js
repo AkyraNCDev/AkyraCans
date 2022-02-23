@@ -110,9 +110,9 @@ let handler = async (m, { conn, text, participants }) => {
   }
 
 }
-handler.help = ['sewa *@user*']
+handler.help = ['gsewa *@user*']
 handler.tags = ['rpg']
-handler.command = /^sewa$/i
+handler.command = /^gsewa$/i
 handler.admin = false
 handler.group = true
 handler.botAdmin = false
