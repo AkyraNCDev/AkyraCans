@@ -668,7 +668,7 @@ module.exports = {
                 console.error(e)
               }
             }
-            if (m.limit) m.reply(+ m.limit + ' Limit terpakai')
+            if (m.limit) m.reply(+ m.limit + 'Vigintilliun Limit terpakai')
           }
           break
         }
@@ -791,7 +791,7 @@ klick untuk mematikannya atau ketik #disable delete
           return
         break
     }
-    await this.sendMessage(from, '[❗] karena anda menelfon bot. anda diblokir otomatis', MessageType.extendedText)
+    await this.sendMessage(from, '[❗] Karena Anda Menelfon Bot. Anda Diblokir Otomatis', MessageType.extendedText)
     await this.blockUser(from, 'add')
   }
 }
@@ -812,11 +812,11 @@ let user = conn.getName(who)
     nsfw: '[ ! ] Nsfw Not Active',
     botAdmin: '[ ! ] Bot Admin Only',
     unreg: `*── 「 NOT REGISTERED 」 ──*
-Halo @${m.sender.split`@`[0]} !
-Yuk Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot
+Haiii @${m.sender.split`@`[0]} !
+Kamu Harus Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot
     
-📍 Ketik : #daftar nama.umur
-▸ Contoh : #daftar ${user}.13`
+🔸Ketik : #daftar nama.umur
+🔸Contoh : #daftar ${user}.13`
   }[type]
   let pd = fs.readFileSync('./src/kanna.jpg')
   if (msg) return m.reply(msg)
