@@ -1,7 +1,7 @@
-# KANNABOTZ
+# RIKKABOT
  [![Kanna](https://telegra.ph/file/8c0c0d33c6129af67e9c1.jpg)
  
-Simple WhatsApp Bot.   |    By Letta
+Simple WhatsApp Bot.   |    By Kyraaa
      |      [KannaBotz Whatsapp](https://wa.me/6283143393763)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kannachann/kanna-wabot)
