@@ -1,11 +1,17 @@
 let { MessageType } = require('@adiwajshing/baileys')
-let handler = async (m, { conn, command }) => {
+let handler = async (m, { conn, participants, command }) => {
     let __timers = (new Date - global.db.data.users[m.sender].lastngocok)
     let _timers = (500000 - __timers)
     let timers = clockString(_timers) 
     let order = global.db.data.users[m.sender].korbanngocok
 let name = m.fromMe ? conn.user : conn.contacts[m.sender]
     let user = global.db.data.users[m.sender]
+    let who
+    if (!m.isGroup) who = m.sender
+    else {
+        let member = participants.map(u => u.jid)
+        who = member[Math.floor(Math.random() * member.length)]
+    }
     let buttons = [
 {buttonId: '.inv', buttonText: {displayText: 'Inventory'}, type: 1}, 
 ]
@@ -53,7 +59,7 @@ dimas4 = `✔️ Menerima gaji....
 `
 hsl = `*—[ Hasil Dari ${command} ${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])} ]—*
 
-👤 Pelanggan: ${pickRandom(['Sagiri', 'Elaina', 'Kakaknya Kanna','loli', 'mba mba', 'kaka mu', 'adek mu', 'mama mu', 'tante tante', 'Anak SD', 'Kanna'])}
+👤 Pelanggan: @${who.replace(/@.+/, '')}
  ➕ 💵 Uang: 100000
  ➕ 🧬 Exp: ${zero5}
  ➕ 🔥 Dosa: 10
@@ -94,6 +100,10 @@ setTimeout(() => {
                      }, 0) 
   user.lastngocok = new Date * 1
     } else conn.sendMessage(m.chat, buttonMessage, MessageType.buttonsMessage ,m )
+    
+    let saha = [who]
+    let mentionedJid = saha.concat(m.mentionedJid)
+    conn.reply(m.chat, m, { contextInfo: { mentionedJid } })
 }
 handler.help = ['ngewe', 'ngentod', 'ngocok']
 handler.tags = ['rpg']
