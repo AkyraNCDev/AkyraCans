@@ -18,12 +18,12 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
     let user = global.db.data.users[m.sender]
     if (new Date - global.db.data.users[m.sender].lastbansos > 300000) {
       if (Aku > Kamu) {
-        conn.sendFile( m.chat, kbansos, 'b.jpg', `Kamu Korupsi Dana Bansos Tapi Kamu Tertangkap🚓\n\nAkibatnya Kamu Harus Membayar\n📉Denda Sebesar Rp 50,000`, m)
-        user.money -= 50000
+        conn.sendFile( m.chat, kbansos, 'b.jpg', `Kamu Korupsi Dana Bansos Tapi Kamu Tertangkap🚓\n\nAkibatnya Kamu Harus Membayar\n📉Denda Sebesar Rp 5,000,000`, m)
+        user.money -= 5000000
         global.db.data.users[m.sender].lastbansos = new Date * 1
       } else if (Aku < Kamu) {
-        user.money += 50000
-        conn.sendFile( m.chat, mbansos, 'b.jpg', `Selamat Kamu Berhasil Korupsi Dana Bansos💸\n\nHasilnya Kamu Mendapatkan\n📈Uang Sebesar Rp 50,000`, m)
+        user.money += 5000000
+        conn.sendFile( m.chat, mbansos, 'b.jpg', `Selamat Kamu Berhasil Korupsi Dana Bansos💸\n\nHasilnya Kamu Mendapatkan\n📈Uang Sebesar Rp 5,000,000`, m)
         global.db.data.users[m.sender].lastbansos = new Date * 1
       } else {
         conn.sendButton( m.chat, `Yahh Kamu Gagal Dalam Korupsi, Mungkin Gak Punya Keahlian Korupsi🤣\n\nKamu Juga Tidak Masuk Penjara Karna Kamu Melarikan Diri🏃`, `${botol}`, `Kembali`, `${usedPrefix}menu`, m)
@@ -35,9 +35,9 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
   }
 }
 
-handler.help = ['bansosnoob']
+handler.help = ['bansosextreme']
 handler.tags = ['rpg']
-handler.command = /^(bansosnoob)$/i
+handler.command = /^(bansosextreme)$/i
 handler.premium = false
 handler.register = true
 handler.limit = true
