@@ -618,7 +618,7 @@ module.exports = {
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `Dosa Anda Habis, Silahkan Beli Melalui ${usedPrefix}blimit\n\n❗Dosa Tidak Direset`, m)
+            this.reply(m.chat, `Limit Request Habis Karena Kamu Gak Sayang Aku:), Silahkan Beli Melalui ${usedPrefix}blimit\n\n❗Syngku Buatmu Tidak Dapat Kembali Dengan Sendirinya`, m)
             continue // Limit habis
           }
           if (plugin.level > _user.level) {
@@ -668,7 +668,7 @@ module.exports = {
                 console.error(e)
               }
             }
-            if (m.limit) m.reply(+ m.limit + ' Dosa terpakai')
+            if (m.limit) m.reply(+ m.limit + ' Cintaku Bertambah Buatmu>//<')
           }
           break
         }
