@@ -618,7 +618,7 @@ module.exports = {
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `Limit Request Habis Karena Kamu Gak Sayang Aku:), Silahkan Beli Melalui ${usedPrefix}blimit\n\n❗Syngku Buatmu Tidak Dapat Kembali Dengan Sendirinya`, m)
+            this.reply(m.chat, `*Limit Request Tidak Cukup!!!*\n\nSilahkan Beli Melalui ${usedPrefix}blimit`, m)
             continue // Limit habis
           }
           if (plugin.level > _user.level) {
@@ -668,7 +668,7 @@ module.exports = {
                 console.error(e)
               }
             }
-            if (m.limit) m.reply(+ m.limit + ' Cintaku Bertambah Buatmu>//<')
+            if (m.limit) m.reply(+ m.limit + ' *Limit Request Terpakai*')
           }
           break
         }
@@ -802,15 +802,15 @@ let usr = db.data.users[m.sender]
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let user = conn.getName(who)
   let msg = {
-    rowner: '[ ! ] Creator Only',
-    owner: '[ ! ] Owner Only',
-    mods: '[ ! ] Moderator Only',
-    premium: '[ ! ] Premium Only',
-    group: '[ ! ] Group Only',
-    private: '[ ! ] Private Only',
-    admin: '[ ! ] Admin Group Only',
-    nsfw: '[ ! ] Nsfw Not Active',
-    botAdmin: '[ ! ] Bot Admin Only',
+    rowner: '*「❗」Creator Only*',
+    owner: '*「❗」Owner Only*',
+    mods: '*「❗」Moderator Only*',
+    premium: '*「❗」Premium Only*',
+    group: '*「❗」Group Only*',
+    private: '*「❗」Private Only*',
+    admin: '*「❗」Admin Group Only*',
+    nsfw: '*「❗」Nsfw Not Active*',
+    botAdmin: '*「❗」Bot Admin Only*',
     unreg: `*── 「 NOT REGISTERED 」 ──*
 Haiii @${m.sender.split`@`[0]} !
 Kamu Harus Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot
