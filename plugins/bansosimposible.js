@@ -3,7 +3,7 @@ let fs = require('fs')
 
 let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
   try {
-    global.DATABASE.data.users[m.sender].lastbansos = global.db.data.users[m.sender].lastbansos || 0
+    global.DATABASE.data.users[m.sender].lastbansos5 = global.db.data.users[m.sender].lastbansos5 || 0
     let randomaku = `${Math.floor(Math.random() * 100)}`.trim()
     let randomkamu = `${Math.floor(Math.random() * 100)}`.trim() //hehe Biar Susah Menang :v
     let Aku = (randomaku * 1)
@@ -12,22 +12,22 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
     let mbansos = './lib/mbansos.jpg'
     let botol = global.botwm
     //let name = conn.getName[m.sender]
-    let __timers = (new Date - global.db.data.users[m.sender].lastbansos)
+    let __timers = (new Date - global.db.data.users[m.sender].lastbansos5)
     let _timers = (604800000 - __timers) 
     let timers = clockString(_timers)
     let user = global.db.data.users[m.sender]
-    if (new Date - global.db.data.users[m.sender].lastbansos > 300000) {
+    if (new Date - global.db.data.users[m.sender].lastbansos5 > 300000) {
       if (Aku > Kamu) {
         conn.sendFile( m.chat, kbansos, 'b.jpg', `Kamu Korupsi Dana Bansos Tapi Kamu Tertangkap🚓\n\nAkibatnya Kamu Harus Membayar\n📉Denda Sebesar Rp 10,000,000`, m)
         user.money -= 10000000
-        global.db.data.users[m.sender].lastbansos = new Date * 1
+        global.db.data.users[m.sender].lastbansos5 = new Date * 1
       } else if (Aku < Kamu) {
         user.money += 10000000
         conn.sendFile( m.chat, mbansos, 'b.jpg', `Selamat Kamu Berhasil Korupsi Dana Bansos💸\n\nHasilnya Kamu Mendapatkan\n📈Uang Sebesar Rp 10,000,000`, m)
-        global.db.data.users[m.sender].lastbansos = new Date * 1
+        global.db.data.users[m.sender].lastbansos5 = new Date * 1
       } else {
         conn.sendButton( m.chat, `Yahh Kamu Gagal Dalam Korupsi, Mungkin Gak Punya Keahlian Korupsi🤣\n\nKamu Juga Tidak Masuk Penjara Karna Kamu Melarikan Diri🏃`, `${botol}`, `Kembali`, `${usedPrefix}menu`, m)
-        global.db.data.users[m.sender].lastbansos = new Date * 1
+        global.db.data.users[m.sender].lastbansos5 = new Date * 1
       }
     } else conn.sendButton(m.chat, `Tadi Sudah Korupsi, Kapan² Lagi Aja💰\n\nDan Kamu Harus Menunggu Selama Agar Bisa Korupsi Bansos Kembali \n▸ 🕓 *${timers}*`, `${botol}`, `⋮☰ Menu`, `${usedPrefix}menu`, m)
   } catch (e) {
