@@ -9,7 +9,7 @@ let handler = async (m, { conn, command, args }) => {
     conn.reply(m.chat, `-Rp.${xppermoney * count} 💵\n+ ${count} 💳\n\n[ ! ] Succes Menabung !`, m)
   } else conn.reply(m.chat, `[❗] Uang Anda Tidak Mencukupi Untuk Menabung ${count} !`, m)
 }
-handler.help = ['nahung <jumlah>']
+handler.help = ['nabung <jumlah>']
 handler.tags = ['xp']
 handler.command = /^nabung ([0-9]+)|nabung$/i
 handler.owner = false
@@ -22,6 +22,7 @@ handler.register = true
 //udah di maapin kan?
 handler.admin = false
 handler.botAdmin = false
+handler.level = 13
 
 handler.fail = null
 handler.exp = 0

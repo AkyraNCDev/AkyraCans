@@ -25,7 +25,7 @@ handler.tags = ['group']
 handler.command = /^getsider$/
 handler.register = true
 handler.limit = true
-
+handler.level = 15
 module.exports = handler
 
 function formatDate(n, locale = 'id') {

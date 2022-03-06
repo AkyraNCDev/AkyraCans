@@ -17,7 +17,9 @@ let handler = async (m, { conn, text }) => {
 
 handler.help = ['caripesan <pesan>|<jumlah>']
 handler.tags = ['tools']
-
+handler.register = true
+handler.limit = 2
+handler.level = 5
 handler.command = /^caripesan/i
 
 module.exports = handler

@@ -1,18 +1,20 @@
 let handler = async m => m.reply(`
 Mau Korupsi Bansos Om?
-MODE
-#bansosnoob - 5
-#bansosmedium -  50
-#bansoshard - 2000
-#bansosextreme -  5000
-#bansosimposible - 10000
-#bansosimortal - 30000
-#bansosmaut - 50000
 
-5 = 50,000
+MODE
+#bansosnoob - 50Rb
+#bansosmedium -  500Rb
+#bansoshard - 2Jt
+#bansosextreme -  5Jt
+#bansosimposible - 10Jt
+#bansosimortal - 30Jt
+#bansosmaut - 50Jt
+#bansosmaster - 200Jt
+
+*Kalau Mines Jangan Minta Reset Syng:v*
 `.trim()) // Tambah sendiri kalo mau
-handler.help = ['owner1'] 
+handler.help = ['bansos'] 
 handler.tags = ['rpg'] 
 handler.command = /^(bansos)$/i
-
+handler.register = true
 module.exports = handler

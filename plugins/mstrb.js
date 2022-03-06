@@ -12,15 +12,15 @@ handler.tags = ['hentai']
 handler.command = /^(mstrb)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = true
+handler.premium = false
 handler.group = false
 handler.private = true
-
+handler.level = 20
 handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.limit = false
+handler.limit = 5
 
 module.exports = handler
 

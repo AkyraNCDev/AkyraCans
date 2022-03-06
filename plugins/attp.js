@@ -7,5 +7,7 @@ handler.tags = ['sticker']
 
 handler.premium = false
 handler.command = /^attp$/i
-
+handler.register = true
+handler.limit = 1
+handler.level = 5
 module.exports = handler

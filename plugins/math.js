@@ -28,6 +28,7 @@ handler.tags = ['game']
 handler.command = /^math/i
 
 handler.tigame = true
+handler.level = 20
 handler.register = true
 //udah di maapin kan?
 module.exports = handler

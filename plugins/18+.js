@@ -11,12 +11,12 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-
+handler.level = 30
 handler.admin = false
 handler.botAdmin = false
-
+handler.register = true
 handler.fail = null
-handler.limit = true
+handler.limit = 20
 
 module.exports = handler
 

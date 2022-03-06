@@ -17,4 +17,7 @@ handler.help = ['covid'].map(v => v + ' <negara>')
 handler.tags = ['edukasi']
 handler.command = /^(corona|covid|covid19)$/i
 //susu
+handler.register = true
+handler.limit = 2
+handler.level = 5
 module.exports = handler

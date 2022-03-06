@@ -4,9 +4,9 @@ let handler = async (m, { conn }) => {
     let _timers = (300000 - __timers)
     let timers = clockString(_timers) 
     let botol = global.botwm
-    let minim = `${Math.floor(Math.random() * 3)}`.trim() 
-    let minam = `${Math.floor(Math.random() * 5)}`.trim() 
-    let minkm = `${Math.floor(Math.random() * 10)}`.trim() 
+    let minim = `${Math.floor(Math.random() * 9)}`.trim() 
+    let minam = `${Math.floor(Math.random() * 30)}`.trim() 
+    let minkm = `${Math.floor(Math.random() * 70)}`.trim() 
 
    if ( user.pickaxe > 0 ) {
     if (new Date - user.lastmining > 3000000) {
@@ -25,7 +25,7 @@ handler.help = ['mining']
 handler.tags = ['rpg']
 handler.command = /^mining/i
 handler.register = true
-
+handler.level = 12
 module.exports = handler
 
 function pickRandom(list) {

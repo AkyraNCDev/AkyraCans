@@ -68,17 +68,17 @@ async function handler(m, { conn, usedPrefix, command, text }) {
         if (room.game.player1 && room.game.player2 && room.game.player3 && room.game.player4) {
 
         // Hadiah ben do seneng :v
-        room.price.money += (Math.floor(Math.random() * 201)) * 1
-        room.price.exp += (Math.floor(Math.random() * 401)) * 1
-        room.price.iron += (pickRandom([0, 0, 0, 0, 1, 0, 0, 0])) * 1
-        room.game.diamond += (pickRandom([0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0])) * 1
-        room.game.sampah += (Math.floor(Math.random() * 101)) * 1
-        room.price.string += (Math.floor(Math.random() * 2)) * 1
-        room.price.kayu += (Math.floor(Math.random() * 2)) * 1
-        room.price.batu += (Math.floor(Math.random() * 2)) * 1
-        room.game.makananPet += (pickRandom([0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0])) * 1
-        room.game.common += (pickRandom([0, 0, 0, 1, 0, 0, 0, 0, 0, 0])) * 1
-        room.game.uncommon += (pickRandom([0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0])) * 1
+        room.price.money += (Math.floor(Math.random() * 100000)) * 1
+        room.price.exp += (Math.floor(Math.random() * 1000)) * 1
+        room.price.iron += (pickRandom([0, 2, 4, 7, 1, 0, 0, 0])) * 1
+        room.game.diamond += (pickRandom([0, 4, 6, 7, 10, 1, 15, 20, 0, 0, 0, 0, 0, 0, 0])) * 1
+        room.game.sampah += (Math.floor(Math.random() * 2000)) * 1
+        room.price.string += (Math.floor(Math.random() * 11)) * 1
+        room.price.kayu += (Math.floor(Math.random() * 11)) * 1
+        room.price.batu += (Math.floor(Math.random() * 11)) * 1
+        room.game.makananPet += (pickRandom([0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 6, 9])) * 1
+        room.game.common += (pickRandom([0, 0, 0, 1, 0, 0, 0, 0, 6, 9])) * 1
+        room.game.uncommon += (pickRandom([0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 6, 9])) * 1
 
         let str = `
 Room ID: ${room.id}
@@ -681,9 +681,9 @@ handler.help = ['dungeon'].map(v => v + ' [custom room name]')
 handler.tags = ['rpg']
 handler.command = /^(dungeon)$/i
 handler.register = true
-handler.limit = true
+handler.limit = 5
 handler.mods = false
-
+hander.level = 20
 module.exports = handler
 
 /**

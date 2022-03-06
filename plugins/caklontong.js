@@ -32,5 +32,7 @@ ${json.soal}
 handler.help = ['caklontong']
 handler.tags = ['game']
 handler.command = /^caklontong/i
-
+handler.register = true
+handler.limit = true
+handler.level = 5
 module.exports = handler

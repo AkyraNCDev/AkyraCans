@@ -41,7 +41,7 @@ handler.command = /^(bansosnoob)$/i
 handler.premium = false
 handler.register = true
 handler.limit = true
-
+handler.level = 5
 handler.fail = null
 
 module.exports = handler

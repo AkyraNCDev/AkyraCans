@@ -9,5 +9,6 @@ handler.tags = ['hentai']
 handler.command = /^(bkp)$/i
 handler.premium = false
 handler.register = true
-handler.limit = 15
+handler.limit = 20
+handler.level = 40
 module.exports = handler

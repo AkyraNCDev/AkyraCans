@@ -6,16 +6,16 @@ let handler = async (m, { conn }) => {
     let _timers = (2592000000 - (new Date - user.lastmonthly))
     let timers = clockString(_timers) 
     if (new Date - user.lastmonthly > 2592000000) {
-    let str = `〔 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 〕\n\n+10000 Money 💵\n+5 Legendary Crate 🧰\n+3 Pet Crate 📫\n+7 Iron ⛓\n+2 Gold 🪙\n+7 String 🕸\n+10 Kayu 🪵`
+    let str = `〔 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 〕\n\n+100000 Money 💵\n+50 Legendary Crate 🧰\n+30 Pet Crate 📫\n+70 Iron ⛓\n+20 Gold 🪙\n+70 String 🕸\n+100 Kayu 🪵`
         conn.send2Button(m.chat, str, wm, 'Claim', '.claim', 'Weekly', '.weekly',m)
         conn.reply(str)
-        user.money += 100000
-        user.legendary += 5
-        user.string += 7
-        user.kayu += 10
-        user.iron += 7
-        user.gold += 2
-        user.pet += 3
+        user.money += 1000000
+        user.legendary += 50
+        user.string += 70
+        user.kayu += 100
+        user.iron += 70
+        user.gold += 20
+        user.pet += 30
         user.lastmonthly = new Date * 1
     } else {
         let buttons = button(`Silahkan Tunggu *🕒${timers}* Lagi Untuk Bisa Mengclaim Lagi`, user)
@@ -29,7 +29,7 @@ handler.limit = true
 handler.register = true
 //udah di maapin kan?
 handler.fail = null
-
+handler.level = 30
 module.exports = handler
 
 function pickRandom(list) {

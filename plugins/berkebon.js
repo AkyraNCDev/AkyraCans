@@ -51,12 +51,13 @@ handler.mods = false
 handler.premium = false
 handler.group = true
 handler.private = false
-
+handler.register = true
+handler.limit = 2
+handler.level = 5
 handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.limit = true
 handler.exp = 0
 handler.money = 0
 

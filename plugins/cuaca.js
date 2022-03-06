@@ -43,6 +43,7 @@ handler.tags = ['internet']
 handler.command = /^(weather|wthr|cuaca)$/i
 handler.limit = true
 handler.register = true
+handler.level = 5
 module.exports = handler
 
 let wm = global.botwm

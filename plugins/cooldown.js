@@ -116,7 +116,7 @@ handler.tags = ['rpg']
 handler.command = /^(cd|cooldown)$/i
 handler.register = true
 module.exports = handler
-
+handler.level = 20
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4201)
 

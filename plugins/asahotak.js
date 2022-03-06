@@ -33,5 +33,6 @@ handler.help = ['asahotak']
 handler.tags = ['game']
 handler.command = /^asahotak/i
 handler.register = true
-
+handler.limit = true
+handler.level = 15
 module.exports = handler

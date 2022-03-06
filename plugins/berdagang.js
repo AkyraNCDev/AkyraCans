@@ -49,7 +49,7 @@ handler.tags = ['rpg']
 handler.command = /^berdagang$/
 handler.limit = true
 handler.group = true
-
+handler.level = 5
 module.exports = handler
 
 function pickRandom(list) {

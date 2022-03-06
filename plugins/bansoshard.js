@@ -40,8 +40,8 @@ handler.tags = ['rpg']
 handler.command = /^(bansoshard)$/i
 handler.premium = false
 handler.register = true
-handler.limit = true
-
+handler.limit = 9
+handler.level = 19
 handler.fail = null
 
 module.exports = handler

@@ -19,6 +19,7 @@ handler.register = true
 handler.limit = 3
 handler.admin = false
 handler.botAdmin = false
+handler.level = 10
 
 handler.fail = null
 

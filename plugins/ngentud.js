@@ -60,7 +60,7 @@ dimas4 = `✔️ Menerima gaji....
 hsl = `*—[ Hasil Dari ${command} ${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])} ]—*
 
 👤 Pelanggan: @${who.replace(/@.+/, '')}
- ➕ 💵 Uang: 100000
+ ➕ 💵 Uang: 300000
  ➕ 🧬 Exp: ${zero5}
  ➕ 🔥 Dosa: 10
 
@@ -71,7 +71,7 @@ ${wm}
 
 
 global.db.data.users[m.sender].warn += 10
-global.db.data.users[m.sender].money += 100000
+global.db.data.users[m.sender].money += 300000
 global.db.data.users[m.sender].exp += rbrb5
 global.db.data.users[m.sender].ojekk += 1
 
@@ -110,8 +110,8 @@ handler.tags = ['rpg']
 handler.command = /^(ngewe|ngentod|ngocok)$/i
 handler.register = true
 handler.premium = false
-handler.limit = true
-
+handler.limit = 5
+handler.level = 13
 module.exports = handler
 let wm = global.botwm
 

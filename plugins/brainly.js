@@ -13,7 +13,7 @@ handler.command = /^(brainly|belajar|mtk|ipa|ips|ppkn|inggris|pertanyaan)$/i
 
 handler.limit = 5
 handler.register = true
-
+handler.level = 15
 module.exports = handler
 
 let wm = global.botwm

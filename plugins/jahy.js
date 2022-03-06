@@ -1,10 +1,25 @@
-let handler = async (m, { conn }) => {
-await m.reply(global.wait)
-  conn.sendFile(m.chat, 'https://api.xteam.xyz/randomimage/jahy?apikey=d81ce7556c32afe3', 'Wangy.js', 'Wangy wangy wangy', m)
+let fetch = require('node-fetch')
+let wm = global.botwm
+let handler = async (m, { conn, usedPrefix, command }) => {
+	if (!db.data.chats[m.chat].nsfw && m.isGroup) throw global.nsfw
+  res = await fetch(`https://api.xteam.xyz/randomimage/jahy?APIKEY=HIRO`)
+  heum = await res.buffer()
+  conn.sendButtonImg(m.chat, heum, 'This Is JAHY', wm, 'Next⏭️', `${usedPrefix + command}`, m)
 }
 handler.help = ['jahy']
 handler.tags = ['hentai']
+
 handler.command = /^(jahy)$/i
-handler.premium = true
+handler.owner = false
+handler.mods = false
+handler.premium = false
+
+handler.admin = false
+handler.botAdmin = false
+handler.register = true
+handler.limit = 5
+handler.level = 19
+handler.fail = null
 
 module.exports = handler
+

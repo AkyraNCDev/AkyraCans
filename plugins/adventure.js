@@ -16,26 +16,26 @@ let handler = async (m, { conn, usedPrefix, DevMode }) => {
             let armornya = (armor == 0 ? 0 : '' || armor == 1 ? 5 : '' || armor == 2 ? 10 : '' || armor == 3 ? 15 : '' || armor == 4 ? 21 : '' || armor == 5 ? 30 : '')
             let __health = (___health > 60 ? ___health - kucingnya - armornya : ___health)
             let healt = (kucing == 0 && armor == 0 ? pickRandom(['100', '99', '98', '97', '96', '95', '94', '93', '92', '91', '90']) : kucing > 0 && armor > 0 ? __health : ___health)
-            let exp = (Math.floor(Math.random() * 1000) + (kuda * 70))
-            let uang = `${Math.floor(Math.random() * 10000)}`.trim() 
-            let _potion = `${Math.floor(Math.random() * 2)}`.trim()
-            let string = `${Math.floor(Math.random() * 7)}`.trim()
-            let kayu = `${Math.floor(Math.random() * 13)}`.trim()
-            let arlok = `${Math.floor(Math.random() * 1)}`.trim()
+            let exp = (Math.floor(Math.random() * 3000) + (kuda * 70))
+            let uang = `${Math.floor(Math.random() * 50000)}`.trim() 
+            let _potion = `${Math.floor(Math.random() * 8)}`.trim()
+            let string = `${Math.floor(Math.random() * 14)}`.trim()
+            let kayu = `${Math.floor(Math.random() * 24)}`.trim()
+            let arlok = `${Math.floor(Math.random() * 4)}`.trim()
             let potion = (_potion * 1)
             let _diamond = (rubah == 0 ? pickRandom(['0', '1', '0', '1', '0', '1', '0']) : '' || rubah == 1 ? pickRandom(['0', '1', '0', '1']) : '' || rubah == 2 ? pickRandom(['0', '1', '0', '1', '2']) : '' || rubah == 3 ? pickRandom(['0', '1', '0', '2', '2', '0']) : '' || rubah == 4 ? pickRandom(['0', '1', '1', '2', '1', '1', '0']) : '' || rubah == 5 ? pickRandom(['0', '0', '1', '2', '2', '1', '1', '0']) : '' )
             let diamond = (_diamond * 1)
-            let _common = `${Math.floor(Math.random() * 3)}`.trim()
+            let _common = `${Math.floor(Math.random() * 20)}`.trim()
             let common = (_common * 1)
-            let _uncommon = `${Math.floor(Math.random() * 2)}`.trim()
+            let _uncommon = `${Math.floor(Math.random() * 10)}`.trim()
             let uncommon = (_uncommon * 1) 
-            let _mythic = `${pickRandom(['1', '0', '0', '1'])}`
+            let _mythic = `${pickRandom(['0', '3', '6', '9'])}`
             let mythic = (_mythic * 1)
-            let _legendary = `${pickRandom(['1', '0', '0', '0'])}`
-            let sampah = `${Math.floor(Math.random() * 300)}`.trim()
+            let _legendary = `${pickRandom(['0', '3', '5', '7'])}`
+            let sampah = `${Math.floor(Math.random() * 2000)}`.trim()
             let legendary = (_legendary * 1)
             let str = `
-♥️Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRandom(['🇯🇵Jepang', '🇰🇷Korea', '🇮🇩Bali', '🇺🇲Amerika', '🇮🇶Iraq', '🇦🇪Arab', '🇵🇰Pakistan', '🇩🇪German', '🇫🇮Finlandia', '💭Ke Bawa Dunia Mimpi', '🔚Ujung dunia', 'Mars', '🌑Bulan', '🪐Saturnus', '☀️Matahari', '❣️Hatinya dia', '...'])} Dan Mendapatkan
+♥️Nyawa Mu Berkurang -${healt * 1} Karena Kamu Telah Berpetualang Sampai ${pickRandom(['🇯🇵Jepang', '🇰🇷Korea', '🇮🇩Bali', '🇺🇲Amerika', '🇮🇶Iraq', '🇦🇪Arab', '🇵🇰Pakistan', '⚠️Uni Soviet','🇩🇪German', '🇫🇮Finlandia', '💭Ke Bawa Dunia Mimpi', '🔚Ujung dunia', 'Mars', '🌑Bulan', '🪐Saturnus', '☀️Matahari', '❣️Hatinya dia', '❤️Hatinya Owner'])} Dan Mendapatkan
 🔰Exp ${exp} 
 💰Uang ${uang}
 🪵Kayu ${kayu}
@@ -79,7 +79,8 @@ let handler = async (m, { conn, usedPrefix, DevMode }) => {
 handler.help = ['adventure', 'petualang', 'berpetualang', 'mulung', 'work']
 handler.tags = ['rpg']
 handler.command = /^(adventure|(ber)?petualang(ang)?|mulung|work)$/i
-
+handler.register = true
+handler.limit = 2
 handler.fail = null
 
 module.exports = handler

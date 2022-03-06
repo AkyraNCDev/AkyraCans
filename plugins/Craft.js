@@ -97,5 +97,7 @@ Burning Fire +
 handler.help = ['craft']
 handler.tags = ['rpg']
 handler.command = /^(craft|crafting|chant)/i
-
+handler.register = true
+handler.limit = 1
+handler.level = 10
 module.exports = handler

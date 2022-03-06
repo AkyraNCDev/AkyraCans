@@ -26,7 +26,9 @@ ${list}
 handler.help = ['cekabsen']
 handler.tags = ['absen']
 handler.command = /^cekabsen$/i
-
+handler.register = true
+handler.limit = 2
+handler.level = 5
 module.exports = handler
 
 let wm = global.botwm

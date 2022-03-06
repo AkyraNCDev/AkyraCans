@@ -40,7 +40,8 @@ handler.tags = ['rpg']
 handler.command = /^(bansosextreme)$/i
 handler.premium = false
 handler.register = true
-handler.limit = true
+handler.limit = 17
+handler.level = 34
 
 handler.fail = null
 

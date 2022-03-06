@@ -5,15 +5,12 @@ let handler = async (m, { conn, text }) => {
 let logo = global.logopartner
   let ext= `
 ✣╼╼╼╼╼[ BIODATA PARTNER ]╾╾╾╾╾╾✣
-👤 Nama  Amelia Putri Ayu Azhari
+👤 Nama  Amel/Ratu
 📍 Umur 16 
 🧮 Kelas 10
 📈 Status Sad
 
-✣╼╼╼╼╼╼[ SOSIAL MEDIA ]─╾╾╾╾╾╾✣
-📷 Instagram none
-🇫  Facebook none
-🏮 Chanel Youtube none
+✣╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╾╾╾╾╾╾✣
 
 `
 let name = await conn.getName(m.sender)

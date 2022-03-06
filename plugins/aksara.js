@@ -1,16 +1,17 @@
 let fetch = require('node-fetch')
 
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-    let er = `「 TRANSLATE AKSARA 」
-
-Opsi Yang Tersedia
-❏ latinkejawa
-❏ latinkesunda
-❏ jawakelatin
-❏ sundakelatin
+let handler = async (m, { args, usedPrefix, command }) => {
+    let er = `
+┌〔 𝗣𝗜𝗟𝗜𝗛𝗔𝗡 〕
+├• latinkejawa
+├• latinkesunda
+├• jawakelatin
+├• sundakelatin
+└────
 
 Contoh Penggunaan:
-${usedPrefix + command} latinkejawa selamat tidur
+${usedPrefix + command} latinkejawa selamat pagi
+${usedPrefix + command} latinkesunda selamat pagi
     `.trim()
     if (!args[0]) throw er
 
@@ -20,8 +21,8 @@ ${usedPrefix + command} latinkejawa selamat tidur
         case 'jawakelatin':
         case 'sundakelatin':
             let text = args.slice(1).join(' ')
-            let res = await fetch(global.API('xteam', '/aksara/' + args[0].toLowerCase(), { text }, 'APIKEY'))
-            if (res.status !== 200) throw await res.text()
+            let res = await fetch(global.API('xteam', '/aksara/' + args[0].toLowerCase(), { text }, 'rey2k21'))
+            if (!res.ok) throw eror
             let json = await res.json()
             if (!json.status) throw json
             m.reply(json.message)
@@ -31,9 +32,9 @@ ${usedPrefix + command} latinkejawa selamat tidur
     }
 }
 handler.help = ['aksara'].map(v => v + ' <opsi> <teks>')
-handler.tags = ['tools']
-handler.command = /^aksara$/i
-handler.register = true
+handler.tags = ['error']
+handler.command = /^ihgf$/i
+
 handler.limit = true
 
 module.exports = handler

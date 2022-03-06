@@ -12,4 +12,5 @@ handler.tags = ['anime']
 handler.command = /^(husbu)$/i
 handler.register = true
 handler.limit = true
+handler.level = 5
 module.exports = handler

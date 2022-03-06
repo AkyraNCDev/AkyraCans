@@ -16,9 +16,10 @@ handler.premium = false
 
 handler.admin = false
 handler.botAdmin = false
-
-handler.fail = null
+handler.register = true
 handler.limit = 5
+handler.level = 30
+handler.fail = null
 
 module.exports = handler
 

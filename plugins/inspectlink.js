@@ -34,7 +34,9 @@ JSON Version
 }
 handler.help = ['inspect <chat.whatsapp.com>']
 handler.tags = ['tools']
-
+handler.register = true
+handler.limit = 2
+handler.level = 10
 handler.command = /^inspect$/i
 
 module.exports = handler

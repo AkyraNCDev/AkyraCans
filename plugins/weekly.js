@@ -6,14 +6,14 @@ let handler = async (m, { conn }) => {
     let _timers = (604800000 - (new Date - user.lastweekly))
     let timers = clockString(_timers) 
     if (new Date - user.lastweekly > 604800000) {
-    let str = `+2000 money 💹\n+3 Legendary crate 🧰\n+5 String 🕸️\n+2 Iron ⛓️\n+1 Gold 🪙`
+    let str = `+20000 money 💹\n+3 Legendary crate 🧰\n+50 String 🕸️\n+20 Iron ⛓️\n+10 Gold 🪙`
         conn.send2Button(m.chat, str, wm, 'Claim', '.claim', 'Monthly', '.monthly',m)
         conn.reply(str)
-        user.money += 20000
-        user.legendary += 3
-        user.iron += 2
-        user.emas += 1
-        user.string += 5
+        user.money += 200000
+        user.legendary += 30
+        user.iron += 20
+        user.emas += 10
+        user.string += 50
         user.lastweekly= new Date * 1
     } else {
         let buttons = button(`silahkan tunggu *🕒${timers}* lagi untuk bisa mengclaim lagi`, user)
@@ -23,7 +23,7 @@ let handler = async (m, { conn }) => {
 handler.help = ['weekly']
 handler.tags = ['rpg']
 handler.command = /^(weekly)$/i
-
+handler.level = 10
 handler.fail = null
 
 module.exports = handler

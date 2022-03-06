@@ -1,21 +1,11 @@
-let fetch = require('node-fetch')
-let handler = async (m, { conn, usedPrefix, command }) => {
-	if (!db.data.chats[m.chat].nsfw && m.isGroup) throw global.nsfw
-   heum = await fetch(`https://api.lolhuman.xyz/api/random2/bj?apikey=rey2k21`)
-    json = await heum.buffer()
-   conn.sendButtonImg(m.chat, json, '', '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'NEXT⏭️', `${usedPrefix + command}`, m)
+let handler = async (m, { conn }) => {
+await m.reply(global.wait)
+  conn.sendFile(m.chat, 'https://api.xteam.xyz/randomimage/blowjob?APIKEY=HIRO', '', '', m)
 }
-handler.help = ['blowjob']
+handler.help = ['ahegao']
 handler.tags = ['hentai']
-
 handler.command = /^(blowjob)$/i
-
-handler.premium = true
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
-handler.limit = 5
-
+handler.limit = 3
+handler.register = true
 module.exports = handler
-
+handler.level = 25

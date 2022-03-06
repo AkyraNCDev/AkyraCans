@@ -36,5 +36,5 @@ handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i
 handler.exp = 5
 handler.limit = true
 handler.register = true
-
+handler.level = 3
 module.exports = handler

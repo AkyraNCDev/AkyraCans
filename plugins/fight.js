@@ -70,8 +70,8 @@ let who
 		let sum = 10 * areaPlayer - 59
 		let dmg = (player.sword  * 5 + player.armor * 5 - sum)
 		dmg = dmg < 0 ? Math.abs(dmg) : 0
-		let coins = areaPlayer * 1000
-		let exp = areaPlayer * 500
+		let coins = areaPlayer * 4000
+		let exp = areaPlayer * 750
 
 		player.healt -= dmg
 		player.lasthunt = new Date * 1 // waktu hunt 2menit
@@ -79,8 +79,8 @@ let who
 		if (player.healt < 0) {
 			let msg = `⚰️*${pname}* Anda Menantang @${who.replace(/@.+/, '')} Dan Kamu Kalah`
 			if (player.level > 0) {
-				player.level -= 1
-				msg += `\n⬇️Level Anda Turun 1 Karena Mati Saat Bertarung Melawan @${who.replace(/@.+/, '')}`
+				player.level -= 5
+				msg += `\n⬇️Level Anda Turun 5 Karena Mati Saat Bertarung Melawan @${who.replace(/@.+/, '')}`
 			}
 			player.healt = 100
 			m.reply(msg)
@@ -106,7 +106,7 @@ handler.disabled = false
 handler.register = true
 handler.group = true
 handler.fail = null
-
+handler.level = 20
 module.exports = handler
 
 function MeNit(ms) {
