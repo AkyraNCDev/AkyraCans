@@ -30,6 +30,8 @@ handler.tags = ['absen']
 handler.command = /^(absen|hadir)$/i
 handler.group = true
 module.exports = handler
-
+handler.register = true
+handler.limit = 2
+handler.level = 5
 let wm = global.botwm
 let datebot = global.botdate

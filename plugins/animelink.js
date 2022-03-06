@@ -50,7 +50,7 @@ handler.help = ['animelink']
 handler.tags = ['anime']
 handler.command = /^animelink$/i
 handler.register = true
-handler.premiun = true
-handler.limit = true
-
+handler.premiun = false
+handler.limit = 5
+handler.level = 25
 module.exports = handler

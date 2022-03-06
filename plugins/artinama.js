@@ -29,6 +29,8 @@ request.get({
 handler.help = ['artinama'].map(v => v + ' [nama]')
 handler.tags = ['kerang']
 handler.command = ['artinama']
-
+handler.register = true
+handler.limit = 2
+handler.level = 5
 module.exports = handler
 

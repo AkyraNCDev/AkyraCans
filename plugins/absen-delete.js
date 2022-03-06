@@ -17,7 +17,9 @@ let handler = async (m, { conn, usedPrefix, isAdmin, isOwner }) => {
 handler.help = ['hapusabsen']
 handler.tags = ['absen']
 handler.command = /^(delete|hapus|-)absen$/i
-
+handler.register = true
+handler.limit = true
+handler.level = 5
 module.exports = handler
 
 let wm = global.botwm

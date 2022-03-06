@@ -9,24 +9,24 @@ let handler = async (m, { conn }) => {
 {buttonId: '.kandang', buttonText: {displayText: 'Kandang 🐾'}, type: 1}, 
 ]
 const buttonMessage = {
-    contentText: `〔 𝗔𝗟𝗘𝗥𝗧 〕\n\n Sepertinya Kakak Sudah Kecapekan\nSilahkan Istirahat Dulu Untuk Mlanjutkan Berburu !\n🕖 *${timers}*`,
+    contentText: `〔 𝗔𝗟𝗘𝗥𝗧 〕\n\n Sepertinya Kakak Sudah Kecapean\nSilahkan Istirahat Dulu Untuk Mlanjutkan Berburu !\n🕖 *${timers}*`,
     footerText: `${wm}`, 
     buttons: buttons,
     headerType: 1
 }
     if (new Date - global.db.data.users[m.sender].as > 500000) {
-let randomaku1 = `${Math.floor(Math.random() * 7)}`
-let randomaku2 = `${Math.floor(Math.random() * 7)}`
-let randomaku4 = `${Math.floor(Math.random() * 7)}`
-let randomaku3 = `${Math.floor(Math.random() * 7)}`
-let randomaku5 = `${Math.floor(Math.random() * 7)}`
-let randomaku6 = `${Math.floor(Math.random() * 7)}`
-let randomaku7 = `${Math.floor(Math.random() * 7)}`
-let randomaku8 = `${Math.floor(Math.random() * 7)}`
-let randomaku9 = `${Math.floor(Math.random() * 7)}`
-let randomaku10 = `${Math.floor(Math.random() * 7)}`
-let randomaku11 = `${Math.floor(Math.random() * 7)}`
-let randomaku12 = `${Math.floor(Math.random() * 7)}`
+let randomaku1 = `${Math.floor(Math.random() * 20)}`
+let randomaku2 = `${Math.floor(Math.random() * 20)}`
+let randomaku4 = `${Math.floor(Math.random() * 20)}`
+let randomaku3 = `${Math.floor(Math.random() * 20)}`
+let randomaku5 = `${Math.floor(Math.random() * 20)}`
+let randomaku6 = `${Math.floor(Math.random() * 20)}`
+let randomaku7 = `${Math.floor(Math.random() * 20)}`
+let randomaku8 = `${Math.floor(Math.random() * 20)}`
+let randomaku9 = `${Math.floor(Math.random() * 20)}`
+let randomaku10 = `${Math.floor(Math.random() * 20)}`
+let randomaku11 = `${Math.floor(Math.random() * 20)}`
+let randomaku12 = `${Math.floor(Math.random() * 20)}`
 .trim()
 
 let rbrb1 = (randomaku1 * 1)
@@ -93,15 +93,15 @@ setTimeout(() => {
                       }, 18000)
                     
                      setTimeout(() => {
-                     m.reply('KPUMNN !!')
+                     m.reply('```KPUMNN❗```')
                      }, 15000) 
                     
                      setTimeout(() => {
-                     m.reply('DORR DORR !!')
+                     m.reply('```DORR DORRR🔫```')
                      }, 14000) 
                      
                      setTimeout(() => {
-                     m.reply('_Sedang Berburu..._')
+                     m.reply('```⏳Sedang Berburu```')
                      }, 0) 
   user.as = new Date * 1
     } else conn.sendMessage(m.chat, buttonMessage, MessageType.buttonsMessage ,m )
@@ -110,7 +110,8 @@ handler.help = ['berburu']
 handler.tags = ['rpg']
 handler.command = /^(berburu)$/i
 handler.register = true
-
+handler.limit = 3
+handler.level = 5
 module.exports = handler
 function clockString(ms) {
   let h = Math.floor(ms / 3600000)

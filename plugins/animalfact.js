@@ -23,5 +23,7 @@ ${usedPrefix}${command} panda
 handler.help = ['animal'].map((v) => v + ' <opsi>')
 handler.tags = ['internet']
 handler.command = /^(animal|animalfact)$/i
-
+handler.register = true
+handler.limit = 2
+handler.level = 3
 module.exports = handler
