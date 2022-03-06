@@ -212,6 +212,13 @@ module.exports = {
             if (!isNumber(user.lastmonthly)) user.lastmontly = 0
             if (!isNumber(user.lastIstigfar)) user.lastIstigfar = 0
             if (!isNumber(user.lastbansos)) user.lastbansos = 0
+            if (!isNumber(user.lastbansos2)) user.lastbansos2 = 0
+            if (!isNumber(user.lastbansos3)) user.lastbansos3 = 0
+            if (!isNumber(user.lastbansos4)) user.lastbansos4 = 0
+            if (!isNumber(user.lastbansos5)) user.lastbansos5 = 0
+            if (!isNumber(user.lastbansos6)) user.lastbansos6 = 0
+            if (!isNumber(user.lastbansos7)) user.lastbansos7 = 0
+            if (!isNumber(user.lastbansos8)) user.lastbansos8 = 0
             if (!isNumber(user.lastrampok)) user.lastrampok = 0
             if (!('registered' in user)) user.registered = false
             if (!user.registered) {
@@ -618,11 +625,11 @@ module.exports = {
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `*Limit Request Tidak Cukup!!!*\n\nSilahkan Beli Melalui ${usedPrefix}blimit`, m)
+            this.reply(m.chat, `*❗Limit Request Tidak Cukup*\n\nSilahkan Beli Melalui ${usedPrefix}blimit`, m)
             continue // Limit habis
           }
           if (plugin.level > _user.level) {
-            this.reply(m.chat, `diperlukan level ${plugin.level} untuk menggunakan perintah ini. Level kamu ${_user.level}`, m)
+            this.reply(m.chat, `「 LOW LEVEL 」\n❗Diperlukan Level ${plugin.level} Untuk Menggunakan Perintah Ini,\n\nLevel Kamu ${_user.level}📊`, m)
             continue // If the level has not been reached
           }
           let extra = {
@@ -668,7 +675,7 @@ module.exports = {
                 console.error(e)
               }
             }
-            if (m.limit) m.reply(+ m.limit + ' *Limit Request Terpakai*')
+            if (m.limit) m.reply(+ m.limit + ' *Limit Request Terpakai🎟️*')
           }
           break
         }
@@ -812,11 +819,11 @@ let user = conn.getName(who)
     nsfw: '*「❗」Nsfw Not Active*',
     botAdmin: '*「❗」Bot Admin Only*',
     unreg: `*── 「 NOT REGISTERED 」 ──*
-Haiii @${m.sender.split`@`[0]} !
+Haiii @${m.sender.split`@`[0]}
 Kamu Harus Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot
     
-🔸Ketik : #daftar nama.umur
-🔸Contoh : #daftar ${user}.13`
+ 📍 Ketik : #daftar nama.umur
+       Contoh : #daftar ${user}.16`
   }[type]
   let pd = fs.readFileSync('./src/kanna.jpg')
   if (msg) return m.reply(msg)
