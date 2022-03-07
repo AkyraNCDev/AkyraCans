@@ -10,8 +10,9 @@ MODE
 #bansosimortal - 30Jt
 #bansosmaut - 50Jt
 #bansosmaster - 200Jt
+#bansospdip - 1M
 
-*Kalau Mines Jangan Minta Reset Syng:v*
+Reset Individual Database Max 3×
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['bansos'] 
 handler.tags = ['rpg'] 
