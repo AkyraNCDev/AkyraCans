@@ -14,7 +14,9 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-
+handler.register = true
+handler.limit = 2
+handler.level = 5
 handler.limit = false
 handler.admin = false
 handler.botAdmin = false

@@ -22,7 +22,6 @@ handler.register = true
 //udah di maapin kan?
 handler.admin = false
 handler.botAdmin = false
-handler.level = 13
 
 handler.fail = null
 handler.exp = 0
