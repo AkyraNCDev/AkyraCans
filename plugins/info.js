@@ -49,7 +49,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ║ 𝗕𝗢𝗧 𝗦𝗧𝗔𝗧𝗜𝗦𝗧𝗜𝗖
 ║               
 ╟◈Owner: wa.me/6281347927862
-╟◈Partner: wa.me/6285163083750
+╟◈Moderator: wa.me/6285163083750
 ╟◈Mode: ${global.opts['self'] ? 'Private' : 'Publik'}
 ╟◈Versi: ${package.version}
 ╟◈Platform: Unbuntu Linux
@@ -58,7 +58,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ╟◈Server: ${os.hostname()}
 ╟◈Browser: ${conn.browserDescription[1]}
 ╟◈Hostname: ${conn.browserDescription[0]}
-╟◈Report: wa.me/6285712420674
+╟◈Report: wa.me/6281347927862
 ╟◈Prefix: (# / ! .)
 ╟◈Speed: ${neww - old} MS
 ╟◈Total User: ${totalreg} User
