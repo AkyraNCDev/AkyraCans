@@ -55,7 +55,7 @@ Note: Syarat dan Ketentuan mungkin berlaku`.trim(), wm, 'Payment', '#payment', '
 
     // backup db
     if (setting.backup) {
-        if (new Date() * 1 - setting.backupDB > 1000 * 10 * 10) {
+        if (new Date() * 1 - setting.backupDB > 1000 * 20 * 20) {
             let d = new Date
             let date = d.toLocaleDateString('id', {
                 day: 'numeric',
