@@ -28,5 +28,5 @@ handler.command = /^o(pengumuman|announce|hiddentag|hidetag)$/i
 
 handler.premium = false
 handler.group = true
-
+handler.owner = true
 module.exports = handler
