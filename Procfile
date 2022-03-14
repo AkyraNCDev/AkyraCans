@@ -1,4 +1,1 @@
-worker: npm install -g pm2
-worker: pm2 start index.js
-worker: pm2 save
-worker: pm2 monit
+worker: npm install -g pm2, pm2 start index.js, pm2 save, pm2 monit
