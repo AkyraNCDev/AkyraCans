@@ -111,7 +111,6 @@ handler.command = /^(ngewe|ngentod|ngocok)$/i
 handler.register = true
 handler.premium = false
 handler.limit = 5
-handler.level = 13
 module.exports = handler
 let wm = global.botwm
 

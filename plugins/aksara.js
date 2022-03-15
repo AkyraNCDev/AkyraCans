@@ -21,7 +21,7 @@ ${usedPrefix + command} latinkesunda selamat pagi
         case 'jawakelatin':
         case 'sundakelatin':
             let text = args.slice(1).join(' ')
-            let res = await fetch(global.API('xteam', '/aksara/' + args[0].toLowerCase(), { text }, 'rey2k21'))
+            let res = await fetch(global.API('lol', '/aksara/' + args[0].toLowerCase(), { text }, 'rey2k21'))
             if (!res.ok) throw eror
             let json = await res.json()
             if (!json.status) throw json

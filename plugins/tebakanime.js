@@ -9,7 +9,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tebakanime[id][0])
         throw false
     }
-    let res = await fetch('http://zekais-api.herokuapp.com/tebakanime')
+    let res = await fetch('https://api.lolhuman.xyz/api/tebakchara?apikey=AryaKey')
     let json = await res.json()
     let caption = `
 Timeout *${(timeout / 1000).toFixed(2)} detik*

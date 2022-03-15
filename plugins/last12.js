@@ -72,6 +72,6 @@ Haii Guys, Update Kali Ini Liat Saja Dibawah Yaa, Maaf Jika Sedikit><
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['lastupdate'] 
 handler.tags = ['info'] 
-handler.command = /^(lastupdate)$/i
+handler.command = /^(ggff)$/i
 
 module.exports = handler

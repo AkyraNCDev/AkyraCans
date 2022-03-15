@@ -15,6 +15,9 @@ conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                                        "title": `Top Money`,
                                        "rowId": ".topmoney"
                                        }, {
+                                       "title": `Top Tabungan`,
+                                       "rowId": ".toptabungan"
+                                       }, {
                                        "title": `Top Exp`,
                                        "rowId": ".topexp"
                                        }, {

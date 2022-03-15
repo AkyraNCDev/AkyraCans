@@ -4,8 +4,8 @@ let fs = require('fs')
 let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
   try {
     global.DATABASE.data.users[m.sender].lastbansos8 = global.db.data.users[m.sender].lastbansos8 || 0
-    let randomaku = `${Math.floor(Math.random() * 101)}`.trim()
-    let randomkamu = `${Math.floor(Math.random() * 75)}`.trim() //hehe Biar Susah Menang :v
+    let randomaku = `${Math.floor(Math.random() * 100)}`.trim()
+    let randomkamu = `${Math.floor(Math.random() * 100)}`.trim() //hehe Biar Susah Menang :v
     let Aku = (randomaku * 1)
     let Kamu = (randomkamu * 1)
     let kbansos = './lib/kbansos.jpg'
@@ -18,12 +18,12 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
     let user = global.db.data.users[m.sender]
     if (new Date - global.db.data.users[m.sender].lastbansos8 > 300000) {
       if (Aku > Kamu) {
-        conn.sendFile( m.chat, kbansos, 'b.jpg', `Kamu Korupsi Dana Bansos Tapi Kamu Tertangkap🚓\n\nAkibatnya Kamu Harus Membayar\n📉Denda Sebesar Rp 200,000,000`, m)
-        user.money -= 200000000
+        conn.sendFile( m.chat, kbansos, 'b.jpg', `Kamu Korupsi Dana Bansos Tapi Kamu Tertangkap🚓\n\nAkibatnya Kamu Harus Membayar\n📉Denda Sebesar Rp 100,000,000,000`, m)
+        user.money -= 100000000000
         global.db.data.users[m.sender].lastbansos8 = new Date * 1
       } else if (Aku < Kamu) {
-        user.money += 200000000
-        conn.sendFile( m.chat, mbansos, 'b.jpg', `Selamat Kamu Berhasil Korupsi Dana Bansos💸\n\nHasilnya Kamu Mendapatkan\n📈Uang Sebesar Rp 200,000,000`, m)
+        user.money += 100000000000
+        conn.sendFile( m.chat, mbansos, 'b.jpg', `Selamat Kamu Berhasil Korupsi Dana Bansos💸\n\nHasilnya Kamu Mendapatkan\n📈Uang Sebesar Rp 100,000,000,000`, m)
         global.db.data.users[m.sender].lastbansos8 = new Date * 1
       } else {
         conn.sendButton( m.chat, `Yahh Kamu Gagal Dalam Korupsi, Mungkin Gak Punya Keahlian Korupsi🤣\n\nKamu Juga Tidak Masuk Penjara Karna Kamu Melarikan Diri🏃`, `${botol}`, `Kembali`, `${usedPrefix}menu`, m)
@@ -35,13 +35,13 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
   }
 }
 
-handler.help = ['bansosmaster']
+handler.help = ['korupsi8']
 handler.tags = ['rpg']
-handler.command = /^(bansosmaster)$/i
+handler.command = /^(korupsi8)$/i
 handler.premium = false
 handler.register = true
-handler.limit = 100
-handler.level = 200
+handler.limit = 400
+handler.level = 240
 handler.fail = null
 
 module.exports = handler

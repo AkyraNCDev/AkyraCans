@@ -28,7 +28,6 @@ handler.register = true
 
 handler.limit = 3
 
-handler.level = 10
 
 
 handler.admin = false

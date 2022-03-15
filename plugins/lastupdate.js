@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-❗Information Update on 7
+❗Information Update on 15
 
 
 ➕ New Features
@@ -9,52 +9,104 @@ let handler = async m => m.reply(`
 
 ADDITION✉️
 1. Perubahan Limit Setiap Fitur
-2. Menjadikan Level Untuk Syarat Menggunakan Fitur
-3. Fitur RPG Hadiahnya Digandakan Berkali Lipat
-4. Harga Barang Naek
+2. Menghilangkan Seberapa Syarat Level
+3. Peningkatan Fitur RPG
+4. Apikey Baru
+5. Event Spesial Ramadhan
 
-➕ #asupancecan
-➕ #asupanhijaber
-➕ #asupanbocil
-➕ #asupanrika
-➕ #asupanghea
-➕ #asupansantuy
-➕ #asupanukhty
-➕ #cecanindo
-➕ #cecanmalaysia
-➕ #cecanthailand
-➕ #cecanchina
-➕ #cecankorea
-➕ #cecanjapan
-➕ #cecanvietnam
-➕ #cecanjustinaxie
-➕ #cecanhijaber
-➕ #bdsm
-➕ #femdom
-➕ #foot
-➕ #bansosmaster
-➕ #fight
-➕ #cuckold
-➕ #gangbang
-➕ #glasses
-➕ #wpnsfwmobile
-➕ #jahy
+➕ #classic
+➕ #erokemo
+➕ #erofeet
+➕ #toptabungan
+➕ #vngemas
+➕ #whatmusic
+➕ #luckroyale  🔥
+➕ #nowevent  🔥
 
-☑️ #ahegao
-☑️ #blowjob
-☑️ #cecan
+
+☑️ #art
+☑️ #animefeets
+☑️ #armpits
 ☑️ #cogan
-☑️ #loli
+☑️ #cringe
+☑️ #cecan
+☑️ #elaina
+☑️ #elf
+☑️ #estetic
+☑️ #ecchi
+☑️ #foxgirl
+☑️ #fury
+☑️ #futanari
+☑️ #nsfwloli
+☑️ #kanna
+☑️ #holoero
+☑️ #poke
+☑️ #sagiri
+☑️ #shinobu
+☑️ #spotify
+☑️ #tiktok
+☑️ #nsfwavatar
+☑️ #nsfwtrap
+☑️ #nh
+☑️ #nhs
+☑️ #nhd
+☑️ #nhpdf
+☑️ #wink
+☑️ #yaoi
 
-🔄 #sewa
+
+🔄 #absen
+🔄 #adventure
+🔄 #ass
+🔄 #asupan
+🔄 #asupanbocil
+🔄 #asupancecan
+🔄 #asupanhijaber
+🔄 #asupanghea
+🔄 #asupanrika
+🔄 #asupansantuy
+🔄 #asupanukhty
+🔄 #attp
+🔄 #asahotak
 🔄 #bansos
-🔄 #blimit
-🔄 #claim
-🔄 #weekly
-🔄 #monthly
+🔄 #bdsm
+🔄 #berdagang
+🔄 #berkebon
+🔄 #blowjob
+🔄 #bkp
+🔄 #bully
+🔄 #brainly
+🔄 #berburu
+🔄 #cecan
+🔄 #cecanchina
+🔄 #cecanhijaber
+🔄 #cecanindo
+🔄 #cecanjapan
+🔄 #cecanjustinaxie
+🔄 #cecankorea
+🔄 #cecanmalay
+🔄 #cecanthailand
+🔄 #cevanvietnam
+🔄 #delcheat
+🔄 #duel
+🔄 #glasses
+🔄 #filebokep
+🔄 #femdom
+🔄 #foot
+🔄 #foxgirl
+🔄 #hololewd
+🔄 #happy
+🔄 #lewdkemo
+🔄 #loli
+🔄 #nabung
+🔄 #ngewe
+🔄 #ngentod
+🔄 #ngocok
+🔄 #tembak
+🔄 #wink
 
 
-「 Maret 7 」
+「 Maret 15 」
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['lastupdate'] 
 handler.tags = ['info'] 

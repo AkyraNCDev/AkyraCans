@@ -3,9 +3,7 @@ let fetch = require('node-fetch')
 let pp = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=Source+code'
 let info = `╭═[ SCRIPT ]═────···
 ┴
-│ Enc 100% : Free
-│ Enc 50% : 30K
-│ Enc 0% : 50K
+│ Buy 100K (Chat Owner)
 ┬
 ╰──────────═┅═──────────
 [❗] Jangan Diperjual Belikan Tanpa Seizin Owner

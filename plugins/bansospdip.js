@@ -18,12 +18,12 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
     let user = global.db.data.users[m.sender]
     if (new Date - global.db.data.users[m.sender].lastbansos4 > 300000) {
       if (Aku > Kamu) {
-        conn.sendFile( m.chat, kbansos, 'b.jpg', `Kamu Korupsi Dana Bansos Tapi Kamu TertangkapðŸš“\n\nAkibatnya Kamu Harus Membayar\nðŸ“‰Denda Sebesar Rp 1,000,000,000`, m)
-        user.money -= 1000000000
+        conn.sendFile( m.chat, kbansos, 'b.jpg', `Kamu Korupsi Dana Bansos Tapi Kamu TertangkapðŸš“\n\nAkibatnya Kamu Harus Membayar\nðŸ“‰Denda Sebesar Rp 1,000,000,000,000`, m)
+        user.money -= 1000000000000
         global.db.data.users[m.sender].lastbansos4 = new Date * 1
       } else if (Aku < Kamu) {
-        user.money += 1000000000
-        conn.sendFile( m.chat, mbansos, 'b.jpg', `Selamat Kamu Berhasil Korupsi Dana BansosðŸ’¸\n\nHasilnya Kamu Mendapatkan\nðŸ“ˆUang Sebesar Rp 1,000,000,000`, m)
+        user.money += 1000000000000
+        conn.sendFile( m.chat, mbansos, 'b.jpg', `Selamat Kamu Berhasil Korupsi Dana BansosðŸ’¸\n\nHasilnya Kamu Mendapatkan\nðŸ“ˆUang Sebesar Rp 1,000,000,000,000`, m)
         global.db.data.users[m.sender].lastbansos4 = new Date * 1
       } else {
         conn.sendButton( m.chat, `Yahh Kamu Gagal Dalam Korupsi, Mungkin Gak Punya Keahlian KorupsiðŸ¤£\n\nKamu Juga Tidak Masuk Penjara Karna Kamu Melarikan DiriðŸƒ`, `${botol}`, `Kembali`, `${usedPrefix}menu`, m)
@@ -35,13 +35,13 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
   }
 }
 
-handler.help = ['bansospdip']
+handler.help = ['korupsi9']
 handler.tags = ['rpg']
-handler.command = /^(bansospdip)$/i
+handler.command = /^(korupsi9)$/i
 handler.premium = false
 handler.register = true
-handler.limit = 200
-handler.level = 777
+handler.limit = 700
+handler.level = 370
 
 handler.fail = null
 

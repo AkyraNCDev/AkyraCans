@@ -26,9 +26,8 @@ handler.private = false
 
 handler.register = true
 
-handler.limit = 3
+handler.limit = 5
 
-handler.level = 14
 
 
 handler.admin = false

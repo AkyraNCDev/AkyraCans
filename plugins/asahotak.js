@@ -1,6 +1,6 @@
 const fetch = require('node-fetch')
 let timeout = 120000
-let poin = 500
+let poin = 5000
 let handler = async (m, { conn, usedPrefix }) => {
     conn.asahotak = conn.asahotak ? conn.asahotak : {}
     let id = m.chat
@@ -17,7 +17,7 @@ Pertanyaan
 ${json.soal}
 
 ⏱️Timeout ${(timeout / 1000).toFixed(2)} Detik
-❔Ketik ${usedPrefix}ao Untuk Bantuan
+🔎Ketik ${usedPrefix}ao Untuk Bantuan
 🎁Bonus: ${poin} XP
     `.trim()
     conn.asahotak[id] = [
@@ -34,5 +34,4 @@ handler.tags = ['game']
 handler.command = /^asahotak/i
 handler.register = true
 handler.limit = true
-handler.level = 15
 module.exports = handler

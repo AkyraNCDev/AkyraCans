@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
 await m.reply(global.wait)
-  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random/kanna?apikey=LOLKONTOL09', '', '', m)
+  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random/kanna?apikey=AryaKey', '', '', m)
 }
 handler.help = ['kanna']
 handler.tags = ['anime']

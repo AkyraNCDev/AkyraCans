@@ -3,7 +3,7 @@ let handler = async (m, { conn, args }) => {
    response = args.join(' ')
   if (!args) throw 'Masukkan Parameter'
   m.reply('Sedang Diproses...')
-  let res = `https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=holoEro&apikey=hardianto`
+  let res = `https://api.lolhuman.xyz/api/random2/holoero?apikey=AryaKey`
   conn.sendFile(m.chat, res, 'pussy.jpg', ``, m, false)
 }
 handler.help = ['holoero'].map(v => v + ' ')
@@ -20,6 +20,6 @@ handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.limit = false
+handler.limit = 4
 
 module.exports = handler

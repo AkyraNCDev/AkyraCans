@@ -110,8 +110,6 @@ handler.help = ['berburu']
 handler.tags = ['rpg']
 handler.command = /^(berburu)$/i
 handler.register = true
-handler.limit = 3
-handler.level = 5
 module.exports = handler
 function clockString(ms) {
   let h = Math.floor(ms / 3600000)

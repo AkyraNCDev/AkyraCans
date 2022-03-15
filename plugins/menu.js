@@ -259,7 +259,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "footerText": `
 ⊚━━━━━❮ 𝗗𝗔𝗦𝗛𝗕𝗢𝗔𝗥𝗗
 ╓ ⊚ ❭━━━━━━━━━━━━━━━━━┈─•
-╟╮  ⊚┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟨ V16
+╟╮  ⊚┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟨ V19
 ║╽❖ ᴀᴋᴛғɪ sᴇʟᴀᴍᴀ ${uptime}
 ║╽❖ ʙᴀᴛᴇʀᴀɪ ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? 'ᴘᴇɴɢɪsɪᴀɴ' : ''}` : 'ᴛɪᴅᴀᴋ ᴅɪᴋᴇᴛᴀʜᴜɪ'}
 ║╽❖ ᴘʀᴇғɪx : [ᴍᴜʟᴛɪ]
@@ -275,7 +275,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   ┳ │                  𝗬𝗼𝘂𝗿 𝗜𝗻𝗳𝗼
   ╽ ┠❖ Name ${name}
   ╽ ┠❖ Age ${age} 
-  ╽ ┠❖ Limit ${age}
+  ╽ ┠❖ Limit ${limit}
   ╽ ┠❖ Role ${role}
   ╽ ┠❖ Level ${level}
   ╰ ┠❖ Money ${money}
@@ -451,7 +451,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                 "description": "                                        ꜱᴄ ʙᴏᴛ",
                                 "rowId": ".sc"
                                 }, {
-                                "title": ".                    🎖️❯╾𝗧𝗛??𝗡𝗞𝗦 𝗧𝗢╼",
+                                "title": ".                    🎖️❯╾𝗧????𝗡𝗞𝗦 𝗧𝗢╼",
                                 "description": "ᴛᴇʀɪᴍᴀ ᴋᴀꜱɪʜ ᴜɴᴛᴜᴋ ᴜꜱᴇʀ ʏᴀɴɢ ʙᴇʀᴘᴀʀᴛɪꜱɪᴘᴀꜱɪ",
                                 "rowId": ".? thnks"
                                 }],

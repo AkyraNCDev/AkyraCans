@@ -29,7 +29,7 @@ let handler = async ( m, { conn, args, command}) => {
      if (/duel/.test(command)) {
        if (!who) return m.reply('Tag Yang Ingin Di Ajak Duel\n\Contoh: #duel @user')
 
-     let pler = `@${m.sender.replace(/@.+/, '')} Mengajak Duel ${args[0]}\n\nPilih Ya Atau No`
+     let pler = `@${m.sender.replace(/@.+/, '')} Mengajak Duel ${args[0]}\n\nKirim #dya Untuk Menerima\nKirim #dno Untuk Menolak`
      let mentionedJid = [m.sender]
 
        if (new Date - user.lastduel > 300000) {

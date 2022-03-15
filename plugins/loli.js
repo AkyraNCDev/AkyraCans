@@ -6,6 +6,5 @@ handler.help = ['loli']
 handler.tags = ['anime']
 handler.command = /^(loli)$/i
 handler.limit = 3
-handler.level = 10
 handler.register = true
 module.exports = handler
