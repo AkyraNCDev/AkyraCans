@@ -625,11 +625,11 @@ module.exports = {
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `*❗Limit Request Tidak Cukup*\n\nSilahkan Beli Melalui ${usedPrefix}blimit`, m)
+            this.reply(m.chat, `*「 LESS LIMIT 」❗Diperlukan ${plugin.limit} Limit Untuk Menggunakan Fitur Ini*\n\nLimit Kamu ${_user.limit}🎟️\n\nSilahkan Beli Melalui ${usedPrefix}blimit`, m)
             continue // Limit habis
           }
           if (plugin.level > _user.level) {
-            this.reply(m.chat, `「 LOW LEVEL 」\n❗Diperlukan Level ${plugin.level} Untuk Menggunakan Perintah Ini,\n\nLevel Kamu ${_user.level}📊`, m)
+            this.reply(m.chat, `「 LOW LEVEL 」\n❗Diperlukan Level ${plugin.level} Untuk Menggunakan Fitur Ini,\n\nLevel Kamu ${_user.level}📊\n\nSilahkan Cek Menu RPG/Game/Fun Untuk Mendapatkan EXP`, m)
             continue // If the level has not been reached
           }
           let extra = {
