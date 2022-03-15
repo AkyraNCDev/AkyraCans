@@ -625,7 +625,7 @@ module.exports = {
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `*「 LESS LIMIT 」❗Diperlukan ${plugin.limit} Limit Untuk Menggunakan Fitur Ini*\n\nLimit Kamu ${_user.limit}🎟️\n\nSilahkan Beli Melalui ${usedPrefix}blimit`, m)
+            this.reply(m.chat, `*「 LESS LIMIT 」\n❗Diperlukan ${plugin.limit} Limit Untuk Menggunakan Fitur Ini*\n\nLimit Kamu ${_user.limit}🎟️\n\nSilahkan Beli Melalui ${usedPrefix}blimit`, m)
             continue // Limit habis
           }
           if (plugin.level > _user.level) {
