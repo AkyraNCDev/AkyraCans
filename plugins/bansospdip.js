@@ -4,8 +4,8 @@ let fs = require('fs')
 let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
   try {
     global.DATABASE.data.users[m.sender].lastbansos4 = global.db.data.users[m.sender].lastbansos4 || 0
-    let randomaku = `${Math.floor(Math.random() * 107)}`.trim()
-    let randomkamu = `${Math.floor(Math.random() * 95)}`.trim() //hehe Biar Susah Menang :v
+    let randomaku = `${Math.floor(Math.random() * 109)}`.trim()
+    let randomkamu = `${Math.floor(Math.random() * 90)}`.trim() //hehe Biar Susah Menang :v
     let Aku = (randomaku * 1)
     let Kamu = (randomkamu * 1)
     let kbansos = './lib/kbansos.jpg'
@@ -18,30 +18,30 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
     let user = global.db.data.users[m.sender]
     if (new Date - global.db.data.users[m.sender].lastbansos4 > 300000) {
       if (Aku > Kamu) {
-        conn.sendFile( m.chat, kbansos, 'b.jpg', `Kamu Korupsi Dana Bansos Tapi Kamu Tertangkap🚓\n\nAkibatnya Kamu Harus Membayar\n📉Denda Sebesar Rp 10,000,000`, m)
-        user.money -= 10000000
+        conn.sendFile( m.chat, kbansos, 'b.jpg', `Kamu Korupsi Dana Bansos Tapi Kamu TertangkapðŸš“\n\nAkibatnya Kamu Harus Membayar\nðŸ“‰Denda Sebesar Rp 1,000,000,000,000`, m)
+        user.money -= 1000000000000
         global.db.data.users[m.sender].lastbansos4 = new Date * 1
       } else if (Aku < Kamu) {
-        user.money += 10000000
-        conn.sendFile( m.chat, mbansos, 'b.jpg', `Selamat Kamu Berhasil Korupsi Dana Bansos💸\n\nHasilnya Kamu Mendapatkan\n📈Uang Sebesar Rp 10,000,000`, m)
+        user.money += 1000000000000
+        conn.sendFile( m.chat, mbansos, 'b.jpg', `Selamat Kamu Berhasil Korupsi Dana BansosðŸ’¸\n\nHasilnya Kamu Mendapatkan\nðŸ“ˆUang Sebesar Rp 1,000,000,000,000`, m)
         global.db.data.users[m.sender].lastbansos4 = new Date * 1
       } else {
-        conn.sendButton( m.chat, `Yahh Kamu Gagal Dalam Korupsi, Mungkin Gak Punya Keahlian Korupsi🤣\n\nKamu Juga Tidak Masuk Penjara Karna Kamu Melarikan Diri🏃`, `${botol}`, `Kembali`, `${usedPrefix}menu`, m)
+        conn.sendButton( m.chat, `Yahh Kamu Gagal Dalam Korupsi, Mungkin Gak Punya Keahlian KorupsiðŸ¤£\n\nKamu Juga Tidak Masuk Penjara Karna Kamu Melarikan DiriðŸƒ`, `${botol}`, `Kembali`, `${usedPrefix}menu`, m)
         global.db.data.users[m.sender].lastbansos4 = new Date * 1
       }
-    } else conn.sendButton(m.chat, `Tadi Sudah Korupsi, Kapan² Lagi Aja💰\n\nDan Kamu Harus Menunggu Selama Agar Bisa Korupsi Bansos Kembali \n▸ 🕓 *${timers}*`, `${botol}`, `⋮☰ Menu`, `${usedPrefix}menu`, m)
+    } else conn.sendButton(m.chat, `Tadi Sudah Korupsi, KapanÂ² Lagi AjaðŸ’°\n\nDan Kamu Harus Menunggu Selama Agar Bisa Korupsi Bansos Kembali \nâ–¸ ðŸ•“ *${timers}*`, `${botol}`, `â‹®â˜° Menu`, `${usedPrefix}menu`, m)
   } catch (e) {
     throw `${e}`
   }
 }
 
-handler.help = ['korupsi4']
+handler.help = ['korupsi9']
 handler.tags = ['rpg']
-handler.command = /^(korupsi4)$/i
+handler.command = /^(korupsi9)$/i
 handler.premium = false
 handler.register = true
-handler.limit = 10
-handler.level = 10
+handler.limit = 700
+handler.level = 370
 
 handler.fail = null
 

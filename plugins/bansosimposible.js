@@ -3,31 +3,31 @@ let fs = require('fs')
 
 let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
   try {
-    global.DATABASE.data.users[m.sender].lastbansos3 = global.db.data.users[m.sender].lastbansos3 || 0
-    let randomaku = `${Math.floor(Math.random() * 106)}`.trim()
-    let randomkamu = `${Math.floor(Math.random() * 94)}`.trim() //hehe Biar Susah Menang :v
+    global.DATABASE.data.users[m.sender].lastbansos5 = global.db.data.users[m.sender].lastbansos5 || 0
+    let randomaku = `${Math.floor(Math.random() * 105)}`.trim()
+    let randomkamu = `${Math.floor(Math.random() * 95)}`.trim() //hehe Biar Susah Menang :v
     let Aku = (randomaku * 1)
     let Kamu = (randomkamu * 1)
     let kbansos = './lib/kbansos.jpg'
     let mbansos = './lib/mbansos.jpg'
     let botol = global.botwm
     //let name = conn.getName[m.sender]
-    let __timers = (new Date - global.db.data.users[m.sender].lastbansos3)
+    let __timers = (new Date - global.db.data.users[m.sender].lastbansos5)
     let _timers = (604800000 - __timers) 
     let timers = clockString(_timers)
     let user = global.db.data.users[m.sender]
-    if (new Date - global.db.data.users[m.sender].lastbansos3 > 300000) {
+    if (new Date - global.db.data.users[m.sender].lastbansos5 > 300000) {
       if (Aku > Kamu) {
-        conn.sendFile( m.chat, kbansos, 'b.jpg', `Kamu Korupsi Dana Bansos Tapi Kamu Tertangkap🚓\n\nAkibatnya Kamu Harus Membayar\n📉Denda Sebesar Rp 1,000,000`, m)
-        user.money -= 1000000
-        global.db.data.users[m.sender].lastbansos3 = new Date * 1
+        conn.sendFile( m.chat, kbansos, 'b.jpg', `Kamu Korupsi Dana Bansos Tapi Kamu Tertangkap🚓\n\nAkibatnya Kamu Harus Membayar\n📉Denda Sebesar Rp 100,000,000`, m)
+        user.money -= 100000000
+        global.db.data.users[m.sender].lastbansos5 = new Date * 1
       } else if (Aku < Kamu) {
-        user.money += 1000000
-        conn.sendFile( m.chat, mbansos, 'b.jpg', `Selamat Kamu Berhasil Korupsi Dana Bansos💸\n\nHasilnya Kamu Mendapatkan\n📈Uang Sebesar Rp 1,000,000`, m)
-        global.db.data.users[m.sender].lastbansos3 = new Date * 1
+        user.money += 100000000
+        conn.sendFile( m.chat, mbansos, 'b.jpg', `Selamat Kamu Berhasil Korupsi Dana Bansos💸\n\nHasilnya Kamu Mendapatkan\n📈Uang Sebesar Rp 100,000,000`, m)
+        global.db.data.users[m.sender].lastbansos5 = new Date * 1
       } else {
         conn.sendButton( m.chat, `Yahh Kamu Gagal Dalam Korupsi, Mungkin Gak Punya Keahlian Korupsi🤣\n\nKamu Juga Tidak Masuk Penjara Karna Kamu Melarikan Diri🏃`, `${botol}`, `Kembali`, `${usedPrefix}menu`, m)
-        global.db.data.users[m.sender].lastbansos3 = new Date * 1
+        global.db.data.users[m.sender].lastbansos5 = new Date * 1
       }
     } else conn.sendButton(m.chat, `Tadi Sudah Korupsi, Kapan² Lagi Aja💰\n\nDan Kamu Harus Menunggu Selama Agar Bisa Korupsi Bansos Kembali \n▸ 🕓 *${timers}*`, `${botol}`, `⋮☰ Menu`, `${usedPrefix}menu`, m)
   } catch (e) {
@@ -35,13 +35,13 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
   }
 }
 
-handler.help = ['korupsi3']
+handler.help = ['korupsi5']
 handler.tags = ['rpg']
-handler.command = /^(korupsi3)$/i
+handler.command = /^(korupsi5)$/i
 handler.premium = false
 handler.register = true
-handler.limit = 5
-handler.level = 7
+handler.limit = 20
+handler.level = 20
 handler.fail = null
 
 module.exports = handler
