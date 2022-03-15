@@ -4,8 +4,8 @@ let fs = require('fs')
 let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
   try {
     global.DATABASE.data.users[m.sender].lastbansos4 = global.db.data.users[m.sender].lastbansos4 || 0
-    let randomaku = `${Math.floor(Math.random() * 109)}`.trim()
-    let randomkamu = `${Math.floor(Math.random() * 90)}`.trim() //hehe Biar Susah Menang :v
+    let randomaku = `${Math.floor(Math.random() * 140)}`.trim()
+    let randomkamu = `${Math.floor(Math.random() * 55)}`.trim() //hehe Biar Susah Menang :v
     let Aku = (randomaku * 1)
     let Kamu = (randomkamu * 1)
     let kbansos = './lib/kbansos.jpg'
