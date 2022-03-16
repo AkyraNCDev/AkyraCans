@@ -285,7 +285,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
      
                ${week}, ${date}
 
-Bot's Official Group Chat
 https://chat.whatsapp.com/CvzDovqBFsxEd52abw0TkD`,
           "buttonText": "𝗠𝗘𝗡𝗨",
           "listType": "SINGLE_SELECT",
