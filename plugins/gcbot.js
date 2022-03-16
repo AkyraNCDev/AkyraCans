@@ -4,7 +4,7 @@ let botol = global.botwm
 let str = `
 ✧────[ 𝗚𝗥𝗢𝗨𝗣 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟 ]───✧
 👥 Group 1 :
-https://chat.whatsapp.com/FQZcB1IaelbDkEdVWF313Z
+https://chat.whatsapp.com/CvzDovqBFsxEd52abw0TkD
 ✧──────────···──────────✧
 
 ℹ️Kalau Penuh Buat Lagi...
