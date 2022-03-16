@@ -50,7 +50,7 @@ function pickRandom(list) {
 }*/
 
 global.DeveloperMode = 'false' //Buat Mode True False Moderator
-global.linkGC = ['https://chat.whatsapp.com/FQZcB1IaelbDkEdVWF313Z'] // ganti jadi group lu
+global.linkGC = ['https://chat.whatsapp.com/CvzDovqBFsxEd52abw0TkD'] // ganti jadi group lu
 global.owner = ['6281347927862','6285163083750'] // Put your number here
 global.mods = [] // Want some help?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Premium user has unlimited limit
