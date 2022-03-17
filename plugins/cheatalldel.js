@@ -6,6 +6,7 @@ let handler = async (m, { conn }) => {
         global.db.data.users[m.sender].money = 0
         global.db.data.users[m.sender].limit = 0
         global.db.data.users[m.sender].level = 0
+        global.db.data.users[m.sender].exp = 0
         
 }
 handler.help = ['delcheat']
