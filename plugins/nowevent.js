@@ -4,7 +4,7 @@ let handler = async m => m.reply(`
 *🚫 Event Closed*
 
 *📆Tanggal Main Event*
-     *17 Maret - Selasa 3 Mei*
+     *20 Maret - Selasa 3 Mei*
 
 *Hari Puncak 31 Maret🌋*
 `.trim()) // Tambah sendiri kalo mau
