@@ -43,6 +43,8 @@ module.exports = {
             if (!user.rtrofi) user.rtrofi = 'Perunggu'
             if (!isNumber(user.troopcamp)) user.troopcamp = 0
             if (!isNumber(user.coin)) user.coin = 0
+            if (!isNumber(user.cameltoken)) user.cameltoken = 0
+            if (!isNumber(user.kurmatoken)) user.kurmatoken = 0
             if (!isNumber(user.atm)) user.atm = 0
             if (!isNumber(user.limit)) user.limit = 20
             if (!isNumber(user.glimit)) user.glimit = 20
@@ -208,6 +210,7 @@ module.exports = {
             if (!isNumber(user.lastcodereg)) user.lastcodereg = 0
             if (!isNumber(user.lastdagang)) user.lastdagang = 0
             if (!isNumber(user.lasthourly)) user.lasthourly = 0
+            if (!isNumber(user.lastramadhan)) user.lastramadhan = 0
             if (!isNumber(user.lastweekly)) user.lastweekly = 0
             if (!isNumber(user.lastmonthly)) user.lastmontly = 0
             if (!isNumber(user.lastIstigfar)) user.lastIstigfar = 0
@@ -265,6 +268,8 @@ module.exports = {
             pc : 0,
             exp: 0,
             coin: 0,
+            cameltoken: 0,
+            kurmatoken: 0,
             atm: 0,
             limit: 20,
             tigame: 50,
@@ -378,6 +383,7 @@ module.exports = {
             lastduel: 0,
             lastmining: 0,
             lasthourly: 0,
+            lastramadhan: 0,
             lasthunt: 0,
             lastweekly: 0,
             lastmonthly: 0,
@@ -625,11 +631,11 @@ module.exports = {
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `*「 LESS LIMIT 」\n❗Diperlukan ${plugin.limit} Limit Untuk Menggunakan Fitur Ini*\n\nLimit Kamu ${_user.limit}🎟️\n\nSilahkan Beli Melalui ${usedPrefix}blimit`, m)
+            this.reply(m.chat, `*「 LESS LIMIT 」*\n❗Diperlukan ${plugin.limit} Limit Untuk Menggunakan Fitur Ini\nLimit Kamu ${_user.limit}🎟️\n\nSilahkan Beli Melalui ${usedPrefix}blimit`, m)
             continue // Limit habis
           }
           if (plugin.level > _user.level) {
-            this.reply(m.chat, `「 LOW LEVEL 」\n❗Diperlukan Level ${plugin.level} Untuk Menggunakan Fitur Ini,\n\nLevel Kamu ${_user.level}📊\n\nSilahkan Cek Menu RPG/Game/Fun Untuk Mendapatkan EXP`, m)
+            this.reply(m.chat, `*「 LOW LEVEL 」*\n❗Diperlukan Level ${plugin.level} Untuk Menggunakan Fitur Ini,\nLevel Kamu ${_user.level}📊\n\nSilahkan Cek Menu RPG & Game Untuk Mendapatkan EXP`, m)
             continue // If the level has not been reached
           }
           let extra = {
