@@ -285,12 +285,17 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
      
                ${week}, ${date}
 
-https://chat.whatsapp.com/CvzDovqBFsxEd52abw0TkD`,
+𝗥𝗔𝗠𝗔𝗗𝗛𝗔𝗡 𝗘𝗩𝗘𝗡𝗧 𝗜𝗦 𝗖𝗢𝗠𝗜𝗡𝗚🔥
+Cek Dengan Cara #rd`,
           "buttonText": "𝗠𝗘𝗡𝗨",
           "listType": "SINGLE_SELECT",
           "sections": [
                             {
                                 "rows": [{
+                                	      "title": "            ☪️ ❯╾ 𝗥𝗔𝗠𝗔𝗗𝗛𝗔𝗡 𝟮𝟬𝟮𝟮  ╼ ",
+                                         "description": "                     ᴇᴠᴇɴᴛ ʀᴀᴍᴅʜᴀɴ ᴛᴀʜᴜɴ 2022",
+                                         "rowId": ".rd"
+                                    }, {
                                          "title": "                        📊 ❯╾ 𝗦𝗧𝗔𝗧𝗨𝗦 ╼ ",
                                          "description": "                  ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ꜱᴛᴀᴛᴜꜱ ʀɪᴋᴋᴀ ʙᴏᴛ",
                                          "rowId": ".botstat"
