@@ -254,12 +254,12 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `✧──────···[ 🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 ]···──────✧`.trim(),
+          "title": `✧────···[ 🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 ]···────✧`.trim(),
           "description": `${ucapan()}, ${name} !`.trim(),
           "footerText": `
 ⊚━━━━━❮ 𝗗𝗔𝗦𝗛𝗕𝗢𝗔𝗥𝗗
-╓ ⊚ ❭━━━━━━━━━━━━━━━━━━┈─•
-╟╮  ⊚┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟨ V16
+╓ ⊚ ❭━━━━━━━━━━━━━━━━━┈─•
+╟╮  ⊚┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟨ V19
 ║╽❖ ᴀᴋᴛғɪ sᴇʟᴀᴍᴀ ${uptime}
 ║╽❖ ʙᴀᴛᴇʀᴀɪ ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? 'ᴘᴇɴɢɪsɪᴀɴ' : ''}` : 'ᴛɪᴅᴀᴋ ᴅɪᴋᴇᴛᴀʜᴜɪ'}
 ║╽❖ ᴘʀᴇғɪx : [ᴍᴜʟᴛɪ]
@@ -269,17 +269,36 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ║╽❖ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} ᴄʜᴀᴛ ᴛᴇʀʙᴀɴɴᴇᴅ
 ║╽❖ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} ᴘᴇɴɢɢᴜɴᴀ ᴛᴇʀʙᴀɴɴᴇᴅ
 ╟╯╭╼╼╼╼╼╼╼╼╼╼╼╼╼╼┈─•
-╠═╯  Free to Add 1 Day Trial
-║ • 𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 Is The Best
-╰━━━━━━━━━━━━━━━━━━━━┈─◂
+╠═╯  𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 Is The Best
+║ • Free To Add With Conditions
+╰━┯━━━━━━━━━━━━━━━━━━┈─◂
+  ┳ │                  𝗬𝗼𝘂𝗿 𝗜𝗻𝗳𝗼
+  ╽ ┠❖ Name ${name}
+  ╽ ┠❖ Age ${age} 
+  ╽ ┠❖ Limit ${limit}
+  ╽ ┠❖ Role ${role}
+  ╽ ┠❖ Level ${level}
+  ╰ ┠❖ Money ${money}
+  ⊚━━━━━━━━━━━━━━━━━━┈─◂
+      
         ▌│█║▌║▌║║▌║▌║█│▌█ ▌
      
-     ${week}, ${date}`,
+               ${week}, ${date}
+
+𝗥𝗔𝗠𝗔𝗗𝗛𝗔𝗡 𝗘𝗩𝗘𝗡𝗧 𝗜𝗦 𝗖𝗢𝗠𝗜𝗡𝗚🔥
+Cek Dengan Cara #rd
+
+Official Group Chat Bot
+https://chat.whatsapp.com/CvzDovqBFsxEd52abw0TkD`,
           "buttonText": "𝗠𝗘𝗡𝗨",
           "listType": "SINGLE_SELECT",
           "sections": [
                             {
                                 "rows": [{
+                                	      "title": "            ☪️ ❯╾ 𝗥𝗔𝗠𝗔𝗗𝗛𝗔𝗡 𝟮𝟬𝟮𝟮  ╼ ",
+                                         "description": "                     ᴇᴠᴇɴᴛ ʀᴀᴍᴅʜᴀɴ ᴛᴀʜᴜɴ 2022",
+                                         "rowId": ".rd"
+                                    }, {
                                          "title": "                        📊 ❯╾ 𝗦𝗧𝗔𝗧𝗨𝗦 ╼ ",
                                          "description": "                  ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ꜱᴛᴀᴛᴜꜱ ʀɪᴋᴋᴀ ʙᴏᴛ",
                                          "rowId": ".botstat"
@@ -295,6 +314,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                          "title": "                        👨‍💻 ❯╾ 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 ╼ ",
                                          "description": "                            ᴋᴏɴᴛᴀᴋ ᴄʀᴇᴀᴛᴏʀᴋᴜ <3",
                                          "rowId": ".nowner"
+                                    }, {
+                                         "title": "                     ⏫ ❯╾ 𝗟𝗔𝗦𝗧 𝗨𝗣𝗗𝗔𝗧𝗘 ╼ ",
+                                         "description": "              ɪɴғᴏʀᴍᴀsɪ ᴜᴘᴅᴀᴛᴇ ᴛᴇʀᴀᴋʜɪʀ ᴋᴀʟɪ ʙᴏᴛ",
+                                         "rowId": ".lastupdate"
                        }],
                     "title": "✧────────────[ 𝐒𝐓𝐀𝐓𝐒 ]───────────────✧"
                 }, {
@@ -438,7 +461,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                 "description": "                                        ꜱᴄ ʙᴏᴛ",
                                 "rowId": ".sc"
                                 }, {
-                                "title": ".                    🎖️❯╾𝗧𝗛𝗔𝗡𝗞𝗦 𝗧𝗢╼",
+                                "title": ".                    🎖️❯╾𝗧????𝗡𝗞𝗦 𝗧𝗢╼",
                                 "description": "ᴛᴇʀɪᴍᴀ ᴋᴀꜱɪʜ ᴜɴᴛᴜᴋ ᴜꜱᴇʀ ʏᴀɴɢ ʙᴇʀᴘᴀʀᴛɪꜱɪᴘᴀꜱɪ",
                                 "rowId": ".? thnks"
                                 }],
@@ -537,7 +560,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
 
   logo2 = global.logo
-  kanna = fs.readFileSync('./src/logo3.jpg')
+  kanna = fs.readFileSync('./src/logo4.jpg')
   kannaImg = (await conn.prepareMessage('0@s.whatsapp.net', kanna, MessageType.image, { thumbnail: Buffer.alloc(0) })).message.imageMessage
   sumberImg = await (await fetch(fla + teks + ' menu')).buffer()
   image = (await conn.prepareMessage('0@s.whatsapp.net', logo2, MessageType.image, { thumbnail: Buffer.alloc(0) })).message.imageMessage
