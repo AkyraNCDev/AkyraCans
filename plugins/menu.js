@@ -286,7 +286,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                ${week}, ${date}
 
 𝗥𝗔𝗠𝗔𝗗𝗛𝗔𝗡 𝗘𝗩𝗘𝗡𝗧 𝗜𝗦 𝗖𝗢𝗠𝗜𝗡𝗚🔥
-Cek Dengan Cara #rd`,
+Cek Dengan Cara #rd
+
+Official Group Chat Bot
+https://chat.whatsapp.com/CvzDovqBFsxEd52abw0TkD`,
           "buttonText": "𝗠𝗘𝗡𝗨",
           "listType": "SINGLE_SELECT",
           "sections": [
