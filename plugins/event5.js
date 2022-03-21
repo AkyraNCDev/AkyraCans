@@ -85,8 +85,8 @@ let date = global.botdate
     let kardus = global.db.data.users[m.sender].kardus
     let botol = global.db.data.users[m.sender].botol
     let arlok = global.db.data.users[m.sender].arlok
-    let limit = global.db.data.users[m.sender].limit
-    let glimit = global.db.data.users[m.sender].glimit
+    let Limit + Legendary 100 = global.db.data.users[m.sender].Limit + Legendary 100
+    let gLimit + Legendary 100 = global.db.data.users[m.sender].gLimit + Legendary 100
     let sampah = global.db.data.users[m.sender].sampah
     let anggur = global.db.data.users[m.sender].anggur
     let jeruk = global.db.data.users[m.sender].jeruk
@@ -104,7 +104,7 @@ let date = global.botdate
     let sortedarlok = Object.entries(global.db.data.users).sort((a, b) => b[1].arlok - a[1].arlok)
     let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
     let sortedexp = Object.entries(global.db.data.users).sort((a, b) => b[1].exp - a[1].exp)
-    let sortedlimit = Object.entries(global.db.data.users).sort((a, b) => b[1].limit - a[1].limit)
+    let sortedLimit + Legendary 100 = Object.entries(global.db.data.users).sort((a, b) => b[1].Limit + Legendary 100 - a[1].Limit + Legendary 100)
     let sorteddiamond = Object.entries(global.db.data.users).sort((a, b) => b[1].diamond - a[1].diamond)
     let sortedpotion = Object.entries(global.db.data.users).sort((a, b) => b[1].potion - a[1].potion)
     let sortedsampah = Object.entries(global.db.data.users).sort((a, b) => b[1].sampah - a[1].sampah)
@@ -119,7 +119,7 @@ let date = global.botdate
     let userspotion = sortedpotion.map(v => v[0])
     let userssampah = sortedsampah.map(v => v[0])
     let usersexp = sortedexp.map(v => v[0])
-    let userslimit = sortedlimit.map(v => v[0])
+    let usersLimit + Legendary 100 = sortedLimit + Legendary 100.map(v => v[0])
     let userslevel = sortedlevel.map(v => v[0])
     let userscommon = sortedcommon.map(v => v[0])
     let usersuncommon = sorteduncommon.map(v => v[0])
@@ -155,22 +155,40 @@ Dimulai 2 April ⏳
 
 𝗧𝗢𝗣 𝗟𝗘𝗔𝗗𝗘𝗥𝗕𝗢𝗔𝗥𝗗
 
-*Tepat Pukul 23:59 Pada Tanggal 2 Mei Leaderboard Akan Dicatat Dan Top 1 Sampai 10 Akan Mendapatkan Hadiah:*
-Hanya Berlaku Di Leaderboard
- •  Level
- 
+*Kuasai Sebanyak Banyaknya Top 1 Untuk Mendapatkan Hadiah Sesuai Ketentuan Dibawah Ini*
 
-PRESENT
-1St       1M Money + 10K Limit
-2Nd      900Jt Money + 9K Limit
-3Rd      800Jt Money + 8K Limit
-4Th      700Jt Money + 7K Limit
-5Th      600Jt Money + 6K Limit
-6Th      500Jt Money + 5K Limit
-7Th      400Jt Money + 4K Limit
-8Th      300Jt Money + 3K Limit
-9Th      200Jt Money + 2K Limit
-10Th   100Jt Money + 1K Limit
+13 Top 1 - 3M + 30Rb Limit + Legendary 3000
+12 Top 1 - 2M + 20Rb Limit + Legendary 2000
+11 Top 1 - 1M + 10Rb Limit + Legendary 1000
+10 Top 1 - 1M + 10Rb Limit + Legendary 1000
+09 Top 1 - 900Jt + 9Rb Limit + Legendary 900
+08 Top 1 - 800Jt + 8Rb Limit + Legendary 800
+07 Top 1 - 700Jt + 7Rb Limit + Legendary 700
+06 Top 1 - 600Jt + 6Rb Limit + Legendary 600
+05 Top 1 - 500Jt + 5Rb Limit + Legendary 500
+04 Top 1 - 400Jt + 4Rb Limit + Legendary 400
+03 Top 1 - 300Jt + 3Rb Limit + Legendary 300
+02 Top 1 - 200Jt + 2Rb Limit + Legendary 200
+01 Top 1 - 100Jt + 1Rb Limit + Legendary 100
+
+Untuk Leaderboard
+• Level
+• Exp
+• Money
+• Gold
+• Diamond
+• Arloji
+• Potion
+• Common
+• Uncommon
+• Mythic
+• Legendary
+• Sampah
+
+Top Leaderboard Dibekukan 23:59 2 Mei
+
+Bonus Untuk Minus Money
+*Kuasai Minimal 2 Top Leaderboard Untuk Mendapatkan Uang Sesuai Utang Kamu*
 
 
 ╭─────❒Your Token
