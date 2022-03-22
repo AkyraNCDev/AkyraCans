@@ -4,7 +4,7 @@ let handler = async(m, { conn, text }) => {
 
     if (!text) return conn.reply(m.chat, 'Harap Masukan Nama Film Animenya', m)
 
-	let res = await fetch(`https://api.lolhuman.xyz/api/lk21?apikey=rey2k21&query=${text}`)
+	let res = await fetch(`https://api.lolhuman.xyz/api/lk21?apikey=AryaKey&query=${text}`)
 	 json = await res.json()
   let {
     title,

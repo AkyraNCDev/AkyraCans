@@ -3,7 +3,7 @@ let handler = async (m, { conn, args }) => {
    response = args.join(' ')
   if (!args) throw 'Masukkan Parameter'
   m.reply('Sedang Diproses...')
-  let res = `https://api.xteam.xyz/asupan/wibu?apikey=MIMINETBOT`
+  let res = `https://api.xteam.xyz/asupan/wibu?apikey=d81ce7556c32afe3`
   conn.sendFile(m.chat, res, 'wibu.mp4', `wangy wangy wangy`, m, false)
 }
 handler.help = ['wibu'].map(v => v + ' ')

@@ -68,7 +68,7 @@ lolpentakill
     if (!teks) return conn.reply(m.chat, 'Uhm... Teksnya?', m)
 
   await m.reply('Sedang membuat...')
- let hasil = await (await fetch('https://api.xteam.xyz/photooxy/' + effect + '?text=' + teks + '&APIKEY=uhdahlah')).buffer()
+ let hasil = await (await fetch('https://api.xteam.xyz/photooxy/' + effect + '?text=' + teks + '&APIKEY=d81ce7556c32afe3')).buffer()
  let caption = `*PHOTOOXY*\n\nEffect : ${effect}`
 
     conn.sendFile(m.chat, hasil, 'photooxy.jpg', caption, m)

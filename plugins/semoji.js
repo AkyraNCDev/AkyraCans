@@ -168,5 +168,4 @@ Mau bikin stiker bisa 2/3 emoji? klik http://wa.me/6285159258830?text=%23stikere
 handler.help = ['semoji']
 handler.tags = ['sticker']
 handler.command = /^((s(tic?ker)?)?emo(ji)?)$/i
-handler.level = 10
 module.exports = handler

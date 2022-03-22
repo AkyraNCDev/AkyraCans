@@ -2,7 +2,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let id = m.chat
     conn.absen = conn.absen ? conn.absen : {}
     if (!(id in conn.absen)) {
-        await conn.sendButton(m.chat, `🔎 Tidak Ada Absen Berlangsung!`, wm , 'Mulai Absen', `${usedPrefix}mulaiabsen`, m)
+        await conn.sendButton(m.chat, `🔎 Tidak Ada Absen Berlangsung!`, wm , '𝐌𝐔𝐋𝐀𝐈 𝐀𝐁𝐒𝐄𝐍', `${usedPrefix}mulaiabsen`, m)
         throw false
     }
 
@@ -21,14 +21,12 @@ ${conn.absen[id][2]}
 ├✧ *Total: ${absen.length} ✧*
 ${list}
 ╰────···──────`.trim()
-    await conn.send2Button(m.chat, caption, wm, 'Absen', `${usedPrefix}absen`, 'Hapus', `${usedPrefix}hapusabsen`, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } })
+    await conn.send2Button(m.chat, caption, wm, '𝐀𝐁𝐒𝐄𝐍', `${usedPrefix}absen`, '𝐇𝐀𝐏𝐔𝐒', `${usedPrefix}hapusabsen`, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } })
 }
 handler.help = ['cekabsen']
 handler.tags = ['absen']
 handler.command = /^cekabsen$/i
 handler.register = true
-handler.limit = 2
-handler.level = 5
 module.exports = handler
 
 let wm = global.botwm

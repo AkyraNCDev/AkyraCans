@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
 await m.reply(global.wait)
-  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random2/wallpaper?apikey=rey2k21', '', '', m)
+  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random2/wallpaper?apikey=AryaKey', '', '', m)
 }
 handler.help = ['wallpaper']
 handler.tags = ['image']

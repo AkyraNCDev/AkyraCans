@@ -23,7 +23,7 @@ ${conn.absen[id][2]}
 │ Total: ${absen.length}
 ${list}
 ╰───────·····──────
-`,datebot + '\n' + wm, 'Absen', '.absen', 'Cek Absen', '.cekabsen', m, { contextInfo: { mentionedJid: absen } })
+`,datebot + '\n' + wm, '𝐀𝐁𝐒𝐄𝐍', '.absen', '𝐂𝐄𝐊 𝐀𝐁𝐒𝐄𝐍', '.cekabsen', m, { contextInfo: { mentionedJid: absen } })
 }
 handler.help = ['absen']
 handler.tags = ['absen']
@@ -31,6 +31,5 @@ handler.command = /^(absen|hadir)$/i
 handler.group = true
 module.exports = handler
 handler.register = true
-handler.limit = 1
 let wm = global.botwm
 let datebot = global.botdate

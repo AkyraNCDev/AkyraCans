@@ -18,7 +18,7 @@ try {
         let owgi = await conn.downloadAndSaveMediaMessage(ger)
         let anu = await imgbb("3b8594f4cb11895f4084291bc655e510", owgi)
         let file = `${anu.display_url}`
-        let pdf = await getBuffer(`http://api.lolhuman.xyz/api/convert/imgtopdf?apikey=31caf10e4a64e86c1a92bcba&img=${file}`)
+        let pdf = await getBuffer(`http://api.lolhuman.xyz/api/convert/imgtopdf?apikey=AryaKey&img=${file}`)
     await m.reply('Nihh')
    conn.sendFile(m.chat, pdf, 'file.pdf', '', m, false, { asDocument: true })
 

@@ -14,22 +14,22 @@ let handler = async (m, { conn }) => {
     let username = conn.getName(who)
     let wm = global.botwm
     let str = `
-╭───「 𝗩𝗔𝗨𝗟𝗧 」
-├─ 👤 Name : ${username}
-├─ 🆔 Nomor : ${require('awesome-phonenumber')(`+${m.sender.split('@')[0]}`).getNumber('international')}
-├─ ⭐ Premium : ${premium ? "Yes" :"No"}
-├─ 📅 Age : ${registered ? '' + age : ''}
-├─ 🏅 Role : ${role}
-├─ 🎫 Limit : ${limit}
-├─ 🎟 ️Limit Game : ${tigame}
-├─ 💰 Money : ${money}
-├─ 🏦 Bank : ${atm}
-├─ 🔰 Level : ${level}
-╰─ 🧬 Exp : ${exp}
-
+╭────「 𝗩𝗔𝗨𝗟𝗧 」
+┟  ╖• Name : ${username}
+╽⌑╟• Nomor : ${require('awesome-phonenumber')(`+${m.sender.split('@')[0]}`).getNumber('international')}
+╽⌑╟• Premium : ${premium ? "Yes" :"No"}
+╽⌑╟• Age : ${registered ? '' + age : ''}
+╽⌑╟• Role : ${role}
+╽⌑╟• Limit : ${limit}
+╽⌑╟• ️Limit Game : ${tigame}
+╽⌑╟• Money : ${money}
+╽⌑╟• Bank : ${atm}
+╽⌑╟• Level : ${level}
+┟⌑╟• Exp : ${exp}
+╰  ╨╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 `.trim()
     let mentionedJid = [who]
-    conn.sendButton(m.chat, str, `${wm}`, 'Inventory', '.inv', m)
+    conn.sendButton(m.chat, str, `${wm}`, '𝐈𝐍𝐕𝐄𝐍𝐓𝐎𝐑𝐘', '.inv', m)
     conn.reply(str)
   }
 }

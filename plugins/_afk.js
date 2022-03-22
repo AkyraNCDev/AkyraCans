@@ -3,9 +3,9 @@ handler.before = m => {
   let user = global.db.data.users[m.sender]
   if (user.afk > -1) {
     let test = `
-╭─[ 𝗢𝗨𝗧 𝗢𝗙 𝗔𝗙𝗞 𝗠𝗢𝗗𝗘 ]─✧
+╭────[ 𝗦𝗧𝗢𝗣 𝗔𝗙𝗞 ]────✧
 ┆ Alasan : ${user.afkReason ? '' + user.afkReason : ''}
-┆ *Time : ${clockString(new Date - user.afk)}*
+┆ Selama : *${clockString(new Date - user.afk)}*
 ╰┅────★
 `.trim()
 conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
@@ -20,12 +20,12 @@ conn.reply(test)
     let afkTime = user.afk
     if (!afkTime || afkTime < 0) continue
     let reason = user.afkReason || ''
-    let str = `╭──[ 𝗜𝗡 𝗔𝗙𝗞 𝗠𝗢𝗗𝗘 ]──✧
+    let str = `╭────[ 𝗜𝗡 𝗔𝗙𝗞  ]────✧
 ┆ ${reason ? 'Alasan : ' + reason : 'Tanpa Alasan'}
-┆ *Time : ${clockString(new Date - afkTime)}*
+┆ Selama : *${clockString(new Date - afkTime)}*
 ╰┅────★
 `.trim()
-conn.sendButton(m.chat, str, `${wm}`,'Okiee', 'okeh',m)
+conn.sendButton(m.chat, str, `${wm}`,'𝐌𝐀𝐀𝐅, 𝐀𝐊𝐔 𝐓𝐈𝐃𝐀𝐊 𝐓𝐀𝐔', 'okeh',m)
 conn.reply(str)
   }
   return true

@@ -6,7 +6,7 @@ let handler = async (m, { conn }) => {
     let user = global.db.data.users[m.sender]
     let wm = global.botwm
     let buttons = [
-{buttonId: '.kandang', buttonText: {displayText: 'Kandang 🐾'}, type: 1}, 
+{buttonId: '.kandang', buttonText: {displayText: '𝐊𝐀𝐍𝐃𝐀𝐍𝐆'}, type: 1}, 
 ]
 const buttonMessage = {
     contentText: `〔 𝗔𝗟𝗘𝗥𝗧 〕\n\n Sepertinya Kakak Sudah Kecapean\nSilahkan Istirahat Dulu Untuk Mlanjutkan Berburu !\n🕖 *${timers}*`,
@@ -15,18 +15,18 @@ const buttonMessage = {
     headerType: 1
 }
     if (new Date - global.db.data.users[m.sender].as > 500000) {
-let randomaku1 = `${Math.floor(Math.random() * 20)}`
-let randomaku2 = `${Math.floor(Math.random() * 20)}`
-let randomaku4 = `${Math.floor(Math.random() * 20)}`
-let randomaku3 = `${Math.floor(Math.random() * 20)}`
-let randomaku5 = `${Math.floor(Math.random() * 20)}`
-let randomaku6 = `${Math.floor(Math.random() * 20)}`
-let randomaku7 = `${Math.floor(Math.random() * 20)}`
-let randomaku8 = `${Math.floor(Math.random() * 20)}`
-let randomaku9 = `${Math.floor(Math.random() * 20)}`
-let randomaku10 = `${Math.floor(Math.random() * 20)}`
-let randomaku11 = `${Math.floor(Math.random() * 20)}`
-let randomaku12 = `${Math.floor(Math.random() * 20)}`
+let randomaku1 = `${Math.floor(Math.random() * 9)}`
+let randomaku2 = `${Math.floor(Math.random() * 9)}`
+let randomaku4 = `${Math.floor(Math.random() * 9)}`
+let randomaku3 = `${Math.floor(Math.random() * 9)}`
+let randomaku5 = `${Math.floor(Math.random() * 9)}`
+let randomaku6 = `${Math.floor(Math.random() * 9)}`
+let randomaku7 = `${Math.floor(Math.random() * 9)}`
+let randomaku8 = `${Math.floor(Math.random() * 9)}`
+let randomaku9 = `${Math.floor(Math.random() * 9)}`
+let randomaku10 = `${Math.floor(Math.random() * 9)}`
+let randomaku11 = `${Math.floor(Math.random() * 9)}`
+let randomaku12 = `${Math.floor(Math.random() * 9)}`
 .trim()
 
 let rbrb1 = (randomaku1 * 1)
@@ -55,21 +55,22 @@ zero10 = `${rbrb10}`
 zero11 = `${rbrb11}`
 zero12 = `${rbrb12}`
 
-hsl = `━━━━━━━━━[ *Hasil Berburu* ]━━━━━━━━━
-
-Banteng     🐂 = [ ${zero1} ]			 
-Kerbau       🐃 = [ ${zero7} ]
-Harimau    🐅 = [ ${zero2} ]			 
-Sapi            🐮 = [ ${zero8} ]
-Gajah          🐘 = [ ${zero3} ]			 
-Monyet.     🐒 = [ ${zero9} ]
-Kambing    🐐 = [ ${zero4} ]			 
-Babi Hutan🐗 = [ ${zero10} ]
-Panda         🐼 = [ ${zero5} ]			 
-Babi            🐖 = [ ${zero11} ]
-Buaya          🐊= [ ${zero6} ]			 
-Ayam          🐓 = [${zero12} ]
- 
+hsl = `╭┅┅┅┅[ *HASIL BERBURU* ]┅┅┅┫ 
+┋
+┞${zero1} Ekor Banteng
+┞${zero7} Ekor Kerbau
+┞${zero2} Ekor Harimau
+┞${zero8} Ekor Sapi
+┞${zero3} Ekor Gajah 
+┞${zero9} Ekor Monyet
+┞${zero4} Ekor Kambing	 
+┞${zero10} Ekor Babi Hutan
+┞${zero5} Ekor Panda			 
+┞${zero11} Ekor Babi
+┞${zero6} Ekor Buaya		 
+┞${zero12} Ekor Ayam
+┋
+╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┫
 `
 global.db.data.users[m.sender].banteng += rbrb1
 global.db.data.users[m.sender].harimau += rbrb2
@@ -85,7 +86,7 @@ global.db.data.users[m.sender].babi += rbrb11
 global.db.data.users[m.sender].ayam += rbrb12
 
 setTimeout(() => {
-                     conn.sendButton(m.chat, hsl, wm, 'Kandang', '#kandang',m)
+                     conn.sendButton(m.chat, hsl, wm, '𝐊𝐀𝐍𝐃𝐀𝐍𝐆', '#kandang',m)
                      }, 20000) 
                
                      setTimeout(() => {

@@ -259,7 +259,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "footerText": `
 ⊚━━━━━❮ 𝗗𝗔𝗦𝗛𝗕𝗢𝗔𝗥𝗗
 ╓ ⊚ ❭━━━━━━━━━━━━━━━━━┈─•
-╟╮  ⊚┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟨ V19
+╟╮  ⊚┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟨ V20
 ║╽❖ ᴀᴋᴛғɪ sᴇʟᴀᴍᴀ ${uptime}
 ║╽❖ ʙᴀᴛᴇʀᴀɪ ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? 'ᴘᴇɴɢɪsɪᴀɴ' : ''}` : 'ᴛɪᴅᴀᴋ ᴅɪᴋᴇᴛᴀʜᴜɪ'}
 ║╽❖ ᴘʀᴇғɪx : [ᴍᴜʟᴛɪ]
@@ -285,8 +285,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
      
                ${week}, ${date}
 
-𝗥𝗔𝗠𝗔𝗗𝗛𝗔𝗡 𝗘𝗩𝗘𝗡𝗧 𝗜𝗦 𝗖𝗢𝗠𝗜𝗡𝗚🔥
-Cek Dengan Cara #rd
+DAPATKAN BONUS EXP DENGAN🎁
+PERINTAH = #ref
 
 Official Group Chat Bot
 https://chat.whatsapp.com/CvzDovqBFsxEd52abw0TkD`,

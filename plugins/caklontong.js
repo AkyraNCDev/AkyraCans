@@ -24,7 +24,7 @@ ${json.soal}
         await conn.sendButton(m.chat, caption, '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'Bantuan', '.calo', m),
         json, poin,
         setTimeout(async () => {
-            if (conn.caklontong[id]) await conn.sendButton(m.chat, `Waktu Habis!\nJawabannya Adalah *${json.jawaban}*\n${json.deskripsi}`, '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'Cak Lontong', '.caklontong')
+            if (conn.caklontong[id]) await conn.sendButton(m.chat, `Waktu Habis!\nJawabannya Adalah *${json.jawaban}*\n${json.deskripsi}`, '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', '𝐂𝐀𝐊 𝐋𝐎𝐍𝐓𝐎𝐍𝐆', '.caklontong')
             delete conn.caklontong[id]
         }, timeout)
     ]
@@ -33,6 +33,4 @@ handler.help = ['caklontong']
 handler.tags = ['game']
 handler.command = /^caklontong/i
 handler.register = true
-handler.limit = true
-handler.level = 5
 module.exports = handler

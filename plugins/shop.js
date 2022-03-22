@@ -32,40 +32,48 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
     let _type = (args[1] || '').toLowerCase()
     let jualbeli = (args[0] || '').toLowerCase()
     const Kchat = `
-*🎒 SHOP*
+*ITEM SHOP BOT*
 
-*🧪 Penggunaan :*
-_${usedPrefix}shop <Buy|sell> <item> <jumlah>_
-Contoh penggunaan: _*${usedPrefix}shop buy potion 1*_\n\n
-🛍️ List Barang:\n━━━━━━━━━━━━━━━━━
-*♻ Barang   | 💲 Harga beli*\n━━━━━━━━━━━━━━━━━
-*•* .🥤 Potion:       ${potion}
-*•* .🪙  Gold :         ${Bgold}
-*•* .💎 Diamond:    ${Bdiamond}
-*•* .🪨 Batu:           ${Bbatu}
-*•* .🪵 Kayu:           ${Bkayu}
-*•* .🕸️ String:         ${Bstring}
-*•* .⛓️ Iron:             ${Biron}
-*•* .📦 Common:     ${Bcommon} 
-*•* .🛍️ Uncommon: ${Buncommon}
-*•* .🎁 Mythic:          ${Bmythic}
-*•* .🧰 Legendary:    ${Blegendary}
-*•* .🗑️ Sampah:        ${Bsampah}
-*•* .🥼 Armor:            ${armor}\n━━━━━━━━━━━━━━━━━
-*♻ Barang   | 💲 Harga Jual*\n━━━━━━━━━━━━━━━━━
-*•* .🥤 Potion:        ${Spotion}
-*•* .🪙  Gold:          ${Sgold}
-*•* .🧭 Arloji:         ${Sarloji}
-*•* .🪨 Batu:           ${Sbatu}
-*•* .🪵 Kayu:           ${Skayu}
-*•* .🕸️ String:         ${Sstring}
-*•* .⛓️ Iron:            ${Siron}
-*•* .💎 Diamond:    ${Sdiamond}
-*•* .📦 Common:     ${Scommon}
-*•* .🛍️ Uncommon:${Suncommon}
-*•* .🎁 Mythic:        ${Smythic}
-*•* .🧰 Legendary:  ${Slegendary}
-*•* .🗑️ Sampah:      ${Ssampah}\n━━━━━━━━━━━━━━━━━\n━━━━━━━━━━━━━━━━━\n\n
+Cara Pakai
+${usedPrefix}shop <Buy|sell> <item> <jumlah>
+Contoh penggunaan
+${usedPrefix}shop buy potion 1
+
+🛍️ LIST BARANG
+━━━━━━━━━━━━━━━━━
+🛅 Barang   | 💲 Harga beli*
+━━━━━━━━━━━━━━━━━
+║┟🥤 Potion:           ${potion}
+║┟🪙  Gold :               ${Bgold}
+║┟💎 Diamond:      ${Bdiamond}
+║┟🪨 Batu:                 ${Bbatu}
+║┟🪵 Kayu:                ${Bkayu}
+║┟🕸️ String:           ${Bstring}
+║┟⛓️ Iron:               ${Biron}
+║┟📦 Common:     ${Bcommon} 
+║┟🛍️ Uncommon: ${Buncommon}
+║┟🎁 Mythic:          ${Bmythic}
+║┟🧰 Legendary:       ${Blegendary}
+║┟🗑️ Sampah:       ${Bsampah}
+║┟🥼 Armor:              ${armor}
+━━━━━━━━━━━━━━━━━
+♻ Barang   | 💲 Harga Jual
+━━━━━━━━━━━━━━━━━
+║┟🥤 Potion:         ${Spotion}
+║┟🪙  Gold:               ${Sgold}
+║┟🧭 Arloji:               ${Sarloji}
+║┟🪨 Batu:                ${Sbatu}
+║┟🪵 Kayu:               ${Skayu}
+║┟🕸️ String:          ${Sstring}
+║┟⛓️ Iron:              ${Siron}
+║┟💎 Diamond:     ${Sdiamond}
+║┟📦 Common:     ${Scommon}
+║┟🛍️ Uncommon:${Suncommon}
+║┟🎁 Mythic:         ${Smythic}
+║┟🧰 Legendary:      ${Slegendary}
+║┟🗑️ Sampah:      ${Ssampah}
+━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━\n\n
 `.trim()
     try {
         if (/shop|toko|buy/i.test(command)) {

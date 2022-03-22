@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
 await m.reply(global.wait)
-  conn.sendFile(m.chat, 'https://api.xteam.xyz/randomimage/blowjob?APIKEY=HIRO', '', '', m)
+  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random2/blowjob?apikey=AryaKey', '', '', m)
 }
 handler.help = ['blowjob']
 handler.tags = ['hentai']

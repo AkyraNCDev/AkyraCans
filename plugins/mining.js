@@ -25,7 +25,6 @@ handler.help = ['mining']
 handler.tags = ['rpg']
 handler.command = /^mining/i
 handler.register = true
-handler.level = 12
 module.exports = handler
 
 function pickRandom(list) {

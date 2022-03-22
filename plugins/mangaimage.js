@@ -2,7 +2,7 @@ let fetch = require('node-fetch')
 let wm = global.botwm
 let handler = async (m, { conn, usedPrefix, command }) => {
 	if (!db.data.chats[m.chat].nsfw && m.isGroup) throw global.nsfw
-  res = await fetch(`https://api.xteam.xyz/randomimage/manga?APIKEY=HIRO`)
+  res = await fetch(`https://api.xteam.xyz/randomimage/manga?APIKEY=d81ce7556c32afe3`)
   heum = await res.buffer()
   conn.sendButtonImg(m.chat, heum, 'This Is MANGA', wm, 'Next⏭️', `${usedPrefix + command}`, m)
 

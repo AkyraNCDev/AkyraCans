@@ -4,13 +4,14 @@ let fs = require('fs')
 let handler = async (m, { conn, text }) => {
 let logo = global.logoowner
   let ext= `
-✣╼╼╼╼╼╼[ BIODATA OWNER ]╾╾╾╾╾╾╾✣
-👤 Nama Akyra
-📍 Umur 16 
-🧮 Kelas 10
-📈 Status Sibuk
+❂╼╼╼╼╼╼[ BIODATA OWNER ]╾╾╾╾╾╾╾❂
 
-✣╼╼╼╼╼╼─╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾✣
+👤 Nama Qalesya Akyra Rukma Quinnsha
+📍 Umur 16 Tahun
+🧮 Kelas 10 SMK
+🚩 Alamat Kaltim
+
+❂╼╼╼╼╼─╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾❂
 
 `
 let name = await conn.getName(m.sender)

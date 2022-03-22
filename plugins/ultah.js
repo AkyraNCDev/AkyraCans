@@ -3,12 +3,12 @@ let handler = async (m, { conn, args }) => {
    response = args.join(' ')
   if (!args) throw 'Masukkan Parameter'
   m.reply('*[❗] Wait,Tunggu Bentar Kak Sedang Dalam Proses...*')
-  let res = `http://lolhuman.herokuapp.com/api/random/quotesimage?apikey=AryaKey`
-  conn.sendFile(m.chat, res, 'nama.jpg', `Nih Mhank`, m, false)
+  let res = `http://lolhuman.herokuapp.com/api/ephoto1/birthdaycake?apikey=AryaKey&text=${response}`
+  conn.sendFile(m.chat, res, 'ultah.jpg', `Selamat Ulang Tahun ${response}`, m, false)
 }
-handler.help = ['quotesimg'].map(v => v + ' <teks>')
-handler.tags = ['image']
-handler.command = /^(quotesimg)$/i
+handler.help = ['ultah'].map(v => v + ' <teks>')
+handler.tags = ['sticker']
+handler.command = /^(ultah)$/i
 handler.limit = true
 handler.register = true
 

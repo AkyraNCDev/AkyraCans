@@ -7,7 +7,7 @@ let handler = (m, { text }) => {
 ┆ Alasan : *${text ? '' + text : ''}*
 ╰┅────★
 `.trim()
-conn.sendButton(m.chat, str, wm, 'Oke, Jangan Lama²!!', 'iyaaaaa',m)
+conn.sendButton(m.chat, str, wm, '𝐎𝐊𝐄, 𝐂𝐄𝐏𝐀𝐓 𝐊𝐄𝐌𝐁𝐀𝐋𝐈 𝐘𝐀', 'iyaaaaa',m)
 conn.reply(str)
 }
 handler.help = ['afk <alasan>']

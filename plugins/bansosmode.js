@@ -20,12 +20,8 @@ Corruption Choice:
 #korupsi16 - 1Nn (Lv.2000/40000Limit)
 #korupsi17 - 1Ds (Lv.3000/100000Limit)
 
-
-❗ Korupsi 10-17 Locked
-
-❗ Kalau Mau Korupsi Limit + Level Tinggi Karena Kalau Hoki Kan Hasilnya Gak Ngotak
-
-❗ Masih Dalam Tahap, Kirim #request <permasalahan> Jika Ada Yang Tidak Kau Suka:)
+*⚠️WARNING⚠️*
+Jangan Tergoda Sama Banyaknya Hasil Korupsi, Lu Kira Lu Bakal Dapat Mudah? Semakin Besar Hasil Korupsi Maka Besar Juga Peluang Minus
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['bansos'] 
 handler.tags = ['rpg'] 

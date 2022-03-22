@@ -5,9 +5,9 @@ let handler = async(m, { conn, text }) => {
 
 try {
  await m.reply('Searching...')
-    if (!text) return conn.reply(m.chat, 'Uhm.. Urlnya Mana?', m)https://api.lolhuman.xyz/api/mediafire?apikey=LOLKONTOL09&url=
+    if (!text) return conn.reply(m.chat, 'Uhm.. Urlnya Mana?', m)https://api.lolhuman.xyz/api/mediafire?apikey=AryaKey&url=
 
-    axios.get(`https://api.xteam.xyz/dl/mediafire?url=${text}&APIKEY=HIRO`).then ((res) => {
+    axios.get(`https://api.xteam.xyz/dl/mediafire?url=${text}&APIKEY=d81ce7556c32afe3`).then ((res) => {
   let wait = `*MEDIAFIRE*\n\nNama File : ${res.data.name_file}\nSize : ${res.data.file_size}\nDipublikasikan : ${res.data.upload_date}\nTipe : ${res.data.file_type}\nDeskripsi :\n${res.data.description}\n\n⏳File Sedang Dikirim, Harap Tunggu Sekitar 1 Menit.`
   let file = res.data.download
 
