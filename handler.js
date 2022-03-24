@@ -35,6 +35,7 @@ module.exports = {
             if (!isNumber(user.level)) user.level = 0
             if (!isNumber(user.warning)) user.warning = 0
             if (!('pasangan' in user)) user.pasangan = ''
+            if (!('kerajaan' in user)) user.kerajaan = ''
             if (!isNumber(user.exp)) user.exp = 0
             if (!isNumber(user.pc)) user.pc = 0
             if (!isNumber(user.korbanngocok)) user.korbanngocok = 0
@@ -265,6 +266,7 @@ module.exports = {
             level: 0,
             warning: 0,
             pasangan: '',
+            kerajaan: '',
             pc : 0,
             exp: 0,
             coin: 0,
