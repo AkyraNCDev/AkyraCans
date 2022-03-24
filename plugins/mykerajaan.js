@@ -9,7 +9,7 @@ let imgk = fs.readFileSync('./lib/kerajaan.jpg')
 
 let user = global.db.data.users[m.sender]
 
-if (!('created' in user)) return m.reply('anda tidak memiliki kerajaan')
+if (!('created' in user)) return m.reply('Anda Tidak Memiliki Kerajaan\nKirim Perintah #buildkingdom Untuk Membangun\n\nLevel 1 Free')
 
 let kerajaan = global.db.data.users[m.sender].kingdomName
 let trops = global.db.data.users[m.sender].troops
@@ -81,9 +81,9 @@ conn.sendFile( m.chat, imgk, 'kerajaa.jpg', caption, m, false, {
   })
 }
 
-handler.help = ['mykingdom','mykrjn','kerajaanku']
+handler.help = ['kingdom','mykrjn','kerajaanku']
 handler.tags = ['rpg']
-handler.command = /^(mykingdom|kerajaanku)/i
+handler.command = /^(kingdom|kerajaanku)/i
 
 handler.owner = false
 handler.register = false
