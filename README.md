@@ -1,10 +1,10 @@
-# KANNABOTZ
- [![Kanna](https://telegra.ph/file/8c0c0d33c6129af67e9c1.jpg)
+# RIKKABOT
+ [![Rikka](https://telegra.ph/Rikka-03-25)
  
-Simple WhatsApp Bot.   |    By Letta
-     |      [KannaBotz Whatsapp](https://wa.me/6283143393763)
+Simple WhatsApp Bot.   |    By Akyra
+     |      [RikkaBotz Whatsapp](https://wa.me/6281347927862)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kannachann/kanna-wabot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Akyra2005/AkyraCans)
 
 ## FOR TERMUX/UBUNTU/SSH USER
 
@@ -142,11 +142,11 @@ conn.logger.level = 'debug'
 ---------
 
 <a href="https://api.xteam.xyz"><img src="https://i.ibb.co/7j0vtwz/xlogo.png" width="100" height="100"></a> | [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25) | [![Ftwrr](https://github.com/Ftwrr.png?size=100)](https://github.com/Ftwrr) 
-[![Kanna](https://github.com/Kannachann.png?size=100)](https://wa.me/6283143393763) 
+[![Rikka](https://github.com/Kannachann.png?size=100)](https://wa.me/6281347927862) 
 
 
 [XTEAM](https://api.xteam.xyz/) | [Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [Ftwrr](https://github.com/Ftwrr)
-Powered by XTEAM | Author / Creator | Most Active Contributor | Kannachann | 2nd Most Active Contributor
+Powered by XTEAM | Author / Creator | Most Active Contributor | AkyraCans | 2nd Most Active Contributor
 
 
 NOTE: Jangan Lupa kasih star !
