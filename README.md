@@ -1,5 +1,5 @@
 # RIKKABOT
- [![Rikka](https://ibb.co/89cM0ZB)
+ [![Rikka](https://telegra.ph/bdc30dcce0274c79e0aaeb4e0000e253.jpg)
  
 Simple WhatsApp Bot.   |    By Akyra
      |      [RikkaBotz Whatsapp](https://wa.me/6281347927862)
