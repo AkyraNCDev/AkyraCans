@@ -11,42 +11,22 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-╭─────═[ 𝗜𝗡𝗙𝗢 𝗨𝗦𝗘𝗥 ]═────⎔
-╟╮
-║│◪ Name: %name
-║│◪ Premium: %prems
-║│◪ Age: %age
-║│◪ Limit: %limit
-║│◪ Money: %money
-║│◪ Role: %role
-║│◪ Level: %level [%xp4levelup]
-║│◪ Xp: %exp / %maxexp
-║│◪ Total Xp: %totalexp
-║╰───────────────────╮
-╟──────═[ 𝗧𝗜𝗠𝗘 ]═───────┴⎔
-╟╮
-║│    ${ucapan()} %name!
-║│◪ %week %weton, %date
-║│◪ Tanggal Islam: %dateIslamic
-║│◪ Waktu: %time
-║╰───────────────────╮
-╟──────═[ 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧]═────┴⎔
-╟╮
-║│◪ Nama Bot: %me
-║│◪ Mode: ${global.opts['self'] ? 'Private' : 'Publik'}
-║│◪ Prefix: [ # ]
-║│◪ Speed: ${neww - old} ms
-║│◪ Battery: ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-║│◪ Platform: Unbuntu linux
-║│◪ Uptime: %uptime (%muptime)
-║│◪ Database: %rtotalreg Dari %totalreg
-║╰───────────────────╮
-╰────═┅═───────═┅═───┴⎔
+
+ ▣ Nama Bot: %me
+ ▣ Mode: ${global.opts['self'] ? 'Private' : 'Publik'}
+ ▣ Prefix: Multi
+ ▣ Speed: ${neww - old} ms
+ ▣ Battery: ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+ ▣ Platform: Unbuntu Linux
+ ▣ Uptime: %uptime (%muptime)
+ ▣ Database: %rtotalreg Dari %totalreg
+
+
 %readmore`.trimStart(),
-  header: '╭═[ %category ]═────···\n┴',
-  body: '│⚘ %cmd %islimit %isPremium',
-  footer: '┬\n╰───────────···',
-  after: `⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕.
+  header: '╭════[ %category ]═════···',
+  body: '┢⎔ %cmd %islimit %isPremium',
+  footer: '┕╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╾•',
+  after: `\n        ▌│█║▌║▌║║▌║▌║█│▌█ ▌\n               %week, %date.
      %me
 `,
 }
@@ -254,218 +234,211 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `✧────···[ 🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 ]···────✧`.trim(),
+          "title": `*❦ʀᴇɴ-ʙᴏᴛ*`.trim(),
           "description": `${ucapan()}, ${name} !`.trim(),
           "footerText": `
-⊚━━━━━❮ 𝗗𝗔𝗦𝗛𝗕𝗢𝗔𝗥𝗗
-╓ ⊚ ❭━━━━━━━━━━━━━━━━━┈─•
-╟╮  ⊚┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟨ V19
-║╽❖ ᴀᴋᴛғɪ sᴇʟᴀᴍᴀ ${uptime}
-║╽❖ ʙᴀᴛᴇʀᴀɪ ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? 'ᴘᴇɴɢɪsɪᴀɴ' : ''}` : 'ᴛɪᴅᴀᴋ ᴅɪᴋᴇᴛᴀʜᴜɪ'}
-║╽❖ ᴘʀᴇғɪx : [ᴍᴜʟᴛɪ]
-║╽❖ ${Object.keys(global.db.data.users).length} ᴘᴇɴɢɢᴜɴᴀ
-║╽❖ ${totaljadibot.length} ᴊᴀᴅɪʙᴏᴛ
-║╽❖ ${conn.blocklist.length} ᴛᴇʀʙʟᴏᴄᴋ
-║╽❖ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} ᴄʜᴀᴛ ᴛᴇʀʙᴀɴɴᴇᴅ
-║╽❖ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} ᴘᴇɴɢɢᴜɴᴀ ᴛᴇʀʙᴀɴɴᴇᴅ
-╟╯╭╼╼╼╼╼╼╼╼╼╼╼╼╼╼┈─•
-╠═╯  𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 Is The Best
-║ • Free To Add With Conditions
-╰━┯━━━━━━━━━━━━━━━━━━┈─◂
-  ┳ │                  𝗬𝗼𝘂𝗿 𝗜𝗻𝗳𝗼
-  ╽ ┠❖ Name ${name}
-  ╽ ┠❖ Age ${age} 
-  ╽ ┠❖ Limit ${limit}
-  ╽ ┠❖ Role ${role}
-  ╽ ┠❖ Level ${level}
-  ╰ ┠❖ Money ${money}
-  ⊚━━━━━━━━━━━━━━━━━━┈─◂
+Hai Selamat Datang, Saya Adalah ❦ʀᴇɴ-ʙᴏᴛ Salah Satu Bot Whatsapp Yang Dikembangkan Oleh Akyra. Silahkan Pilih Menu Untuk Menggunakan Bot Dan Membaca Rules Bot Ini Untuk Menjadi User Yang Bijak Dalam Menggunakan Bot.
+
+ ◈ ᴀᴋᴛɪғ sᴇʟᴀᴍᴀ ${uptime}
+ ◈ ᴍᴜʟᴛɪ ᴘʀᴇғɪx
+ ◈ ʙᴀʜᴀsᴀ ɪɴᴅ-ᴇɴɢ
+ ◈ 643 ғɪᴛᴜʀ 
       
-        ▌│█║▌║▌║║▌║▌║█│▌█ ▌
-     
-               ${week}, ${date}
+╭┄┄┄┄┄⎔ 𝗗𝗔𝗦𝗛𝗕𝗢𝗔𝗥𝗗
+┣•ʙᴀᴛᴇʀᴀɪ     
+┃▰▰▰▰▰▰▰▰▰▰ 100%
+┣•ᴘᴇɴɢɢᴜɴᴀ 
+┃▰▰▰▰▰▰▱▱▱▱ ${Object.keys(global.db.data.users).length} ᴜsᴇʀ
+┣•ᴊᴀᴅɪʙᴏᴛ     
+┃▱▱▱▱▱▱▱▱▱▱ ${totaljadibot.length} ᴜsᴇʀ
+┣•ᴛᴇʀʙʟᴏᴄᴋ                        
+┃▰▰▰▰▰▱▱▱▱▱ ${conn.blocklist.length} ᴜsᴇʀ
+┣•ᴄʜᴀᴛ ᴛᴇʀʙᴀɴɴᴇᴅ
+┃▱▱▱▱▱▱▱▱▱▱ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} ᴜsᴇʀ
+┣•ᴘᴇɴɢɢᴜɴᴀ ᴛᴇʀʙᴀɴɴᴇᴅ
+┃▰▱▱▱▱▱▱▱▱▱ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} ᴜsᴇʀ
+┗┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅⎔
 
-𝗥𝗔𝗠𝗔𝗗𝗛𝗔𝗡 𝗘𝗩𝗘𝗡𝗧 𝗜𝗦 𝗖𝗢𝗠𝗜𝗡𝗚🔥
-Cek Dengan Cara #rd
 
-Official Group Chat Bot
-https://chat.whatsapp.com/CvzDovqBFsxEd52abw0TkD`,
+𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟 𝗚𝗥𝗢𝗨𝗣 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧
+https://chat.whatsapp.com/CvzDovqBFsxEd52abw0TkD
+`,
           "buttonText": "𝗠𝗘𝗡𝗨",
           "listType": "SINGLE_SELECT",
           "sections": [
                             {
                                 "rows": [{
-                                	      "title": "            ☪️ ❯╾ 𝗥𝗔𝗠𝗔𝗗𝗛𝗔𝗡 𝟮𝟬𝟮𝟮  ╼ ",
-                                         "description": "                     ᴇᴠᴇɴᴛ ʀᴀᴍᴅʜᴀɴ ᴛᴀʜᴜɴ 2022",
+                                	      "title": "𝗥𝗔𝗠𝗔𝗗𝗛𝗔𝗡 𝟮𝟬𝟮𝟮 ☪️",
+                                         "description": "Berisi Fitur & Menu Event Khusus Ramadhan 1443H",
                                          "rowId": ".rd"
                                     }, {
-                                         "title": "                        📊 ❯╾ 𝗦𝗧𝗔𝗧𝗨𝗦 ╼ ",
-                                         "description": "                  ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ꜱᴛᴀᴛᴜꜱ ʀɪᴋᴋᴀ ʙᴏᴛ",
+                                         "title": "𝗦𝗧𝗔𝗧𝗨𝗦 📊",
+                                         "description": "Memperlihatkan Status Ren Bot Saat Ini",
                                          "rowId": ".botstat"
                                     }, {
-                                         "title": "                          ⚡❯╾ 𝗦𝗣𝗘𝗘𝗗 ╼ ",
-                                         "description": "              ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ᴋᴇᴄᴇᴘᴀᴛᴀɴ ʀᴇꜱᴘᴏɴ ʙᴏᴛ",
+                                         "title": "𝗦𝗣𝗘𝗘𝗗 ⚡",
+                                         "description": "Uji Coba Kecepatan Bot Dalam Merespon",
                                          "rowId": ".ping"
                                     }, {
-                                         "title": "                            🗒️❯╾ 𝗜𝗡𝗙𝗢 ╼ ",
-                                         "description": "                           ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ɪɴꜰᴏ ʙᴏᴛ",
+                                         "title": "𝗜𝗡𝗙𝗢 🗒️",
+                                         "description": "Informasi Tentang Ren Bot",
                                          "rowId": ".info"
                                     }, {
-                                         "title": "                        👨‍💻 ❯╾ 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 ╼ ",
-                                         "description": "                            ᴋᴏɴᴛᴀᴋ ᴄʀᴇᴀᴛᴏʀᴋᴜ <3",
+                                         "title": "𝗖𝗥𝗘𝗔𝗧𝗢𝗥 👤",
+                                         "description": "Kontak Pengembang Sekaligus Pemilik Bot Ren",
                                          "rowId": ".nowner"
                                     }, {
-                                         "title": "                     ⏫ ❯╾ 𝗟𝗔𝗦𝗧 𝗨𝗣𝗗𝗔𝗧𝗘 ╼ ",
-                                         "description": "              ɪɴғᴏʀᴍᴀsɪ ᴜᴘᴅᴀᴛᴇ ᴛᴇʀᴀᴋʜɪʀ ᴋᴀʟɪ ʙᴏᴛ",
+                                         "title": "𝗟𝗔𝗦𝗧 𝗨𝗣𝗗𝗔𝗧𝗘 ⏫",
+                                         "description": "Informasi Update Bot Ren",
                                          "rowId": ".lastupdate"
                        }],
-                    "title": "✧────────────[ 𝐒𝐓𝐀𝐓𝐒 ]───────────────✧"
+                    "title": "⎔────────────[ 𝐒𝐓𝐀𝐓𝐒 ]───────────────⎔"
                 }, {
                   "rows": [{
-                  "title": "𝗠𝗲𝗻𝘂 01┈╼❮🧾❯",
-                  "description": "All Commands",
+                  "title": "𝗔𝗟𝗟 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 📚",
+                  "description": "Semua Fitur Bot Ren",
                   "rowId": ".? all"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 02 ┈╼❮🎮❯",
-                  "description": "Game",
+                  "title": "𝗚𝗔𝗠𝗘 🎮",
+                  "description": "Sesuatu Yang Dapat Dimainkan Dengan Aturan Tertentu Sehingga Ada Yang Menang.",
                   "rowId": ".? game"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 03 ┈╼❮🌱❯",
-                  "description": "RPG",
+                  "title": "𝗥𝗢𝗟𝗘 𝗣𝗟𝗔𝗬𝗜𝗡𝗚 𝗚𝗔𝗠𝗘 ⚔️",
+                  "description": "Sebuah Permainan Di Mana Pemainnya Memainkan Peran Karakter Dalam Latar Fiksi.",
                   "rowId": ".? rpg"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 04 ┈╼❮✨❯",
-                  "description": "Exp & limit",
+                  "title": "𝗘𝗫𝗣 & 𝗟𝗜𝗠𝗜𝗧 🧬",
+                  "description": "Berisi Fitur Yang Bersangkutan Dengan EXP & LIMIT",
                   "rowId": ".? xp"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 05 ┈╼❮🧩❯",
-                  "description": "Fun",
+                  "title": "𝗛𝗔𝗩𝗘 𝗙𝗨𝗡 🧩",
+                  "description": "Salah Satu Kegiatan Outbound Yang Mana Kegiatan Ini Adalah “Bermain” Bersama.",
                   "rowId": ".? fun"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 06 ┈╼❮🎁❯",
-                  "description": "Gift",
+                  "title": "𝗚𝗜𝗙𝗧 🎁",
+                  "description": "Sesuatu Yang Diberikan Kepada Orang Lain Tanpa Adanya Timbal Balik.",
                   "rowId": ".? gift"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 07 ┈╼❮🔞❯",
-                  "description": "Nsfw",
+                  "title": "𝗡𝗢𝗧 𝗦𝗔𝗙𝗘 𝗙𝗢𝗥 𝗪𝗢𝗥𝗞 🔞",
+                  "description": "Foto, Video, Atau File Yang Mungkin Tidak Ingin Dilihat Oleh Pemirsa Di Lingkungan Publik.",
                   "rowId": ".? nsfw"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 08 ┈╼❮⛩️❯",
-                  "description": "Anime",
+                  "title": "𝗔𝗡𝗜𝗠𝗘 ⛩️",
+                  "description": "Animasi Khas Jepang Yang Biasanya Dicirikan Melalui Gambar- Gambar Berwarna-Warni.",
                   "rowId": ".? anime"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 09 ┈╼❮📰❯",
-                  "description": "News",
+                  "title": "𝗡𝗘𝗪𝗦 📰",
+                  "description": "Laporan Tercepat Mengenai Fakta Atau Ide Terbaru Yang Benar, Menarik Atau Penting",
                   "rowId": ".? News"
                 },  {
-                  "title": "𝗠𝗲𝗻𝘂 10 ┈╼❮🕋❯",
-                  "description": "Islami",
+                  "title": "𝗜𝗦𝗟𝗔𝗠𝗜𝗖 🕋",
+                  "description": "Tentang Islam Yang Mungkin Akan Bisa Merubah Hidupmu",
                   "rowId": ".? quran"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 11 ┈╼❮🏫❯",
-                  "description": "Edukasi",
+                  "title": "𝗘𝗗𝗨𝗖𝗔𝗧𝗜𝗢𝗡 🏫",
+                  "description": "Upaya Mengubah Sikap Dan Perilaku Seseorang Ataupun Kelompok.",
                   "rowId": ".? edukasi"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 12 ┈╼❮🖼️❯",
-                  "description": "Radom Image",
+                  "title": "𝗥𝗔𝗡𝗗𝗢𝗠 𝗜𝗠𝗔𝗚𝗘 🖼️",
+                  "description": "Mendapatkan Beberapa Foto Random Sesuai Perintah Yang Tersedia",
                   "rowId": ".? image"
                 },  {
-                  "title": "𝗠𝗲𝗻𝘂 13 ┈╼❮🎫❯",
-                  "description": "Sticker",
+                  "title": "𝗦𝗧𝗜𝗖𝗞𝗘𝗥 🎫",
+                  "description": "Foto Atau Gambar Yang Dikemas Secara Menarik Dan Lucu",
                   "rowId": ".? stiker"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 14 ┈╼❮🐚❯",
-                  "description": "Kerang ajaib",
+                  "title": "𝗠𝗔𝗚𝗜𝗖 𝗦𝗛𝗘𝗟𝗟 🐚",
+                  "description": "Mainan Yang Digunakan Untuk Menjawab Semua Pertanyaan Yang Diajukan",
                   "rowId": ".? kerangajaib"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 15 ┈╼❮📑❯",
-                  "description": "Quotes",
+                  "title": "𝗤𝗨𝗢𝗧𝗘𝗦 📑",
+                  "description": "Pengulangan Satu Ekspresi Sebagai Bagian Dari Yang Lain.",
                   "rowId": ".? quotes"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 16 ┈╼❮👑❯",
-                  "description": "Admin Group",
+                  "title": "𝗔𝗗𝗠𝗜𝗡 👑",
+                  "description": "Fitur Yang Hanya Dapat Digunakan Oleh Admin Group.",
                   "rowId": ".? admin"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 17 ┈╼❮👥❯",
-                  "description": "Group Chat",
+                  "title": "𝗚𝗥𝗢𝗨𝗣 𝗖𝗛𝗔𝗧👥",
+                  "description": "Fitur Khusus Yang Hanya Dapat Digunakan Di Group Oleh Admin & Member",
                   "rowId": ".? grup"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 18 ┈╼❮🌟❯",
-                  "description": "Premium Users",
+                  "title": "𝗣𝗥𝗘𝗠𝗜𝗨𝗠 🌟",
+                  "description": "Fitur Berkelas Yang Hanya Premium User Yang Dapat Menggunakan-nya",
                   "rowId": ".? premium"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 19 ┈╼❮💻❯",
-                  "description": "Internet",
+                  "title": "𝗜𝗡𝗧𝗘𝗥𝗡𝗘𝗧 💻",
+                  "description": "Mencari Sesuatu Yang Kamu Butuhkan Di Internet Lewat Bot Ini.",
                   "rowId": ".? internet"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 20 ┈╼❮🎭❯",
-                  "description": "Anonymous Chat",
+                  "title": "𝗔𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 🎭",
+                  "description": "Terhubung Dengan Pengguna Lain Tanpa Harus Mengetahui Nama Akun Dan Asal Usulnya.",
                   "rowId": ".? anonymous"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 21 ┈╼❮✍️❯",
-                  "description": "Menulis & Membuat Logo",
+                  "title": "𝗪𝗥𝗜𝗧𝗘 & 𝗖𝗥𝗘𝗔𝗧𝗘 𝗟𝗢𝗚𝗢 ✍️",
+                  "description": "Menulis & Membuat Logo Menggunakan Fitur Yang Tersedia Di Bot Ren.",
                   "rowId": ".? nulis"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 22 ┈╼❮📥❯",
-                  "description": "Downloader",
+                  "title": "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 📥",
+                  "description": "Menerima Data Dari Sistem Jarak Jauh, Biasanya Server Seperti Server Web, Server FTP.",
                   "rowId": ".? downloader"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 23 ┈╼❮🧰❯",
-                  "description": "Tools",
+                  "title": "𝗧𝗢𝗢𝗟𝗦 🧰",
+                  "description": "Tools Menjadi Fitur Penting Yang Bisa Membantu Pekerjaan.",
                   "rowId": ".? tools"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 24 ┈╼❮📂❯",
-                  "description": "Database",
+                  "title": "𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 📂",
+                  "description": "Data Yang Terorganisir, Yang Umumnya Disimpan Dan Diakses Secara Elektronik Dari Bot Ren",
                   "rowId": ".? database"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 25 ┈╼❮🗳️❯",
-                  "description": "Vote & Absen",
+                  "title": "𝗩𝗢𝗧𝗘 & 𝗥𝗢𝗟𝗟 𝗖𝗔𝗟𝗟 🗳️",
+                  "description": "Pemungutan Suara Dan Absen",
                   "rowId": ".? vote"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 26 ┈╼❮🎙️❯",
-                  "description": "Voice Changer",
+                  "title": "𝗩𝗢𝗜𝗖𝗘 𝗖𝗛𝗔𝗡𝗚𝗘𝗥 🎙️",
+                  "description": "Alat Untuk Merubah SuaRa Kita Di Telepon Atau Handphone.",
                   "rowId": ".? audio"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 27 ┈╼❮🤖❯",
-                  "description": "Jadibot",
+                  "title": "𝗝𝗔𝗗𝗜 𝗕𝗢𝗧 🤖",
+                  "description": "Menjadi Bot Ren Untuk Sementara Maupun Permanen",
                   "rowId": ".? jadibot"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 28 ┈╼❮ℹ️❯",
-                  "description": "Info",
+                  "title": "𝗜𝗡𝗙𝗢 ℹ️",
+                  "description": "Kumpulan Pesan Yang Terdiri Dari Order Sekuens Dari Simbol",
                   "rowId": ".? info"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 29 ┈╼❮❓❯",
-                  "description": "No Category",
+                  "title": "𝗡𝗢 𝗖𝗔𝗧𝗘𝗚𝗢𝗥𝗬❓",
+                  "description": "Fitur Yang Tidak Mempunyai Kategori",
                   "rowId": ".? tanpakategori"
                 }, {
-                  "title": "𝗠𝗲𝗻𝘂 30 ┈╼❮ 🧑‍💻❯",
-                  "description": "Owner",
+                  "title": "𝗢𝗪𝗡𝗘𝗥 🧑‍💻",
+                  "description": "Khusus Owner Bot Ren Yang Bisa Menggunakan",
                   "rowId": ".? owner"
                 }],
-                                "title": "✧────────────[ 𝗠𝗘𝗡𝗨 ]───────────────✧"
+                                "title": "⎔────────────[ 𝗠𝗘𝗡𝗨 ]───────────────⎔"
                                 }, {
                                 "rows": [{
-                                "title": ".                     💰 ❯╾𝗗𝗢𝗡𝗔𝗦𝗜╼",
-                                "description": "          ᴅᴏɴᴀꜱɪ ᴋᴀᴋ, ᴊᴀɴɢᴀɴ ᴇɴᴀᴋ ᴘᴀᴋᴇɴʏᴀ ᴅᴏᴀɴɢ",
+                                "title": "𝗗𝗢𝗡𝗔𝗦𝗜 💰",
+                                "description": "Pemberian Pada Umumnya Bersifat Secara Fisik Oleh Perorangan Atau Badan Hukum, Pemberian Ini Mempunyai Sifat Sukarela Dengan Tanpa Adanya Imbalan Bersifat Keuntungan Kepada Orang Lain",
                                 "rowId": ".donasi"
                                 }, {
-                                "title": ".                        🔖❯╾𝗦𝗘𝗪𝗔╼",
-                                "description": "               ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ʟɪꜱᴛ ʜᴀʀɢᴀ ꜱᴇᴡᴀ ʙᴏᴛ",
+                                "title": "𝗦𝗘𝗪𝗔 🔖",
+                                "description": "List Harga Pembelian Sewa Untuk Group Chat",
                                 "rowId": ".sewa"
                                 }, {
-                                "title": ".                    ⭐ ❯╾𝗣𝗥𝗘𝗠𝗜𝗨𝗠╼",
-                                "description": "                 ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ʟɪꜱᴛ ʜᴀʀɢᴀ ᴘʀᴇᴍɪᴜᴍ",
+                                "title": "𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ⭐",
+                                "description": "List Harga Pembelian Premium",
                                 "rowId": ".premium"
                                 }, {
-                                "title": ".                        🗒️❯╾𝗦𝗖𝗥𝗜𝗣𝗧╼",
-                                "description": "                                        ꜱᴄ ʙᴏᴛ",
+                                "title": "𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 💻",
+                                "description": "SC Bot Ren",
                                 "rowId": ".sc"
                                 }, {
-                                "title": ".                    🎖️❯╾𝗧????𝗡𝗞𝗦 𝗧𝗢╼",
-                                "description": "ᴛᴇʀɪᴍᴀ ᴋᴀꜱɪʜ ᴜɴᴛᴜᴋ ᴜꜱᴇʀ ʏᴀɴɢ ʙᴇʀᴘᴀʀᴛɪꜱɪᴘᴀꜱɪ",
+                                "title": "𝗧𝗛𝗔𝗡𝗞-𝗬𝗢𝗨 𝗡𝗢𝗧𝗘 🎖️",
+                                "description": "Terima Kasih Telah Membantu Bot Ini Untuk Berkembang",
                                 "rowId": ".? thnks"
                                 }],
-                                "title": "✧─────────────[ Info ]────────────────✧"
+                                "title": "⎔─────────────[ Info ]────────────────⎔"
                             }
                         ], "contextInfo": 
                          { "stanzaId": m.key.id,
@@ -554,7 +527,7 @@ https://chat.whatsapp.com/CvzDovqBFsxEd52abw0TkD`,
     }
   text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     // await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), '🎮 Ƙαɴɴα вσт', 'Owner', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
-    await conn.send3ButtonLoc(m.chat, logo, '─────[ 🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃 ]─────', text.trim(), '❯╾ 𝐎𝐖𝐍𝐄𝐑 ╼ ', '.nowner', '❯╾ 𝐃𝐎𝐍𝐀𝐒𝐈 ╼ ', '.donasi', '❯╾ 𝐑𝐔𝐋𝐄𝐒 ╼ ', '.rules', m)
+    await conn.send3ButtonLoc(m.chat, logo, '❦ʀᴇɴ-ʙᴏᴛ', text.trim(), '☉ 𝐎𝐖𝐍𝐄𝐑 ☉', '.nowner', '☉ 𝐃𝐎𝐍𝐀𝐒𝐈 ☉', '.donasi', '☉ 𝐑𝐔𝐋𝐄𝐒 ☉', '.rules', m)
     let nama = await conn.getName(m.sender)
     let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
 

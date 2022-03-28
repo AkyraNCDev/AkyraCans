@@ -1,16 +1,7 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let fetch = require('node-fetch')
 let pp = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=Source+code'
-let info = `╭═[ SCRIPT ]═────···
-┴
-│ Enc 100% : Free
-│ Enc 50% : 30K
-│ Enc 0% : 50K
-┬
-╰──────────═┅═──────────
-[❗] Jangan Diperjual Belikan Tanpa Seizin Owner
-
-`.trim()
+let info = `*Исходный код является частным*`.trim()
 await conn.send2Button(m.chat, info, `${botol}`, '⋮☰ Back', '.menu', 'Owner', '.nowner', m)
 conn.reply(info)
 }
@@ -20,7 +11,7 @@ handler.command = /^(sc)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
-handler.group = false
+handler.group = true
 handler.private = false
 handler.register = true
 handler.admin = false
