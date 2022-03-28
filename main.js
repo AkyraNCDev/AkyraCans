@@ -45,7 +45,7 @@ global.DATABASE = global.db // Backwards Compatibility
 
 global.conn = new WAConnection()
 conn.version =[2,2143,3]
-conn.browserDescription =['Rikka-Bot', 'Deskop', '3.0']
+conn.browserDescription =['Ren-Bot', 'Deskop', '3.0']
 let authFile = `${opts._[0] || 'session'}.data.json`
 if (fs.existsSync(authFile)) conn.loadAuthInfo(authFile)
 if (opts['trace']) conn.logger.level = 'trace'
@@ -128,11 +128,11 @@ global.reloadHandler = function () {
     conn.off('group-participants-update', conn.onParticipantsUpdate)
     conn.off('CB:action,,call', conn.onCall)
   }
-  conn.welcome = `*Hai @user ! 👋*
-         Selamat Datang Di Grup
-          @subject
+  conn.welcome = `*───[ WELCOME ]───*\n
+Haiii @user Selamat Datang Di Grup
+                @subject
            
-╭─────❒𝗣𝗥𝗢𝗙𝗜𝗟𝗘
+╭─────❒𝗜𝗡𝗧𝗥𝗢
 ├❏ Nama
 ├❏ Umur
 ├❏ Status
@@ -140,9 +140,9 @@ global.reloadHandler = function () {
 └──────────────────>
 
   ${readMore}
-              *◌  ⃝✧⪼ Deskripsi Group ミ*
+              Deskripsi Group:
   @desc`
-  conn.bye = '*───[ Good Bye ]───*\n  ```Sayonara @user ! 👋```'
+  conn.bye = '*───[ GOOD BYE ]───*\n  ```Terima Kasih Telah Mampir Walaupun Cuma Sementara @user ! 👋```'
   conn.spromote = '「 *PROMOTE* 」\n @user sekarang admin!'
   conn.sdemote = '「 *DEMOTE*」\n @user sekarang bukan admin!'
   conn.handler = handler.handler

@@ -828,10 +828,10 @@ let user = conn.getName(who)
     botAdmin: '*「❗」Bot Admin Only*',
     unreg: `*── 「 NOT REGISTERED 」 ──*
 Haiii @${m.sender.split`@`[0]}
-Kamu Harus Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot
+Untuk Menggunakan Bot Ini Kamu Harus Terdaftar Di Database Bot Ini.
     
  📍 Ketik : #daftar nama.umur
-       Contoh : #daftar ${user}.16`
+       Contoh : #daftar ${user}.12`
   }[type]
   let pd = fs.readFileSync('./src/kanna.jpg')
   if (msg) return m.reply(msg)

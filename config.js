@@ -89,20 +89,21 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃\nwa.me/6285159258830\n\n\n𝙱𝚢 𝟸𝙰〽️\n\n\nFollow IG: @bot.ngcore\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.'
+global.packname = '❦ʀᴇɴ-ʙᴏᴛ\nwa.me/6285159258830\n\n\n𝙱𝚢 𝟸𝙰〽️\n\n\nFollow IG: @bot.ngcore\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.'
 global.author = '۰ ⸼'
 
 // silakan di ganti klo mau
-global.botwm = `🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃`//UBAH JADI NAMAMU
+global.botwm = `❦ʀᴇɴ-ʙᴏᴛ`//UBAH JADI NAMAMU
 global.botdate = `╭──────────═┅═─────────\n│◪ ${time}\n┊◪ ${week} ${date}\n╰──────────═┅═─────────`
 global.imagebot = `https://telegra.ph/Rikka-02-10-3`
 global.logo = fs.readFileSync('./src/logo3.jpg')
 global.logoowner = fs.readFileSync('./src/owner.jpg')
 global.logopartner = fs.readFileSync('./src/partner.jpg')
-global.wait = '```「❗」Sedang Diproses```'
+global.wait = '*Memuat Data📂*\n*■□□□□□□□□□ 10%*'
+global.done = '*Data Selesai Dimuat📂*\n*■■■■■■■■■■ 100%*'
 global.rpg = '[❗] Fitur Rpg Dimatikan\n*Ketik !enable rpg Untuk Menggunakan Fitur Ini!*\nKalo Mau Main Disini Aja\nhttps://chat.whatsapp.com/FQZcB1IaelbDkEdVWF313Z'
 global.nsfw = '[❗] Fitur NSFW Dimatikan\n*Ketik !enable nsfw Untuk Menggunakan Fitur Ini!*\n\n“Katakanlah Kepada Orang Laki-laki Yang Beriman: Hendaklah Mereka Menahan Pandanganya, Dan Memelihara Kemaluannya; … Katakanlah Kepada Wanita Yang Beriman: Hendaklah Mereka Menahan Pandangannya, Dan Kemaluannya, Dan Janganlah Mereka Menampakkan Perhiasannya, Kecuali Yang (Biasa) Nampak Dari Padany,” \n(TQS. Al-Nur [24]: 30-31).'
-global.eror = '```404 ERROR```'
+global.eror = '*Gagal Mendapatkan Data⚠️*\n*□□□□□□□□□□ 00%*'
 global.pref = '( # . ! /)'
 global.CanvasAPI = '';
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=chrominium-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
