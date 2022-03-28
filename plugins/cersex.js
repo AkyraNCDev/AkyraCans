@@ -3,7 +3,7 @@ let handler = async(m, { conn, text }) => {
 
     //if (!text) return conn.reply(m.chat, 'Masukan parameter, Contoh *#lirik my love*', m)
 
-  await m.reply('[❗]  𝗪𝗮𝗶𝘁, 𝗜𝗻 𝗣𝗿𝗼𝗰𝗲𝘀𝘀')
+  await m.reply(global.wait)
 	axios.get(`http://docs-jojo.herokuapp.com/api/cersex`).then ((res) => {
 	 	let hasil = `*💬JUDUL : ${res.data.result.judul}*\n\n${res.data.result.cersex}`
 

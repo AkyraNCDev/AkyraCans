@@ -1,12 +1,12 @@
 let fetch = require('node-fetch')
 
 let timeout = 120000
-let poin = 500
+let poin = 5000
 let handler = async (m, { conn, usedPrefix }) => {
     conn.tebaklagu = conn.tebaklagu ? conn.tebaklagu : {}
     let id = m.chat
     if (id in conn.tebaklagu) {
-        conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tebaklagu[id][0])
+        conn.reply(m.chat, 'Selesaikan Dulu Sesi Ini Untuk Melanjutkan Ke Sesi Berikutnya', conn.tebaklagu[id][0])
         throw false
     }
     // ubah isi 'id' kalo mau ganti playlist spotifynya
@@ -16,11 +16,13 @@ let handler = async (m, { conn, usedPrefix }) => {
     let json = result.result
     if (!result.status) throw json
     let caption = `
-TEBAK JUDUL LAGU
-Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik *${usedPrefix}cek* untuk bantuan
-Bonus: ${poin} XP
-*Balas pesan ini untuk menjawab!*`.trim()
+*「 TEBAK LAGU 」*
+
+⏱️Timeout ${(timeout / 1000).toFixed(2)} Detik
+🔎Ketik *${usedPrefix}cek* untuk bantuan
+🎁Prize: ${poin} XP
+
+*Balas Pesan Ini Untuk Menjawab!*`.trim()
     conn.tebaklagu[id] = [
         await m.reply(caption),
         json, poin,
@@ -34,6 +36,5 @@ Bonus: ${poin} XP
 handler.help = ['tebaklagu']
 handler.tags = ['game']
 handler.command = /^tebaklagu$/i
-handler.limit = 2
-handler.level = 4
+handler.limit = 1
 module.exports = handler

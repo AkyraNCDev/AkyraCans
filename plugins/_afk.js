@@ -3,12 +3,9 @@ handler.before = m => {
   let user = global.db.data.users[m.sender]
   if (user.afk > -1) {
     let test = `
-╭────[ 𝗦𝗧𝗢𝗣 𝗔𝗙𝗞 ]────✧
-┆ Alasan : ${user.afkReason ? '' + user.afkReason : ''}
-┆ Selama : *${clockString(new Date - user.afk)}*
-╰┅────★
+*👋WELCOME BACK*\n\n*Kamu Berhenti Away From Keyboard (AFK) Selama ${clockString(new Date - user.afk)} Dengan Alasan ${user.afkReason ? '' + user.afkReason : ''}*
 `.trim()
-conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
+conn.sendButton(m.chat, test, wm, '⋮☰ 𝐌𝐄𝐍𝐔', '.menu', m)
 conn.reply(test)
     user.afk = -1
     user.afkReason = ''
@@ -20,10 +17,7 @@ conn.reply(test)
     let afkTime = user.afk
     if (!afkTime || afkTime < 0) continue
     let reason = user.afkReason || ''
-    let str = `╭────[ 𝗜𝗡 𝗔𝗙𝗞  ]────✧
-┆ ${reason ? 'Alasan : ' + reason : 'Tanpa Alasan'}
-┆ Selama : *${clockString(new Date - afkTime)}*
-╰┅────★
+    let str = `*Orang Yang Kamu Tag/Reply Sedang Away From Keyboard (AFK) Dengan Alasan ${reason ? 'Alasan : ' + reason : 'Tanpa Alasan'} Selama ${clockString(new Date - afkTime)}*
 `.trim()
 conn.sendButton(m.chat, str, `${wm}`,'𝐌𝐀𝐀𝐅, 𝐀𝐊𝐔 𝐓𝐈𝐃𝐀𝐊 𝐓𝐀𝐔', 'okeh',m)
 conn.reply(str)

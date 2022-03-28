@@ -32,7 +32,7 @@ ${usedPrefix}build <type>
 ${usedPrefix}upgrade <type> [ FITUR BELUM SELESAI ]
 
 
-🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃
+❦ʀᴇɴ-ʙᴏᴛ
 `
 //
         try {

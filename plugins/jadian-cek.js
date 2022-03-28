@@ -28,21 +28,21 @@ let handler = async (m, { conn, usedPrefix, text }) => {
   }
 
   if (typeof global.db.data.users[user] == "undefined"){
-    return m.reply("```Target tidak terdaftar di dalam database! 🗃️```")
+    return m.reply("```Target Tidak Terdaftar Di Dalam Database! 🗃️```")
   }
 
   if (typeof global.db.data.users[global.db.data.users[user].pasangan] == "undefined" && global.db.data.users[user].pasangan != ""){
-    return m.reply("```Target tidak terdaftar di dalam database! 🗃️```")
+    return m.reply("```Target Tidak Terdaftar Di Dalam Database! 🗃️```")
   }
 
   if (global.db.data.users[user].pasangan == "") {
-    conn.reply(m.chat, `${orang} tidak memiliki pasangan dan tidak sedang menembak siapapun 👥\n\n▸ Ketik *.tembak @user* untuk menembak seseorang`, m)
+    conn.reply(m.chat, `${orang} Jomblo Dan Tidak Ada Yang Mau 👥\n\n▸ Ketik *.tembak @user* untuk menembak seseorang`, m)
   }else if (global.db.data.users[global.db.data.users[user].pasangan].pasangan != user){
-    conn.reply(m.chat, `📝 ${orang} sedang menunggu jawaban dari @${global.db.data.users[user].pasangan.split('@')[0]} karena sedang tidak diterima atau di tolak\n\n▸ Ketik *${usedPrefix}ikhlasin* untuk mengikhlaskan!`, m,{contextInfo: {
+    conn.reply(m.chat, `📝 ${orang} Sedang Menunggu Jawaban @${global.db.data.users[user].pasangan.split('@')[0]} Karena Sedang Tidak Diterima Atau Di Tolak\n\n▸ Ketik *${usedPrefix}ikhlasin* Untuk Sadar Diri!`, m,{contextInfo: {
       mentionedJid: [global.db.data.users[user].pasangan]
     }})
   }else {
-    conn.reply(m.chat, `[💓] ${orang} sedang menjalani hubungan dengan @${global.db.data.users[user].pasangan.split('@')[0]}`, m,{contextInfo: {
+    conn.reply(m.chat, `[💓] ${orang} Sedang Menjalani Hubungan Dengan @${global.db.data.users[user].pasangan.split('@')[0]}\nKamu Jangan Coba Coba Nikung Ya`, m,{contextInfo: {
       mentionedJid: [global.db.data.users[user].pasangan]
     }})
   }

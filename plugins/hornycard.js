@@ -12,7 +12,7 @@ try {
   let img = await q.download()
   let url = await uploadImage(img)
   let Horny = `https://some-random-api.ml/canvas/horny?avatar=${url}`
-  let stiker = await sticker(null, Horny, 'Horny', '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃')
+  let stiker = await sticker(null, Horny, 'Horny', '❦ʀᴇɴ-ʙᴏᴛ')
   conn.sendMessage(m.chat, stiker, MessageType.sticker, {
     quoted: m
   })

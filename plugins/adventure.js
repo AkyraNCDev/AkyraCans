@@ -29,13 +29,15 @@ let handler = async (m, { conn, usedPrefix, DevMode }) => {
             let common = (_common * 1)
             let _uncommon = `${Math.floor(Math.random() * 10)}`.trim()
             let uncommon = (_uncommon * 1) 
-            let _mythic = `${pickRandom(['0', '3', '6', '9'])}`
+            let _mythic = `${pickRandom(['0', '0', '2', '3'])}`
             let mythic = (_mythic * 1)
-            let _legendary = `${pickRandom(['0', '3', '5', '7'])}`
+            let _legendary = `${pickRandom(['0', '0', '1', '2'])}`
             let sampah = `${Math.floor(Math.random() * 2000)}`.trim()
             let legendary = (_legendary * 1)
             let str = `
-♥️Nyawa Mu Berkurang -${healt * 1} Karena Kamu Telah Berpetualang Sampai ${pickRandom(['🇯🇵Jepang', '🇰🇷Korea', '🇮🇩Bali', '🇺🇲Amerika', '🇮🇶Iraq', '🇦🇪Arab', '🇵🇰Pakistan', '⚠️Uni Soviet','🇩🇪German', '🇫🇮Finlandia', '💭Ke Bawa Dunia Mimpi', '🔚Ujung dunia', 'Mars', '🌑Bulan', '🪐Saturnus', '☀️Matahari', '❣️Hatinya dia', '❤️Hatinya Owner'])} Dan Mendapatkan
+*👋Selamat Datang Kembali Dari Petualanganmu Di ${pickRandom(['🇯🇵Jepang', '🇰🇷Korea', '🇮🇩Bali', '🇺🇲Amerika', '🇮🇶Iraq', '🇦🇪Arab', '🇵🇰Pakistan', '⚠️Uni Soviet','🇩🇪German', '🇫🇮Finlandia', '💭Ke Bawa Dunia Mimpi', '🔚Ujung dunia', 'Mars', '🌑Bulan', '🪐Saturnus', '☀️Matahari', '❣️Hatinya dia', '❤️Hatinya Owner'])} Dan Karena Itu Healthmu Berkurang Sebanyak -${healt * 1}♥️ (Gunakan Potion Untuk Heal)*
+
+Hasil Dari Petualangan Kamu:
 🔰Exp ${exp} 
 💰Uang ${uang}
 🪵Kayu ${kayu}
@@ -64,7 +66,7 @@ let handler = async (m, { conn, usedPrefix, DevMode }) => {
             global.db.data.users[m.sender].sampah += sampah * 1
             global.db.data.users[m.sender].lastadventure = new Date * 1
             } else conn.reply(m.chat, `Anda sudah berpetualang dan kelelahan, silahkan Istirahat dulu sekitar\n🕔 *${timers}*`, m)
-        } else conn.send2Button(m.chat, 'Minimal 80 health♥️ Untuk Bisa Berpetualang, Beli Nyawa Dulu Dengan Ketik *' + usedPrefix + 'shop buy potion <jumlah>*\nDan Ketik ' + usedPrefix + 'use potion <jumlah>\n\nUntuk Mendapat 💵Money Dan 🥤Potion Gratis Ketik' + usedPrefix + 'claim', `🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃`, `💉Heal`, `.use potion all`, `🔙Kembali`, `.simplemenu`, m)
+        } else conn.send2Button(m.chat, 'Minimal Healthmu 80♥️ Untuk Berpetualangan, Silahkan Minum Potion Dengan Cara #heal Dan Jika Tidak Cukup Beli Dengan Cara*' + usedPrefix + 'shop buy potion <jumlah>*\nDan Ketik ' + usedPrefix + 'use potion <jumlah>\n\nUntuk Mendapat 💵Money Dan 🥤Potion Gratis Ketik' + usedPrefix + 'claim', `❦ʀᴇɴ-ʙᴏᴛ`, `💉𝐇𝐄𝐀𝐋`, `.use potion all`, `🔙𝐊𝐄𝐌𝐁𝐀𝐋𝐈`, `.simplemenu`, m)
     } catch (e) {
         console.log(e)
         conn.reply(m.chat, 'Error', m)

@@ -8,9 +8,9 @@ let handler  = async (m, { conn, args, usedPrefix, command }) => {
     	.then(res => res.json())
     	.then(json => {
     		conn.updatePresence(m.chat, Presence.composing) 
-    		conn.reply(m.chat, `*Tunggu sebentar . . .*`, m)
+    		conn.reply(m.chat, `*Memuat Data📂*\n*■□□□□□□□□□ 10%*`, m)
 	conn.sendFile(m.chat, json.url, 'blowjoc.jpg', '',m)	
-	}) .catch(() => { conn.reply(m.chat, `*Terjadi kesalahan . . .*`, m) })
+	}) .catch(() => { conn.reply(m.chat, `*Gagal Mendapatkan Data⚠️*\n*□□□□□□□□□□ 00%*`, m) })
   			
 	}
 handler.help = ['holo', 'hololive']

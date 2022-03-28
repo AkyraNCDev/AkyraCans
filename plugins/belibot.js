@@ -6,11 +6,10 @@ Bebas Menambahkan Ke Group Tapi Akan Keluar Jika Melanggar Peraturan Dibawah Ini
 ❍ Terdeteksi Spam
 ❍ Group Sepi Dalam 24 Jam
 ❍ Tidak Digunakan Dalam 24 Jam
-❍ Member Group Minimal 10 +
-❍ PHP-in Owner:v
+❍ Hanya Boleh Ada 1 Bot Dalam 1 Group
 
 ▌│█║▌║▌║║▌║▌║█│▌
-`.trim(), `${wm}`, 'Menu', '#menu', 'Owner', '#Nowner', m)
+`.trim(), `${wm}`, '𝐌𝐄𝐍𝐔', '#menu', '𝐎𝐖𝐍𝐄𝐑', '#Nowner', m)
 }
 
 handler.help = ['sewa', 'sewabot']

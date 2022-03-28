@@ -30,7 +30,6 @@ handler.help = ['artinama'].map(v => v + ' [nama]')
 handler.tags = ['kerang']
 handler.command = ['artinama']
 handler.register = true
-handler.limit = 2
-handler.level = 5
+handler.limit = 1
 module.exports = handler
 

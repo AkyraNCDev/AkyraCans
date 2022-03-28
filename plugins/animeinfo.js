@@ -21,8 +21,7 @@ handler.help = ['animeinfo <judul>']
 handler.tags = ['anime']
 handler.command = /^(animeinfo)$/i
 
-handler.limit = 3
+handler.limit = 1
 handler.register = true
-handler.level = 10
 //maapin fatur :<
 module.exports = handler

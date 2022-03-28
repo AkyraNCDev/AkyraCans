@@ -43,9 +43,9 @@ const timeout = 1800000
                       } else m.reply(`Pastikan bibit apel kamu *500* untuk bisa berkebon`)
                   } else m.reply(`Pastikan bibit mangga kamu *500* untuk bisa berkebon`)
               }
-handler.help = ['berkebon']
+handler.help = ['berkebun']
 handler.tags = ['rpg']
-handler.command = /^(berkebon)/i
+handler.command = /^(berkebun)/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

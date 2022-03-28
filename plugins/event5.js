@@ -200,7 +200,7 @@ Bonus Untuk Minus Money
 📆Periode Event 2 April - 2 Mei
 `.trim()
     mentionedJid: [number]
-    conn.send2Button(m.chat, str, wm, `Daily Login`, `.dailylogin`, `⋮☰ Event`, `.revent`, m)
+    conn.fakeReply(m.chat, str, '0@s.whatsapp.net', `❦ʀᴇɴ-ʙᴏᴛ\n☪️EVENT RAMADHAN 1443H`, 'status@broadcast')
     conn.reply(str)
 }
 handler.help = ['event5']

@@ -11,7 +11,7 @@ let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fet
 │wa.me/6281347927862?text=Demi+Allah,+Saya+Mau+Donasi+Ke+Abang
 ╰──────────···───╮
 ▌│█║▌║▌║║▌║▌║█│▌
-`.trim(), `${wm}`, 'Owner', '.owner')
+`.trim(), `${wm}`, '𝐎𝐖𝐍𝐄𝐑', '.owner')
 
 module.exports = handler
 

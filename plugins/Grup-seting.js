@@ -12,7 +12,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 	}[(args[0] || '')]
 	if (isClose === undefined) {
 		await conn.send2Button(m.chat, `*───────[ GROUP SETTING ]───────*
-	`.trim(),`                     ${wm}\n` + date, 'Open', ',grup 1', 'Close', ',grup 0')
+	`.trim(),`                     ${wm}\n` + date, '𝐎𝐏𝐄𝐍', ',grup 1', '𝐂𝐋𝐎𝐒𝐄', ',grup 0')
 		throw false
 	}
 	await conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, isClose)

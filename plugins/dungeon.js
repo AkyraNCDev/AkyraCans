@@ -17,7 +17,7 @@ async function handler(m, { conn, usedPrefix, command, text }) {
         if (buttons.length == 0) return m.reply(lmao)   
         const buttonMessage = {
             contentText: lmao,
-            footerText: '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃',
+            footerText: '❦ʀᴇɴ-ʙᴏᴛ',
             buttons: buttons,
             headerType: 1
         }
@@ -59,7 +59,7 @@ async function handler(m, { conn, usedPrefix, command, text }) {
         let lmao = `${!room.game.player4 ? `Menunggu ${!room.game.player3 && !room.game.player4 ? '2' : '1'} Partner Lagi... ${room.name ? `Mengetik Command Dibawah Ini *${usedPrefix}${command} ${room.name}*` : ''}` : 'Semua Partner Telah Lengkap...'}`
         const buttonMessage = {
             contentText: lmao,
-            footerText: '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃',
+            footerText: '❦ʀᴇɴ-ʙᴏᴛ',
             buttons: buttons,
             headerType: 1
         }
@@ -335,7 +335,7 @@ HADIAH
 ${usedPrefix}${command} ${text}` : '') + '\nAtau Ketik *Sendiri* Untuk Bermain Sendiri'
         const buttonMessage = {
             contentText: lmao,
-            footerText: '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃',
+            footerText: '❦ʀᴇɴ-ʙᴏᴛ',
             buttons: buttons,
             headerType: 1
         }
@@ -371,7 +371,7 @@ handler.before = function (m) {
         let lmao = 'Kamu Tidak Bisa Bermain Sendiri Karena Memiliki Partner. Silahkan Ketik *gass* Untuk Bermain Dengan Partner Lainnya....'
         const buttonMessage = {
           contentText: lmao,
-          footerText: '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃',
+          footerText: '❦ʀᴇɴ-ʙᴏᴛ',
           buttons: buttons,
           headerType: 1
       }

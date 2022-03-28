@@ -14,17 +14,16 @@ let handler = async (m, { conn }) => {
     let username = conn.getName(who)
     let wm = global.botwm
     let str = `
-╭—[ 𝗕𝗔𝗡𝗞 ${username}
+╭—[ *BANK ${username}*
 │
-│ 🎫 Limit : ${limit}
-│ 🎟 ️Limit Game : ${tigame}
-│ 🏦 Bank : ${atm}
-│ 💵 Money : ${money}
-╰─────···─✧
+├❏  Limit : ${limit}🎟️
+├❏  Bank : ${atm}🏦
+├❏  Money : ${money}💵
+╰──────────────>
 
 `.trim()
     let mentionedJid = [who]
-    conn.sendButton(m.chat, str, `${wm}`, 'Inventory', '.inv', m)
+    conn.fakeReply(m.chat, str, '0@s.whatsapp.net', `❦ʀᴇɴ-ʙᴏᴛ\nIts Me Akyra`, 'status@broadcast')
     conn.reply(str)
   }
 }

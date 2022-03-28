@@ -80,7 +80,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 
 
 `.trim()
-conn.sendButton(m.chat, str, `${botol}`, 'GROUP BOT', '.gcbot', m)
+conn.sendButton(m.chat, str, `${botol}`, '𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐆𝐑𝐎𝐔𝐏 𝐂𝐇𝐀𝐓', '.gcbot', m)
 
 }
 handler.help = ['info']

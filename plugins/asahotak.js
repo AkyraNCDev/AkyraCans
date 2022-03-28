@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     conn.asahotak = conn.asahotak ? conn.asahotak : {}
     let id = m.chat
     if (id in conn.asahotak) {
-        conn.reply(m.chat, '〔 𝗔𝗟𝗘𝗥𝗧 〕\n\n*Masih Ada Soal Belum Terjawab Di Chat Ini*', conn.asahotak[id][0])
+        conn.reply(m.chat, '*Mohon Selesaikan Dulu Sesi Ini Untuk Melanjutkan Ke Sesi Berikutnya*', conn.asahotak[id][0])
         throw false
     }
     let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/asahotak.json')).json()
@@ -18,13 +18,13 @@ ${json.soal}
 
 ⏱️Timeout ${(timeout / 1000).toFixed(2)} Detik
 🔎Ketik ${usedPrefix}ao Untuk Bantuan
-🎁Bonus: ${poin} XP
+🎁Prize: ${poin} XP
     `.trim()
     conn.asahotak[id] = [
-        await conn.sendButton(m.chat, caption, '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'Bantuan', '.ao', m),
+        await conn.sendButton(m.chat, caption, '❦ʀᴇɴ-ʙᴏᴛ', 'Bantuan', '.ao', m),
         json, poin,
         setTimeout(async () => {
-            if (conn.asahotak[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'Main Lagi🔂', '.asahotak', conn.asahotak[id][0])
+            if (conn.asahotak[id]) await conn.sendButton(m.chat, `Waktu Untuk Menjawab Habis!\nJawabannya Adalah *${json.jawaban}*`, '❦ʀᴇɴ-ʙᴏᴛ', '𝐌𝐀𝐈𝐍 𝐋𝐀𝐆𝐈🔂', '.asahotak', conn.asahotak[id][0])
             delete conn.asahotak[id]
         }, timeout)
     ]
@@ -33,5 +33,5 @@ handler.help = ['asahotak']
 handler.tags = ['game']
 handler.command = /^asahotak/i
 handler.register = true
-handler.limit = true
+let wm = global.botwm
 module.exports = handler

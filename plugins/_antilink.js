@@ -9,7 +9,7 @@ handler.before = async function (m, { isAdmin, isBotAdmin }) {
   if (chat.antiLink && isGroupLink && !isAdmin && !m.isBaileys && m.isGroup) {
     let thisGroup = `https://chat.whatsapp.com/${await conn.groupInviteCode(m.chat)}`
     if (m.text.includes(thisGroup)) throw false // jika link grup itu sendiri gak dikick
-    await conn.sendButton(m.chat, `*Link Grup Terdeteksi!*${isBotAdmin ? '' : '\n\nBukan Admin Jadi Gabisa Kick T_T'}\n\nKetik *.off antilink* Untuk Mematikan Fitur Ini${opts['restrict'] ? '' : '\nketik #on restrict supaya bisa kick'}`, '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'Matikan Antilink', ',0 antilink', m)
+    await conn.sendButton(m.chat, `*LINK GROUP TERDETEKSI BOT📡*${isBotAdmin ? '' : '\n\n*Bot Tidak Bisa Mengeluarkan Member Karen Bot Bukan Admin!!!*'}\n\nKetik *.off antilink* Untuk Mematikan Fitur Ini${opts['restrict'] ? '' : '\nketik #on restrict supaya bisa kick'}`, '❦ʀᴇɴ-ʙᴏᴛ', 'Matikan Antilink', ',0 antilink', m)
     //if (global.opts['restrict']) {
       if (isBotAdmin) this.groupRemove(m.chat, [m.sender])
 //    }

@@ -10,7 +10,7 @@ Confirmed : ${json.confirmed.value}
 Recovered : ${json.recovered.value}
 Deaths : ${json.deaths.value}
 Last Update : ${json.lastUpdate}
-\n\n🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃`.trim())
+\n\n❦ʀᴇɴ-ʙᴏᴛ`.trim())
   else throw json
 }
 handler.help = ['covid'].map(v => v + ' <negara>')
@@ -19,5 +19,4 @@ handler.command = /^(corona|covid|covid19)$/i
 //susu
 handler.register = true
 handler.limit = 2
-handler.level = 5
 module.exports = handler

@@ -4,7 +4,7 @@ async function handler(m) {
     this.game = this.game ? this.game : {}
     let id = 'family100_' + m.chat
     if (id in this.game) {
-        this.sendButton(m.chat, 'Selesaikan Dulu Kuis Ini Kak, Baru Lanjut Kuis Selanjutnya', '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'Nyerah', 'nyerah', { quoted: this.game[id].msg })
+        this.sendButton(m.chat, 'Selesaikan Dulu Sesi Ini Untuk Melanjutkan Sesi Berikutnya', '❦ʀᴇɴ-ʙᴏᴛ', '𝐌𝐄𝐍𝐘𝐄𝐑𝐀𝐇', 'nyerah', { quoted: this.game[id].msg })
         throw false
     }
     let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/family100.json')).json()

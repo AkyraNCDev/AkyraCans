@@ -15,7 +15,7 @@ Latin : ${json.latin}
 Artinya:
 "${json.translation}"
 `.trim()
-  await conn.sendButton(m.chat, caption, '', 'Next Doa Harian⏭️', `${usedPrefix + command}`, m)
+  await conn.sendButton(m.chat, caption, '', '𝐍𝐄𝐗𝐓 𝐃𝐀𝐈𝐋𝐘 𝐏𝐑𝐀𝐘𝐄𝐑⏭️', `${usedPrefix + command}`, m)
 }
 handler.help = ['doaharian']
 handler.tags = ['quran']

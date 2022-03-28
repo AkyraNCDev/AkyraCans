@@ -8,7 +8,7 @@ let handler = async (m, { conn }) => {
     let timers = clockString(_timers) 
     if (new Date - user.lasthourly > 3600000) {
     let str = `「 𝗛𝗢𝗨𝗥𝗟𝗬 」\n\n+20000 Money💵\n+1 Potion🥤`
-        conn.send2Button(m.chat, str, wm, 'Daily', '.claim', 'Weekly', '.weekly', m)
+        conn.send2Button(m.chat, str, wm, '𝐃𝐀𝐈𝐋𝐘', '.claim', '𝐖𝐄𝐄𝐊𝐋𝐘', '.weekly', m)
         conn.reply(str)
         global.db.data.users[m.sender].money += 20000
         global.db.data.users[m.sender].potion += 1

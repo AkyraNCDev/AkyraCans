@@ -1,7 +1,7 @@
 let axios = require("axios");
 let handler = async(m, { conn, text }) => {
 
-   await m.reply('Searching...')
+   await m.reply('*Memuat Data📂*\n*■□□□□□□□□□ 10%*')
     if (!text) return conn.reply(m.chat, 'Masukan Alamat IP yang akan dicek', m)
 
 	axios.get(`https://videfikri.com/api/iplookup/?ip=${text}`).then ((res) => {

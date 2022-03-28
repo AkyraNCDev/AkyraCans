@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
     let uptime = clockString(_uptime)
 
     let str = `
-╭─────[ 𝗦𝗧𝗔𝗧𝗨𝗦 ]────
+╭────[ 𝗗𝗔𝗦𝗛𝗕𝗢𝗔𝗥𝗗 ]────
 ├❖ Aktif selama ${uptime}
 ├❖ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
 ├❖ ${groups.length} Grup
@@ -21,7 +21,7 @@ let handler = async (m, { conn }) => {
 ├❖ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
 ╰────────────···
 
-╭───[ 𝗣𝗘𝗥𝗔𝗧𝗨𝗥𝗔𝗡 ]───
+╭───[ 𝗣𝗘𝗡𝗚𝗔𝗧𝗨𝗥𝗔𝗡 ]───
 ├ ${anon ? '✅' : '❌'} Anon Chat
 ├ ${anticall ? '✅' : '❌'} Anti Call
 ├ ${antispam ? '✅' : '❌'} Anti Spam
@@ -32,7 +32,7 @@ let handler = async (m, { conn }) => {
 ├ ${nsfw ? '✅' : '❌'} Mode Nsfw
 ╰────────────···
     `.trim()
-conn.send2Button(m.chat, str, wm, 'Info', '.info', 'Owner', '.owner',m)
+conn.send2Button(m.chat, str, wm, '𝐈𝐍𝐅𝐎', '.info', '𝐎𝐖𝐍𝐄𝐑', '.nowner',m)
 conn.reply(str)
 }
 handler.help = ['botstatus']

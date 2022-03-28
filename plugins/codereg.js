@@ -30,7 +30,7 @@ let handler = async(m, { conn, args, usedPrefix }) => {
     }
 }
 
-handler.command = /^(codereg)$/i
+handler.command = /^(jjaksosj)$/i
 handler.register = true
 handler.limit = true
 

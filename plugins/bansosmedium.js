@@ -5,7 +5,7 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
   try {
     global.DATABASE.data.users[m.sender].lastbansos2 = global.db.data.users[m.sender].lastbansos2 || 0
     let randomaku = `${Math.floor(Math.random() * 100)}`.trim()
-    let randomkamu = `${Math.floor(Math.random() * 98)}`.trim() //hehe Biar Susah Menang :v
+    let randomkamu = `${Math.floor(Math.random() * 100)}`.trim() //hehe Biar Susah Menang :v
     let Aku = (randomaku * 1)
     let Kamu = (randomkamu * 1)
     let kbansos = './lib/kbansos.jpg'

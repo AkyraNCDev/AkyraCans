@@ -74,7 +74,7 @@ break
                        } else conn.reply(m.chat, `Stok Buruan Mu Tidak Cukup Untuk Dimasak`, m)
 break
                 default:
-                    return conn.sendButton( m.chat, cok, `🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃`, `Makan`, `.eat ayamb 1`)
+                    return conn.sendButton( m.chat, cok, `❦ʀᴇɴ-ʙᴏᴛ`, `Makan`, `.eat ayamb 1`)
             }
         }
     } catch (e) {

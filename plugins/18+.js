@@ -1,7 +1,7 @@
 let handler  = async (m, { conn }) => {
 	
-	await m.reply('[❗] WAIT, Tunggu Sebentar')
-  conn.reply(m.chat,`${pickRandom(global.bokep)}`, m)
+	await m.reply('*Memuat Data📂*\n*■□□□□□□□□□ 10%*')
+  conn.reply(m.chat,`${pickRandom(global.bokep)}\n\n${wm}`, m)
 }
 handler.help = ['filebokep']
 handler.tags = ['hentai']
@@ -16,7 +16,7 @@ handler.botAdmin = false
 handler.register = true
 handler.fail = null
 handler.limit = 20
-
+let wm = global.botwm
 module.exports = handler
 
 function pickRandom(list) {
