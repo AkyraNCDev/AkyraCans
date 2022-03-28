@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   if (!res.ok) throw await res.text()
   let json = await res.json()
   if (!json.url) throw 'Error!'
-  conn.sendButtonImg(m.chat, await (await fetch(json.url)).buffer(), 'Nyaa', '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'Neko Again🔂', `${usedPrefix + command}`, m,)
+  conn.sendButtonImg(m.chat, await (await fetch(json.url)).buffer(), 'Nyaa', ' ❦ʀᴇɴ-ʙᴏᴛ ', 'Neko Again🔂', `${usedPrefix + command}`, m,)
 }
 handler.help = ['neko2']
 handler.tags = ['anime']

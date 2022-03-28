@@ -15,17 +15,17 @@ let handler = async (m, { conn, usedPrefix }) => {
     let json = data[Math.floor(Math.random() * data.length)]
     let caption = `
 「 𝗦𝗨𝗦𝗨𝗡 𝗞𝗔𝗧𝗔 」\n
-*${json.soal}*
+*${json.soal}*\n
 🔖Tipe: ${json.tipe}
 ⏱️Timeout *${(timeout / 1000).toFixed(2)} detik*
-🎁Ketik ${usedPrefix}suka untuk bantuan
-❗Bonus: ${poin} XP
+🔎Ketik ${usedPrefix}suka untuk bantuan
+🎁Prize: ${poin} XP
 `.trim()
     conn.susunkata[id] = [
-        await conn.sendButton(m.chat, caption, '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'Bantuan', '.suka'),
+        await conn.sendButton(m.chat, caption, ' ❦ʀᴇɴ-ʙᴏᴛ ', '𝐁𝐀𝐍𝐓𝐔𝐀𝐍🔎', '.suka'),
         json, poin,
         setTimeout(async () => {
-            if (conn.susunkata[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'Susun Kata', '.susunkata')
+            if (conn.susunkata[id]) await conn.sendButton(m.chat, `Waktu Untuk Menjawab Habis!\nJawabannya adalah *${json.jawaban}*`, ' ❦ʀᴇɴ-ʙᴏᴛ ', '𝐌𝐀𝐈𝐍 𝐋𝐀𝐆𝐈🔂', '.susunkata')
             delete conn.susunkata[id]
         }, timeout)
     ]

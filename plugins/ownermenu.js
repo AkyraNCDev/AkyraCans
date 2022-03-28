@@ -1,10 +1,10 @@
 let handler = async (m, { conn }) =>
 conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
-                        "title": "‌╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼",
-                        "description": "Ownerku Gans & Cans><",
+                        "title": "‌ㅤ",
+                        "description": "ㅤ",
                         "buttonText": "Main Menu",
-                        "footerText": "🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃",
+                        "footerText": " ❦ʀᴇɴ-ʙᴏᴛ ",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {

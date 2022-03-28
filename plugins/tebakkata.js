@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let timeout = 120000
-let poin = 500
+let poin = 4999
 let handler = async (m, { conn, usedPrefix }) => {
     conn.tebakkata = conn.tebakkata ? conn.tebakkata : {}
     let id = m.chat
@@ -13,18 +13,18 @@ let handler = async (m, { conn, usedPrefix }) => {
     let data = await res.json()
     let json = data[Math.floor(Math.random() * data.length)]
     let caption = `
-*「 TEBAK KATA 」*
+*「 TEBAK KATA 」*\n
 ${json.soal}
 
 ⏱️Timeout *${(timeout / 1000).toFixed(2)} Detik*
-❔Ketik ${usedPrefix}teka Untuk Bantuan
-🎁Bonus: ${poin} XP
+🔎Ketik ${usedPrefix}teka Untuk Bantuan
+🎁Prize: ${poin} XP
 `.trim()
     conn.tebakkata[id] = [
-        await conn.sendButton(m.chat, caption, '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'Bantuan', '.tekaa'),
+        await conn.sendButton(m.chat, caption, ' ❦ʀᴇɴ-ʙᴏᴛ ', '𝐁𝐀𝐍𝐓𝐔𝐀𝐍🔎', '.tekaa'),
         json, poin,
         setTimeout(async () => {
-            if (conn.tebakkata[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '© nekobotz', 'Tebak Kata', '.tebakkata')
+            if (conn.tebakkata[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '❦ʀᴇɴ-ʙᴏᴛ', '𝐌𝐀𝐈𝐍 𝐋𝐀𝐆𝐈🔂', '.tebakkata')
             delete conn.tebakkata[id]
         }, timeout)
     ]

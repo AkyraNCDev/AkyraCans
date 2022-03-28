@@ -18,7 +18,7 @@ let handler = async (m, { conn }) => {
             
     m.reply(`Kamu Menambang Di ${pickRandom(['⛰️Lembah', '⛰️Goa mletre', '🏞️Sungai Selandia', '⛰️Goa texas', '...'])}\n*⚒️Hasil Tambang:* 🪙Emas: *${minim}*\n⛓️Besi: *${minam}*\n🕸️String: *${minkm}*`)
       } else conn.sendButton( m.chat, `Tunggu 🕓${timers} Lagi, Untuk Menambang`, `${botol}`, `⋮☰ Back`, `.menu`, m)
-    } else conn.sendButton( m.chat, `Kamu Tidak Mempunyai ⛏️Pickaxe Untuk Menambang\nBuat Lah Pickaxe Menggunakan String Kayu Dan Batu!`, `🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃`, `Craft Pickaxe`, `.craft pickaxe`,m )
+    } else conn.sendButton( m.chat, `Kamu Tidak Mempunyai ⛏️Pickaxe Untuk Menambang\nBuat Lah Pickaxe Menggunakan String Kayu Dan Batu!`, `❦ʀᴇɴ-ʙᴏᴛ`, `Craft Pickaxe`, `.craft pickaxe`,m )
   }
 
 handler.help = ['mining']

@@ -1,7 +1,7 @@
 let handler = async (m, { conn }) =>
 conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
-                        "title": "‌🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃",
+                        "title": "‌❦ʀᴇɴ-ʙᴏᴛ",
                         "description": "- List Hentai",
                         "buttonText": "Main Menu",
                         "footerText": "A2",

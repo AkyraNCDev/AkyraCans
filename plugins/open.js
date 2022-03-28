@@ -225,7 +225,6 @@ let handler = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 handler.help = ['open', 'gacha'].map(v => v + ' [crate] [count]')
 handler.tags = ['rpg']
 handler.command = /^(open|buka|gacha)$/i
-handler.limit = true
 handler.register = true
 //udah di maapin kan?
 handler.fail = null

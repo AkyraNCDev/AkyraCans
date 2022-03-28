@@ -78,17 +78,11 @@ dimas4 = `
 `
 
 hsl = `
-*—[ Hasil Ngojek ${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])} ]—*
-
- ➕ 💹 Uang = [ ${zero4} ]
- ➕ ✨ Exp = [ ${zero5} ] 		 
- ➕ 😍 Order Selesai = +1
-
-➕  📥Total Order Sebelumnya : ${order}
-
+Order Selesai✔️\n ${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])} Menjadi Ojek Dan Mendapatkan Uang ${zero4} Dan Exp ${zero5}, Total Order Sebelumnya : ${order}
 ${wm}
 `
-
+
+
 global.db.data.users[m.sender].money += rbrb4
 global.db.data.users[m.sender].exp += rbrb5
 global.db.data.users[m.sender].ojekk += 1

@@ -2,9 +2,9 @@ let handler = async (m, { conn }) =>
 conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": "‌𝗟𝗲𝗮𝗱𝗲𝗿𝗯𝗼𝗮𝗿𝗱",
-                        "description": "Menampilkan Leaderboard Di Bot Rikka\nJika Ingin Masuk Top, Mainkan Beberapa Game",
+                        "description": "Menampilkan Leaderboard Di Bot Ren\nJika Ingin Masuk Top, Mainkan Beberapa Game",
                         "buttonText": "Main Menu",
-                        "footerText": "🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃",
+                        "footerText": "❦ʀᴇɴ-ʙᴏᴛ",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {

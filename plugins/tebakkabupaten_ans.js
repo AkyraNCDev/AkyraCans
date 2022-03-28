@@ -8,14 +8,14 @@ handler.before = async function (m) {
     if (!(id in this.tebakkabupaten)) return m.reply('Soal itu telah berakhir')
     if (m.quoted.id == this.tebakkabupaten[id][0].id) {
         let json = JSON.parse(JSON.stringify(this.tebakkabupaten[id][1]))
-        if (['.tekb', 'Bantuan', ''].includes(m.text)) return !0
+        if (['.tekb', '𝐁𝐀𝐍𝐓𝐔𝐀𝐍🔎', ''].includes(m.text)) return !0
         if (m.text.toLowerCase() == json.title.toLowerCase().trim()) {
             global.db.data.users[m.sender].exp += this.tebakkabupaten[id][2]
-            await this.sendButton(m.chat, `*Benar!* +${this.tebakkabupaten[id][2]} XP`, '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 'Tebak Kabupaten', '.tebakkabupaten', m)
+            await this.sendButton(m.chat, `*Jawaban BENAR⭕*\n🎁Prize +${this.tebakkabupaten[id][2]} XP`, '❦ʀᴇɴ-ʙᴏᴛ', '𝐌𝐀𝐈𝐍 𝐋𝐀𝐆𝐈🔂', '.tebakkabupaten', m)
             clearTimeout(this.tebakkabupaten[id][3])
             delete this.tebakkabupaten[id]
-        } else if (similarity(m.text.toLowerCase(), json.title.toLowerCase().trim()) >= threshold) m.reply(`*Dikit Lagi!*`)
-        else m.reply(`*Salah!*`)
+        } else if (similarity(m.text.toLowerCase(), json.title.toLowerCase().trim()) >= threshold) m.reply(`*Jawaban HAMPIR BENAR*`)
+        else m.reply(`*Jawaban SALAH❌*`)
     }
     return !0
 }

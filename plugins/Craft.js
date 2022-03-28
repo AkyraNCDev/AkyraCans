@@ -86,7 +86,7 @@ Burning Fire +
           break
 
         default:
-          return conn.sendButton( m.chat, caption, `🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃`, `⋮☰MENU`, `.menu`, m)
+          return conn.sendButton( m.chat, caption, `❦ʀᴇɴ-ʙᴏᴛ`, `⋮☰MENU`, `.menu`, m)
       }
     }
   } catch (err) {

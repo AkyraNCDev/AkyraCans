@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
 ]
 const buttonMessage = {
     contentText: `\n*Sepertinya Anda Sudah Kecapekan*\n*Silahkan Istirahat Dulu sekitar ${timers}*\n*Untuk bisa melanjutkan Mennm*\n`,
-    footerText: '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃', 
+    footerText: ' ❦ʀᴇɴ-ʙᴏᴛ ', 
     buttons: buttons,
     headerType: 1
 }
@@ -47,7 +47,7 @@ hsl = `
  🍌 = [ ${zero6} ]
 
 
-🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃
+ ❦ʀᴇɴ-ʙᴏᴛ 
 `
 global.DATABASE.data.users[m.sender].apel += rbrb1
 global.DATABASE.data.users[m.sender].jeruk += rbrb2

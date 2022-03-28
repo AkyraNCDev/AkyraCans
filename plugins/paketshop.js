@@ -65,7 +65,7 @@ conn.send3ButtonLoc(m.chat, await (await fetch(fla + 'Shop')).buffer(), ext, `${
 }
 handler.help = ['topup']
 handler.tags = ['rpg']
-handler.command = /^(topup)$/i
+handler.command = /^(cffg)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

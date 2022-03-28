@@ -6,16 +6,16 @@ let handler = async (m, { conn }) => {
   if (m.quoted.id == global.math[id][0].id) {
   let math = global.math[id][1]
   if (m.text == math.result) {
-    conn.reply(m.chat, `*Jawaban Benar!*\n+${math.bonus} XP`, m)
+    conn.reply(m.chat, `*Jawaban BENAR⭕*\n🎁Prize +${math.bonus} XP`, m)
     global.db.data.users[m.sender].exp += math.bonus
     clearTimeout(global.math[id][3])
     delete global.math[id]
   } else {
     if (--global.math[id][2] == 0) {
-      conn.reply(m.chat, `*Kesempatan habis!*\nJawaban: *${math.result}*`, m)
+      conn.reply(m.chat, `*Kesempatan HABIS✖️*\nJawaban: *${math.result}*`, m)
       clearTimeout(global.math[id][3])
       delete global.math[id]
-    } else conn.reply(m.chat, `*Jawaban Salah!*\nMasih ada ${global.math[id][2]} kesempatan`, m)
+    } else conn.reply(m.chat, `*Jawaban SALAH❌*\nMasih Ada ${global.math[id][2]} Kesempatan`, m)
   }
  }
 }

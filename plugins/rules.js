@@ -1,32 +1,22 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn }) => await conn.send2Button(m.chat, `
-╭─────[ RULES ]─────✧
-┴
-│¹ Dilarang Hina Bot / Owner
-│² Dilarabg Spam Command
-│³ Dilarang Kirim Virtex
-│⁴ Dilarang Spam Menu Ga Jelas
-│⁵ Dilarang Telp / Vc
-│⁶ Dilarang Culik Bot
-│⁷ Dilarang Promosi
-│⁸ Dilarang Meniru Pesan Bot
-│⁹ Bot Tidak Menerima Save Kontak
-│¹⁰ Dilarang Chat Owner Ga Jelas
-│¹¹ No Plagiat
-┬
-╰──────────···
+RULES ❦ʀᴇɴ-ʙᴏᴛ
+1. Dilarang Melakukan Spam
+2. Dilarang Meniru Pesan Bot
+3. Dilarang Menghina Bot/Owner
+4. Dilarang Send Virus WA
+5. Dilarang Chat Gak Jelas
+6. Dilarang Menggoda Owner
+7. Bot Online 24 Jam (Off Karena Lag)
 
-╭─────[ HUKUM ]─────✧
-┴
-│ 1 & 11 = Block + Banned Permanent
-│ 2,4,6 & 8 = Banned Sementara
-│ 3 = War
-│ 5 = Block Sementara
-│ 9 & 10 = Block Permanent
-┬
-╰──────────···
+S&K ❦ʀᴇɴ-ʙᴏᴛ
+1. Owner Tidak Bertanggung Jawab Dengan Fitur Yang Kalian Gunakan
+2. Bot Tidak Menyimpan Data Pribadi Kalian
+3. Bot Menjaga Privasi Kalian
+
+*Melanggar??? = BANNED*
 ${wm}
-`.trim(), 'Harap patuhin peraturan tersebut', '⋮☰ Menu', '.menu', 'Owner', '.nowner', m)
+`.trim(), 'Harap Patuhin Peraturan Tersebut', '⋮☰ Menu', '.menu', 'Owner', '.nowner', m)
 
 handler.help = ['rules']
 handler.tags = ['info']

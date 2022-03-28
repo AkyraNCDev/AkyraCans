@@ -2,7 +2,7 @@ let fetch = require('node-fetch')
 let handler = async (m, { conn, args }) => {
    response = args.join(' ')
   if (!args) throw 'Masukkan Parameter'
-  m.reply('*[❗] Wait,Tunggu Bentar Kak Sedang Dalam Proses...*')
+  m.reply('*Memuat Data📂*\n*■□□□□□□□□□ 10%*')
   let res = `http://lolhuman.herokuapp.com/api/ephoto1/birthdaycake?apikey=AryaKey&text=${response}`
   conn.sendFile(m.chat, res, 'ultah.jpg', `Selamat Ulang Tahun ${response}`, m, false)
 }

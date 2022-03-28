@@ -1,9 +1,9 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `
-Oke Bisa （ ・∀・）
+Активный бот✔️
 `.trim()
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', `*✧──────────···──────────✧*\n                   ${wm}`, 'status@broadcast')
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', `*Its Me Akyra Cans*\nDev ${wm}`, 'status@broadcast')
 }
 handler.customPrefix = /^(tes|tess|test)$/i
 handler.command = new RegExp

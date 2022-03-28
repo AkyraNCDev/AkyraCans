@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
 {buttonId: '.kandang', buttonText: {displayText: '𝐊𝐀𝐍𝐃𝐀𝐍𝐆'}, type: 1}, 
 ]
 const buttonMessage = {
-    contentText: `〔 𝗔𝗟𝗘𝗥𝗧 〕\n\n Sepertinya Kakak Sudah Kecapean\nSilahkan Istirahat Dulu Untuk Mlanjutkan Berburu !\n🕖 *${timers}*`,
+    contentText: `⏳𝗖𝗢𝗢𝗟𝗗𝗢𝗪𝗡\n\n*Silahkan Menunggu Selama ${timers} Untuk Berburu Lagi*`,
     footerText: `${wm}`, 
     buttons: buttons,
     headerType: 1
@@ -57,18 +57,18 @@ zero12 = `${rbrb12}`
 
 hsl = `╭┅┅┅┅[ *HASIL BERBURU* ]┅┅┅┫ 
 ┋
-┞${zero1} Ekor Banteng
-┞${zero7} Ekor Kerbau
-┞${zero2} Ekor Harimau
-┞${zero8} Ekor Sapi
-┞${zero3} Ekor Gajah 
-┞${zero9} Ekor Monyet
-┞${zero4} Ekor Kambing	 
-┞${zero10} Ekor Babi Hutan
-┞${zero5} Ekor Panda			 
-┞${zero11} Ekor Babi
-┞${zero6} Ekor Buaya		 
-┞${zero12} Ekor Ayam
+┞ ${zero1} Ekor Banteng
+┞ ${zero7} Ekor Kerbau
+┞ ${zero2} Ekor Harimau
+┞ ${zero8} Ekor Sapi
+┞ ${zero3} Ekor Gajah 
+┞ ${zero9} Ekor Monyet
+┞ ${zero4} Ekor Kambing	 
+┞ ${zero10} Ekor Babi Hutan
+┞ ${zero5} Ekor Panda			 
+┞ ${zero11} Ekor Babi
+┞ ${zero6} Ekor Buaya		 
+┞ ${zero12} Ekor Ayam
 ┋
 ╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┫
 `

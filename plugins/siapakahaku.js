@@ -6,7 +6,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     conn.siapakahaku = conn.siapakahaku ? conn.siapakahaku : {}
     let id = m.chat
     if (id in conn.siapakahaku) {
-        conn.reply(m.chat, '〔 𝗔𝗟𝗘𝗥𝗧 〕\n\nMasih Ada Soal Belum Terjawab Di Chat Ini', conn.siapakahaku[id][0])
+        conn.reply(m.chat, 'Selesaikan Dulu Sesi Ini Untuk Melanjutkan Sesi Berikutnya', conn.siapakahaku[id][0])
         throw false
     }
     let res = await fetch(global.API('bg', '/siapakahaku', {}))
@@ -18,14 +18,14 @@ let handler = async (m, { conn, usedPrefix }) => {
  *${json.result.soal}*
 
 ⏱️Timeout ${(timeout / 1000).toFixed(2)} Detik
-🎁Bonus: ${poin} XP
-❗Ketik ${usedPrefix}who Untuk Bantuan
+🔎Ketik ${usedPrefix}who Untuk Bantuan
+🎁Prize: ${poin} XP
 `.trim()
     conn.siapakahaku[id] = [
         await conn.reply(m.chat, caption, m),
         json, poin,
         setTimeout(() => {
-            if (conn.siapakahaku[id]) conn.reply(m.chat, `Waktu Habis!\nJawabannya Adalah *${json.result.jawaban}*`, conn.siapakahaku[id][0])
+            if (conn.siapakahaku[id]) conn.reply(m.chat, `Waktu Untuk Menjawab Habis!\nJawabannya Adalah *${json.result.jawaban}*`, conn.siapakahaku[id][0])
             delete conn.siapakahaku[id]
         }, timeout)
     ]

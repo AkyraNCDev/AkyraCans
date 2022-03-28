@@ -8,7 +8,7 @@ let handler  = async (m, { conn, args, text }) => {
     let json = await res.json()
     if (json.status) throw json
     let caption = `
-🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃
+ ❦ʀᴇɴ-ʙᴏᴛ 
 
 Author: ${json.author} Subreddit: ${json.subreddit}
 ${json.postLink}

@@ -33,7 +33,7 @@ DESCRIPTION
 ${json.description}
 Generation: ${json.generation}\n\n
 
-🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃
+ ❦ʀᴇɴ-ʙᴏᴛ 
   `.trim();
   if (!json.error)
     await conn.sendFile(

@@ -110,7 +110,7 @@ handler.tags = ['rpg']
 handler.command = /^(ngewe|ngentod|ngocok)$/i
 handler.register = true
 handler.premium = false
-handler.limit = 5
+handler.limit = 1
 module.exports = handler
 let wm = global.botwm
 

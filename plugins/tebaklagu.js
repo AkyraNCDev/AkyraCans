@@ -16,11 +16,11 @@ let handler = async (m, { conn, usedPrefix }) => {
     let json = result.result
     if (!result.status) throw json
     let caption = `
-TEBAK JUDUL LAGU
-Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik *${usedPrefix}cek* untuk bantuan
-Bonus: ${poin} XP
-*Balas pesan ini untuk menjawab!*`.trim()
+*「 TEBAK JUDUL LAGU 」*\n
+⏱️Timeout *${(timeout / 1000).toFixed(2)} detik*
+🔎Ketik *${usedPrefix}cek* untuk Bantuan
+🎁Prize: ${poin} XP
+⚠️Balas Pesan Ini Untuk Menjawab!!!`.trim()
     conn.tebaklagu[id] = [
         await m.reply(caption),
         json, poin,

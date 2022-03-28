@@ -5,7 +5,7 @@ const { sticker } = require('../lib/sticker')
 
 let handler  = async (m, { conn, text }) => {
    pp = `https://xteam.xyz/videomaker/poly?text=${text}&APIKEY=${Apikey}`
-                     await sticker(false, pp, 'Poly Text', '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃').then(gege => {
+                     await sticker(false, pp, 'Poly Text', ' ❦ʀᴇɴ-ʙᴏᴛ ').then(gege => {
                      conn.sendMessage(m.chat, gege, 'stickerMessage', { quoted: m })
                      })
   if (!text) throw 'Teksnya.. mana sayang?'

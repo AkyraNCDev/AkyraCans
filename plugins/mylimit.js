@@ -13,15 +13,10 @@ let handler = async (m, { conn }) => {
     let { name, tigame, user, level, role, money, premium, limit, exp, lastclaim, registered, regTime, age } = global.db.data.users[m.sender]
     let username = conn.getName(who)
     let str = `
-╭◈ 「 LIMIT 」
-├▸ 👤 Name : ${username}
-├▸ ⭐ Premium : ${premium ? "Yes" :"No"}
-├▸ 🎫 Limit : ${limit}
-├▸ 🎟 ️Limit Game : ${tigame}
-╰────·····──⋆
+*Limit ${username} Tersisa ${limit}🎟️*\n\nBeli Limit Dengan Cara\n#blimit <nominal>\n • Contoh\n    #blimit 10
 `.trim()
     let mentionedJid = [who]
-    conn.sendButton(m.chat, str, `untuk membeli limit ketik /𝗯𝗹𝗶𝗺𝗶𝘁 <𝗻𝗼𝗺𝗶𝗻𝗮𝗹>\n◈ Contoh : /𝙗𝗹𝗶𝗺𝗶𝘁 5`, `INVENTORY`, `.inv`, m, false, { contextInfo: { mentionedJid }})
+    conn.fakeReply(m.chat, str, '0@s.whatsapp.net', `❦ʀᴇɴ-ʙᴏᴛ\nIts Me Akyra`, 'status@broadcast')
     conn.reply[str]
   }
 }

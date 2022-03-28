@@ -9,7 +9,7 @@ let handler = async m => m.reply(`
 *Hari Puncak 31 Maret🌋*
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['nowevent'] 
-handler.tags = ['rpg'] 
-handler.command = /^(nowevent)$/i
+handler.tags = ['ffg'] 
+handler.command = /^(tgf)$/i
 
 module.exports = handler

@@ -19,10 +19,6 @@ let ikan = global.db.data.users[m.sender].ikan
 let orca = global.db.data.users[m.sender].orca
 let past = `—「 𝗞𝗢𝗟𝗔𝗠 🏝️ 」—
   
-💌 Name : ${name}
-📊 Level : ${level}
-✨ Exp : ${exp}
-
 ✧━━━━━━━━━━━━━━━━━━━━━✧
 🐳 Paus: ${paus}   
 🦀 Kepiting: ${kepiting}   
@@ -50,7 +46,7 @@ let isi = ` 🦀Kepiting = ${kepiting}
 🦈Hiu = ${hiu}
 🐡Buntal = ${buntal}
 🐳Orca = ${orca}`.trim()
-  conn.sendButton(m.chat, past, `${wm}`, 'Pasar', '#pasar', m)
+  conn.sendButton(m.chat, past, `${wm}`, '𝐏𝐀𝐒𝐀𝐑 𝐈𝐊𝐀𝐍', '#pasar', m)
   }
   handler.help = ['kotakikan', 'kolam', 'kolamikan']
   handler.tags = ['rpg']
