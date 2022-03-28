@@ -1,9 +1,9 @@
 let handler = async (m, { conn, text }) => {
-  if (global.db.data.users[m.sender].pasangan == "") return conn.reply(m.chat, `Kamu sedang tidak menembak siapapun! 👥`, m)
+  if (global.db.data.users[m.sender].pasangan == "") return conn.reply(m.chat, `Kamu Sedang Tidak Menembak Siapapun! 👥`, m)
   if (global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender) return conn.reply(m.chat, `Kamu telah berpacaran dengan @${global.db.data.users[m.sender].pasangan.split('@')[0]}`, m, {contextInfo: {
     mentionedJid: [global.db.data.users[m.sender].pasangan]
   }})
-  conn.reply(m.chat, `Kamu sudah mengikhlaskan @${global.db.data.users[m.sender].pasangan.split('@')[0]} karena dia tidak memberikan jawaban diterima atau ditolak 🍂`, m, {contextInfo: {
+  conn.reply(m.chat, `Kamu Sudah Sadar Diri Kalau @${global.db.data.users[m.sender].pasangan.split('@')[0]} Tidak Akan Pernah Menjadi Milikmu Selamanya AwokAowkokwoakwoakoakwoqkwowko`, m, {contextInfo: {
     mentionedJid: [global.db.data.users[m.sender].pasangan]
   }})
   global.db.data.users[m.sender].pasangan = ""

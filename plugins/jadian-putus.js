@@ -2,7 +2,7 @@ let handler = async (m, { conn }) => {
   ayg = global.db.data.users[m.sender]
 
   if(ayg.pasangan == ""){
-    return conn.reply(m.chat,`[❗] Anda tidak memiliki pasangan`,m)
+    return conn.reply(m.chat,`[❗] Lu Jomblo Ajg Ngapaen Putus² Awoakowkaowowo`,m)
   }
   
   beb = global.db.data.users[global.db.data.users[m.sender].pasangan]
@@ -21,7 +21,7 @@ let handler = async (m, { conn }) => {
     ayg.pasangan = ""
     beb.pasangan = ""
   }else {
-    conn.reply(m.chat,`[❗] Anda tidak memiliki pasangan.`,m)
+    conn.reply(m.chat,`[❗] Lu Jomblo Ajg Ngapaen Putus² Awoakowoaok.`,m)
   }
 }
 handler.help = ['putus']

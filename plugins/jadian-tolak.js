@@ -42,7 +42,7 @@ let handler = async (m, { conn, text }) => {
       }})
     }else{
       global.db.data.users[user].pasangan = ""
-      conn.reply(m.chat,`Anda baru saja menolak @${user.split('@')[0]} untuk menjadi pasangan anda! 💔`,m,{contextInfo: {
+      conn.reply(m.chat,`Anda baru saja menolak @${user.split('@')[0]} untuk menjadi pasangan anda! 💔\n\nSadar Diri Nolak²`,m,{contextInfo: {
         mentionedJid: [user]
       }})
     }

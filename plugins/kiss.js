@@ -9,7 +9,7 @@ let handler = async (m, { conn}) => {
   let { 
 result
 } = json
-let stiker = await sticker(null, result, 'Kiss', '🎀𝚁𝚒𝚔𝚔𝚊 𝙱𝙾𝚃')
+let stiker = await sticker(null, result, 'Kiss', '❦ʀᴇɴ-ʙᴏᴛ')
   conn.sendMessage(m.chat, stiker, MessageType.sticker, {
     quoted: m
   })
@@ -17,7 +17,7 @@ let stiker = await sticker(null, result, 'Kiss', '🎀𝚁𝚒𝚔𝚔𝚊 𝙱�
   }
 }
 handler.help = ['kiss']
-handler.tags = ['expression']
+handler.tags = ['image']
 handler.command = /^kiss/i
 
 module.exports = handler

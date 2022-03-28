@@ -43,7 +43,7 @@ let handler = async (m, { conn, text }) => {
     }else{
       global.db.data.users[m.sender].pasangan = user
       global.db.data.users[m.sender, user].money -= 1000
-      conn.reply(m.chat,`Selamat anda resmi berpacaran dengan @${user.split('@')[0]} 💗\n\n🎉 Semoga langgeng dan bahagia selalu @${user.split('@')[0]} 💓 @${m.sender.split('@')[0]} 🥳🥳🥳\n\n💹 *Pajak Jadian:* -1000 `,m,{contextInfo: {
+      conn.reply(m.chat,`Selamat anda resmi berpacaran dengan @${user.split('@')[0]} 💗\n\n🎉 Semoga langgeng dan bahagia selalu @${user.split('@')[0]} 💓 @${m.sender.split('@')[0]} 🥳🥳🥳\n\n💹 *Pajak Jadian:* -1000\n\nOwner Titip Buatkan Anak `,m,{contextInfo: {
         mentionedJid: [m.sender,user]
       }})
     }
